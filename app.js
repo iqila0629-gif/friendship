@@ -14,6 +14,8 @@ const state = {
   prefMode: null,
   prefs: {},
   prefStrategy: "consume",
+  beadWeights: ALPHABET.slice(),
+  customWeights: null,
   mode: "normal",
   sources: new Set(["song", "song_album", "abbr", "lyric", "related"]),
   albums: new Set(),
@@ -62,6 +64,24 @@ function buildInventory() {
     inv[ch] = count == null || count === "" ? Infinity : Number(count);
   }
   return inv;
+}
+
+function defaultWeightOrder() {
+  return ALPHABET.slice().sort((a, b) => {
+    const ca = state.counts[a];
+    const cb = state.counts[b];
+    const va = ca == null || ca === "" ? Infinity : Number(ca);
+    const vb = cb == null || cb === "" ? Infinity : Number(cb);
+    if (va !== vb) return va - vb;
+    return a.localeCompare(b);
+  });
+}
+
+function currentWeightOrder() {
+  const base = state.customWeights || defaultWeightOrder();
+  const seen = new Set(base);
+  const rest = defaultWeightOrder().filter((ch) => !seen.has(ch));
+  return [...base, ...rest];
 }
 
 function spellable(entries, inventory) {
@@ -372,19 +392,27 @@ function renderResults() {
   }
 
   title.textContent = "消耗珠子";
+  const unlimitedSongs = spellable(entries, inventory).filter((e) =>
+    Object.entries(e.counts).every(([ch]) => inventory[ch] === Infinity)
+  );
   const found = spellable(entries, inventory)
+    .filter((e) => !unlimitedSongs.includes(e))
     .map((e) => {
       let pref = 0;
       let no = 0;
+      let weightScore = 0;
+      const order = currentWeightOrder();
+      const weightOf = (ch) => order.length - order.indexOf(ch);
       for (const [ch, n] of Object.entries(e.counts)) {
         if (state.prefs[ch] === "pref") pref += n;
         if (state.prefs[ch] === "no") no += n;
+        weightScore += weightOf(ch) * n;
       }
       const score =
         state.prefStrategy === "consume"
-          ? pref * 2 - no * 1 + totalLetters(e.counts) * 0.01
-          : -no * 2 + pref * 1 + totalLetters(e.counts) * 0.01;
-      return { e, pref, no, score };
+          ? (weightScore / totalLetters(e.counts)) * 20 + pref * 4 - no * 2
+          : -(weightScore / totalLetters(e.counts)) * 20 + pref * 2 - no * 4;
+      return { e, pref, no, weightScore, score };
     })
     .sort((a, b) => b.score - a.score || totalLetters(b.e.counts) - totalLetters(a.e.counts));
   meta.textContent = `${found.length} 条`;
@@ -396,6 +424,7 @@ function renderResults() {
   const chainCounts = combinedCounts(chain);
   const remainingAfterChain = useLetters({ ...inventory }, chainCounts);
   const rankable = found.filter((item) => songFits(item.e, remainingAfterChain));
+  const order = currentWeightOrder();
   body.innerHTML = `
     <div class="combo-block">
       <h3>贪心搭配（按当前偏好连续消耗）</h3>
@@ -407,6 +436,27 @@ function renderResults() {
         <button class="reset-btn" id="undoPick">撤销</button>
       </div>
     </div>
+    <div class="combo-block">
+      <h3>珠子权重（优先消耗高权重）</h3>
+      <div class="hint">默认按数量少优先，不限量最后；可拖拽调整或用解析框输入。</div>
+      <div class="select-row">
+        <input class="parse-input" id="weightInput" placeholder="A B C" autocomplete="off">
+        <button class="select-btn small" id="weightApply">应用权重</button>
+        <span class="parse-feedback" id="weightFeedback"></span>
+      </div>
+      <div class="alt-pills" id="weightPills">
+        ${order
+          .map(
+            (ch, i) => `<span class="alt-pill weight-pill" draggable="true" data-letter="${ch}" style="background:#f2ede2;color:var(--ink);">${ch}${i < order.length - 1 ? " &gt;" : ""}</span>`
+          )
+          .join("")}
+      </div>
+    </div>
+    ${unlimitedSongs.length
+      ? `<div class="combo-block"><h3>可无限拼</h3><div class="alt-pills">${unlimitedSongs
+          .map((e) => `<span class="alt-pill" style="${pillStyle(albumById(e.album))}">${esc(e.display)}</span>`)
+          .join("")}</div></div>`
+      : ""}
     <div class="combo-block">
       <h3>分数排行（优先消耗主要珠子，避开不想消耗）</h3>
       ${rankable.length
@@ -438,6 +488,60 @@ function renderResults() {
     state.consumeChain.pop();
     render();
   });
+  $("weightApply").addEventListener("click", () => {
+    const raw = $("weightInput").value;
+    const letters = raw
+      .toUpperCase()
+      .replace(/[^A-Z]/g, " ")
+      .split(/\s+/)
+      .filter((s) => /^[A-Z]$/.test(s));
+    if (!letters.length) {
+      $("weightFeedback").textContent = "格式示例：A B C（权重高的在前）";
+      return;
+    }
+    const seen = new Set();
+    const order = letters.filter((ch) => {
+      if (seen.has(ch)) return false;
+      seen.add(ch);
+      return true;
+    });
+    for (const ch of order) {
+      if (!state.prefs[ch]) {
+        state.prefs[ch] = state.prefStrategy === "consume" ? "pref" : "no";
+      }
+    }
+    state.customWeights = order;
+    $("weightFeedback").textContent = `已应用 ${order.length} 个字母的权重`;
+    state.consumeChain = [];
+    render();
+  });
+  const pillsBox = $("weightPills");
+  if (pillsBox) {
+    let dragLetter = null;
+    pillsBox.querySelectorAll(".weight-pill").forEach((pill) => {
+      pill.addEventListener("dragstart", (ev) => {
+        dragLetter = pill.dataset.letter;
+        ev.dataTransfer.effectAllowed = "move";
+      });
+      pill.addEventListener("dragover", (ev) => {
+        ev.preventDefault();
+      });
+      pill.addEventListener("drop", (ev) => {
+        ev.preventDefault();
+        if (!dragLetter) return;
+        const target = pill.dataset.letter;
+        if (dragLetter === target) return;
+        const arr = state.customWeights ? state.customWeights.slice() : defaultWeightOrder();
+        const from = arr.indexOf(dragLetter);
+        const to = arr.indexOf(target);
+        arr.splice(from, 1);
+        arr.splice(to, 0, dragLetter);
+        state.customWeights = arr;
+        state.consumeChain = [];
+        render();
+      });
+    });
+  }
 }
 
 function renderMax(entries, inventory, title, meta, body) {
@@ -714,7 +818,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.13");
+  const res = await fetch("data/songs.json?v=20260813.14");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
