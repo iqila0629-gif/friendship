@@ -470,6 +470,15 @@ function renderMax(entries, inventory, title, meta, body) {
     </div>`;
 
   state.comboRounds = computeRounds(all, remaining);
+  $("comboUndo").addEventListener("click", () => {
+    state.comboChosen.pop();
+    render();
+  });
+  $("comboClear").addEventListener("click", () => {
+    state.comboChosen = [];
+    render();
+  });
+
   const roundsBox = $("roundsBox");
   roundsBox.innerHTML = "";
   state.comboRounds.forEach((round, ri) => {
@@ -493,14 +502,6 @@ function renderMax(entries, inventory, title, meta, body) {
     roundsBox.appendChild(block);
   });
 
-  $("comboUndo").addEventListener("click", () => {
-    state.comboChosen.pop();
-    render();
-  });
-  $("comboClear").addEventListener("click", () => {
-    state.comboChosen = [];
-    render();
-  });
 }
 
 function render() {
@@ -619,7 +620,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.2");
+  const res = await fetch("data/songs.json?v=20260813.3");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
