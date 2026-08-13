@@ -78,6 +78,10 @@ RELATED_WORDS = [
     ("eras", "other"),
 ]
 
+SPECIAL_SONGS = [
+    ("the 1", "folklore"),
+]
+
 ALBUM_ABBREVIATIONS = [
     ("rep", "reputation"),
     ("folkmore", "folklore"),
@@ -112,8 +116,13 @@ def clean_for_beads(text):
     return re.sub(r"[^A-Za-z]", "", text).upper()
 
 
+def digit_to_letter(text):
+    """Map digit 1 to I for spellable titles like 'the 1'."""
+    return text.replace("1", "I")
+
+
 def letter_counts(text):
-    return dict(sorted(Counter(clean_for_beads(text)).items()))
+    return dict(sorted(Counter(clean_for_beads(digit_to_letter(text))).items()))
 
 
 def has_digit(text):
@@ -142,16 +151,22 @@ def abbreviate(title, you_variant=False):
 
 def main():
     entries = []
-    seen = set()
+    seen_song = set()
 
     def add(display, album_id, source, original=None):
-        cleaned = clean_for_beads(display)
+        cleaned = clean_for_beads(digit_to_letter(display))
         if not cleaned or has_digit(cleaned):
             return None
-        key = (cleaned, source)
-        if key in seen:
+        if source == "song":
+            if cleaned in seen_song:
+                return None
+            seen_song.add(cleaned)
+            for i, existing in enumerate(entries):
+                if existing["clean"] == cleaned and existing["source"] != "song":
+                    entries[i] = None
+        elif any(e is not None and e["clean"] == cleaned and e["source"] == source for e in entries):
             return None
-        seen.add(key)
+        entries[:] = [e for e in entries if e is not None]
         entry = {
             "id": f"{source}:{len(entries)}",
             "display": display,
@@ -188,6 +203,9 @@ def main():
         if cleaned and not has_digit(cleaned) and any(e["clean"] == cleaned for e in entries):
             continue
         add(text, album_id, "related")
+
+    for text, album_id in SPECIAL_SONGS:
+        add(text, album_id, "song")
 
     with open(CSV_PATH, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)

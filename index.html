@@ -311,7 +311,7 @@
           <p class="count-note" id="countNote">开启数量后可输入每个字母的珠子数；留空表示不限量。</p>
         </div>
 
-        <div class="panel">
+        <div class="panel" id="prefPanel">
           <h2 class="panel-title">珠子偏好</h2>
           <div class="filter-group" id="prefControls">
             <button class="chip" data-pref="pref">主要消耗</button>
@@ -340,6 +340,10 @@
 
         <div class="panel">
           <h2 class="panel-title">专辑</h2>
+          <div class="select-row">
+            <button class="select-btn small" id="albumSelectAll">全选</button>
+            <button class="select-btn small" id="albumClearAll">取消全选</button>
+          </div>
           <div class="filter-group" id="albumFilter"></div>
         </div>
       </aside>

@@ -481,6 +481,7 @@ function renderMax(entries, inventory, title, meta, body) {
 
 function render() {
   if (!DATA) return;
+  $("prefPanel").classList.toggle("hidden", state.mode !== "consume");
   renderInventorySummary();
   renderBeadGrid();
   renderFilters();
@@ -549,6 +550,20 @@ function bindStaticControls() {
     });
     document.querySelectorAll("#sourceFilter .chip").forEach((c) => c.classList.add("active"));
     document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.remove("active"));
+    render();
+  });
+  $("albumSelectAll").addEventListener("click", () => {
+    state.albums = new Set(DATA.albums.map((a) => a.id));
+    state.comboStale = true;
+    state.consumeChain = [];
+    state.normalPage = 1;
+    render();
+  });
+  $("albumClearAll").addEventListener("click", () => {
+    state.albums.clear();
+    state.comboStale = true;
+    state.consumeChain = [];
+    state.normalPage = 1;
     render();
   });
   document.querySelectorAll("#modeToggle .mode-btn").forEach((btn) => {
