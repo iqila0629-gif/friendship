@@ -583,6 +583,38 @@ function bindStaticControls() {
     state.comboStale = true;
     render();
   });
+  $("parseApply").addEventListener("click", () => {
+    const raw = $("parseInput").value;
+    const tokens = raw
+      .toUpperCase()
+      .replace(/[，、;；]/g, " ")
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+    const counts = {};
+    const bad = [];
+    for (const token of tokens) {
+      const m = token.match(/^(?:(\d+)\s*)?([A-Z])$/);
+      if (!m) {
+        bad.push(token);
+        continue;
+      }
+      counts[m[2]] = m[1] ? Number(m[1]) : 1;
+    }
+    Object.assign(state.counts, counts);
+    state.showCounts = true;
+    state.comboStale = true;
+    state.consumeChain = [];
+    state.normalPage = 1;
+    const okCount = Object.keys(counts).length;
+    const fb = $("parseFeedback");
+    if (okCount) {
+      fb.textContent = `已设置 ${okCount} 个字母` + (bad.length ? `；无法解析：${bad.join(" ")}` : "");
+    } else {
+      fb.textContent = "格式示例：1A 2B 3C";
+    }
+    render();
+  });
   $("resetAll").addEventListener("click", () => {
     state.selected = new Set(ALPHABET);
     state.counts = {};
@@ -596,6 +628,8 @@ function bindStaticControls() {
     state.consumeChain = [];
     state.comboStale = true;
     state.normalPage = 1;
+    $("parseInput").value = "";
+    $("parseFeedback").textContent = "";
     document.querySelectorAll("#modeToggle .mode-btn").forEach((b) => {
       b.classList.toggle("active", b.dataset.mode === "normal");
     });
@@ -686,7 +720,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.10");
+  const res = await fetch("data/songs.json?v=20260813.11");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();

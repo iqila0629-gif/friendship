@@ -150,6 +150,17 @@
       color: var(--ink);
     }
     .count-note { font-size: 11px; color: var(--muted); margin-top: 22px; }
+    .parse-input {
+      flex: 1 1 120px;
+      min-width: 110px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--ink);
+      background: #fff;
+    }
+    .parse-feedback { font-size: 12px; color: var(--muted); }
 
     .filter-group { display: flex; flex-wrap: wrap; gap: 7px; }
     .chip {
@@ -332,6 +343,11 @@
             <button class="select-btn small" id="clearAll">清空</button>
             <button class="select-btn small toggle-on" id="countToggle">数量</button>
           </div>
+          <div class="select-row" id="parseRow">
+            <input class="parse-input" id="parseInput" placeholder="1A 2B 3C" autocomplete="off">
+            <button class="select-btn small" id="parseApply">解析</button>
+            <span class="parse-feedback" id="parseFeedback"></span>
+          </div>
           <div class="bead-grid" id="beadGrid"></div>
           <p class="count-note" id="countNote">开启数量后可输入每个字母的珠子数；留空表示不限量。</p>
         </div>
@@ -391,6 +407,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260813.10"></script>
+  <script src="app.js?v=20260813.11"></script>
 </body>
 </html>
