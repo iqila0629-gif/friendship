@@ -84,6 +84,18 @@ SPECIAL_SONGS = [
     ("Vigilante Sxxt", "midnights"),
 ]
 
+EXTRA_SONGS = [
+    ("I Knew It, I Knew You", "other"),
+    ("The Alcott", "other"),
+    ("us.", "other"),
+    ("Birch", "other"),
+    ("Birth", "other"),
+    ("Permanent Marker", "other"),
+    ("need", "lover"),
+    ("Dark Blue Tennessee", "taylor_swift"),
+    ("Drama Queen", "speak_now"),
+]
+
 ALBUM_ABBREVIATIONS = [
     ("rep", "reputation"),
     ("folkmore", "folklore"),
@@ -205,6 +217,9 @@ def main():
         add(text, album_id, "related")
 
     for text, album_id in SPECIAL_SONGS:
+        add(text, album_id, "song", convert_ones=True)
+
+    for text, album_id in EXTRA_SONGS:
         add(text, album_id, "song", convert_ones=True)
 
     with open(CSV_PATH, encoding="utf-8", newline="") as f:
