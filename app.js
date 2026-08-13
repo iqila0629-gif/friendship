@@ -396,7 +396,6 @@ function renderResults() {
     Object.entries(e.counts).every(([ch]) => inventory[ch] === Infinity)
   );
   const found = spellable(entries, inventory)
-    .filter((e) => !unlimitedSongs.includes(e))
     .map((e) => {
       let pref = 0;
       let no = 0;
@@ -424,6 +423,9 @@ function renderResults() {
   const chainCounts = combinedCounts(chain);
   const remainingAfterChain = useLetters({ ...inventory }, chainCounts);
   const rankable = found.filter((item) => songFits(item.e, remainingAfterChain));
+  const unlimitedIds = new Set(unlimitedSongs.map((e) => e.id));
+  const limitedRankable = rankable.filter((item) => !unlimitedIds.has(item.e.id));
+  const showRanking = limitedRankable.length ? limitedRankable : rankable;
   const order = currentWeightOrder();
   body.innerHTML = `
     <div class="combo-block">
@@ -459,8 +461,8 @@ function renderResults() {
       : ""}
     <div class="combo-block">
       <h3>分数排行（优先消耗主要珠子，避开不想消耗）</h3>
-      ${rankable.length
-        ? rankable
+      ${showRanking.length
+        ? showRanking
             .slice(0, 40)
             .map(
               (item) => `<div class="consume-card" style="${pillStyle(albumById(item.e.album))}">
@@ -818,7 +820,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.14");
+  const res = await fetch("data/songs.json?v=20260813.15");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
