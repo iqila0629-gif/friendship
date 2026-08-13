@@ -13,6 +13,7 @@ const state = {
   showCounts: false,
   prefMode: null,
   prefs: {},
+  prefStrategy: "consume",
   mode: "normal",
   sources: new Set(["song", "song_album", "abbr", "lyric", "related"]),
   albums: new Set(),
@@ -365,7 +366,11 @@ function renderResults() {
         if (state.prefs[ch] === "pref") pref += n;
         if (state.prefs[ch] === "no") no += n;
       }
-      return { e, pref, no, score: pref * 2 - no * 2 + totalLetters(e.counts) * 0.01 };
+      const score =
+        state.prefStrategy === "consume"
+          ? pref * 2 - no * 1 + totalLetters(e.counts) * 0.01
+          : -no * 2 + pref * 1 + totalLetters(e.counts) * 0.01;
+      return { e, pref, no, score };
     })
     .sort((a, b) => b.score - a.score || totalLetters(b.e.counts) - totalLetters(a.e.counts));
   meta.textContent = `${found.length} 条`;
@@ -554,6 +559,7 @@ function bindStaticControls() {
     state.showCounts = false;
     state.prefMode = null;
     state.prefs = {};
+    state.prefStrategy = "consume";
     state.mode = "normal";
     state.sources = new Set(["song", "song_album", "abbr", "lyric", "related"]);
     state.albums = new Set(DATA.albums.map((a) => a.id));
@@ -564,6 +570,9 @@ function bindStaticControls() {
       b.classList.toggle("active", b.dataset.mode === "normal");
     });
     document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.remove("active"));
+    document.querySelectorAll("#prefStrategy .mode-btn").forEach((b) => {
+      b.classList.toggle("active", b.dataset.strategy === "consume");
+    });
     render();
   });
   $("albumSelectAll").addEventListener("click", () => {
@@ -586,7 +595,11 @@ function bindStaticControls() {
       if (state.mode !== "consume") {
         state.prefs = {};
         state.prefMode = null;
+        state.prefStrategy = "consume";
         document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.remove("active"));
+        document.querySelectorAll("#prefStrategy .mode-btn").forEach((b) => {
+          b.classList.toggle("active", b.dataset.strategy === "consume");
+        });
       }
       state.comboStale = true;
       state.consumeChain = [];
@@ -629,11 +642,21 @@ function bindStaticControls() {
       render();
     });
   });
+  document.querySelectorAll("#prefStrategy .mode-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.prefStrategy = btn.dataset.strategy;
+      document.querySelectorAll("#prefStrategy .mode-btn").forEach((b) => {
+        b.classList.toggle("active", b === btn);
+      });
+      state.consumeChain = [];
+      render();
+    });
+  });
 }
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.6");
+  const res = await fetch("data/songs.json?v=20260813.7");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
