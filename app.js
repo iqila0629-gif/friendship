@@ -162,8 +162,23 @@ function computeRounds(entries, inventory) {
   for (let i = 0; i < 5; i += 1) {
     const solutions = bestSolutions(entries, inv, 1);
     if (!solutions.length) break;
-    rounds.push({ count: solutions[0].length, options: solutions[0], chosen: null });
-    const pick = solutions[0][0];
+    const spellableNow = spellable(entries, inv);
+    const options = spellableNow
+      .map((e) => {
+        let limitedCost = 0;
+        for (const [ch, n] of Object.entries(e.counts)) {
+          if (Number.isFinite(inv[ch])) limitedCost += n * (inv[ch] > 0 ? 1 : 0);
+        }
+        return {
+          e,
+          cost: totalLetters(e.counts) + limitedCost * 2,
+        };
+      })
+      .sort((a, b) => a.cost - b.cost || a.e.display.localeCompare(b.e.display))
+      .slice(0, 12)
+      .map((o) => o.e);
+    rounds.push({ count: solutions[0].length, options, chosen: null });
+    const pick = options[0];
     inv = useLetters(inv, pick.counts);
   }
   return rounds;
@@ -671,7 +686,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.9");
+  const res = await fetch("data/songs.json?v=20260813.10");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
