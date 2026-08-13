@@ -436,7 +436,6 @@ function renderMax(entries, inventory, title, meta, body) {
   }
 
   if (state.comboStale) {
-    state.comboChosen = [];
     state.comboStale = false;
   }
 
@@ -457,13 +456,13 @@ function renderMax(entries, inventory, title, meta, body) {
   body.innerHTML = `
     <div class="combo-block">
       <h3>按组合挑歌（已选 ${state.comboChosen.length} 首 · 剩余最多还可拼 ${maxMore} 首）</h3>
-      <p class="hint">剩余珠子：${remainingText || "全部不限量"}</p>
+      <p class="remaining-beads">剩余珠子：${remainingText || "全部不限量"}</p>
       <div class="hint">每个组合选 1 首；选完该组合即消失，后续组合顺移补位。</div>
       <div class="chosen-list">
         <span class="chosen-label">已选：</span>
         <div class="alt-pills">${chainHtml || `<span class="alt-pill" style="background:#f2ede2;color:#888;">还没有选择</span>`}</div>
-        <button class="reset-btn" id="comboUndo" ${state.comboChosen.length ? "" : "disabled"}>撤销</button>
-        <button class="reset-btn" id="comboClear" ${state.comboChosen.length ? "" : "disabled"}>清空</button>
+        <button class="reset-btn" id="comboUndo">撤销</button>
+        <button class="reset-btn" id="comboClear">清空</button>
       </div>
       <div id="roundsBox"></div>
     </div>
@@ -484,12 +483,16 @@ function renderMax(entries, inventory, title, meta, body) {
 
   state.comboRounds = computeRounds(all, remaining);
   $("comboUndo").addEventListener("click", () => {
-    state.comboChosen.pop();
-    render();
+    if (state.comboChosen.length) {
+      state.comboChosen.pop();
+      render();
+    }
   });
   $("comboClear").addEventListener("click", () => {
-    state.comboChosen = [];
-    render();
+    if (state.comboChosen.length) {
+      state.comboChosen = [];
+      render();
+    }
   });
 
   const roundsBox = $("roundsBox");
@@ -656,7 +659,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.7");
+  const res = await fetch("data/songs.json?v=20260813.8");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
