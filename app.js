@@ -436,6 +436,8 @@ function renderMax(entries, inventory, title, meta, body) {
       <div class="chosen-list">
         <span class="chosen-label">已选：</span>
         <div class="alt-pills">${chainHtml || `<span class="alt-pill" style="background:#f2ede2;color:#888;">还没有选择</span>`}</div>
+        <button class="reset-btn" id="comboUndo" ${state.comboChosen.length ? "" : "disabled"}>撤销</button>
+        <button class="reset-btn" id="comboClear" ${state.comboChosen.length ? "" : "disabled"}>清空</button>
       </div>
       <div id="roundsBox"></div>
     </div>
@@ -476,6 +478,17 @@ function renderMax(entries, inventory, title, meta, body) {
       row.appendChild(pill);
     });
     roundsBox.appendChild(block);
+  });
+
+  $("comboUndo").addEventListener("click", () => {
+    state.comboChosen.pop();
+    state.comboRounds = computeRounds(all, useLetters({ ...inventory }, combinedCounts(state.comboChosen)));
+    render();
+  });
+  $("comboClear").addEventListener("click", () => {
+    state.comboChosen = [];
+    state.comboRounds = computeRounds(all, { ...inventory });
+    render();
   });
 }
 
