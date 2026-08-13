@@ -869,7 +869,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.18");
+  const res = await fetch("data/songs.json?v=20260813.19");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();

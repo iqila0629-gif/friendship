@@ -89,7 +89,6 @@ EXTRA_SONGS = [
     ("The Alcott", "other"),
     ("us.", "other"),
     ("Birch", "other"),
-    ("Birth", "other"),
     ("Permanent Marker", "other"),
     ("need", "lover"),
     ("Dark Blue Tennessee", "taylor_swift"),
@@ -221,6 +220,13 @@ def main():
 
     for text, album_id in EXTRA_SONGS:
         add(text, album_id, "song", convert_ones=True)
+        if word_count(text) >= 4:
+            abbr = abbreviate(text)
+            if abbr and not has_digit(abbr):
+                add(abbr, album_id, "abbr", text)
+            abbr_u = abbreviate(text, you_variant=True)
+            if abbr_u and abbr_u != abbr:
+                add(abbr_u, album_id, "abbr", text)
 
     with open(CSV_PATH, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
