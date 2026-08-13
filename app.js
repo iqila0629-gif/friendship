@@ -8,7 +8,6 @@ const SOURCE_LABELS = {
 };
 
 const state = {
-  selectMode: "on",
   selected: new Set(ALPHABET),
   counts: {},
   showCounts: false,
@@ -55,8 +54,7 @@ function useLetters(inventory, counts) {
 function buildInventory() {
   const inv = {};
   for (const ch of ALPHABET) {
-    const sel = state.selectMode === "on" ? state.selected.has(ch) : !state.selected.has(ch);
-    if (!sel) {
+    if (!state.selected.has(ch)) {
       inv[ch] = 0;
       continue;
     }
@@ -212,14 +210,13 @@ function renderBeadGrid() {
   grid.classList.toggle("with-counts", state.showCounts);
   for (const ch of ALPHABET) {
     const bead = document.createElement("div");
-    const on = state.selectMode === "on" ? state.selected.has(ch) : !state.selected.has(ch);
+    const on = state.selected.has(ch);
     bead.className = "bead";
-    bead.classList.toggle("on", on && state.selectMode === "on");
-    bead.classList.toggle("missing", on && state.selectMode === "off");
+    bead.classList.toggle("on", on);
     bead.classList.toggle("pref", state.prefs[ch] === "pref");
     bead.classList.toggle("no", state.prefs[ch] === "no");
     bead.textContent = ch;
-    bead.title = `点击${state.selectMode === "on" ? "选择" : "标记缺少"} ${ch}`;
+    bead.title = `点击选择 ${ch}`;
     if (state.prefs[ch] === "pref" || state.prefs[ch] === "no") {
       const flag = document.createElement("span");
       flag.className = "bead-flag" + (state.prefs[ch] === "no" ? " no" : "");
@@ -267,6 +264,7 @@ function renderBeadGrid() {
 }
 
 function renderFilters() {
+  renderSourceChips();
   $("albumFilter").innerHTML = "";
   for (const album of DATA.albums) {
     const chip = document.createElement("button");
@@ -282,6 +280,17 @@ function renderFilters() {
     });
     $("albumFilter").appendChild(chip);
   }
+}
+
+function renderSourceChips() {
+  document.querySelectorAll("#sourceFilter .chip").forEach((chip) => {
+    const s = chip.dataset.source;
+    if (s === "song_album") {
+      chip.classList.toggle("active", state.sources.has("song") && state.sources.has("song_album"));
+    } else {
+      chip.classList.toggle("active", state.sources.has(s));
+    }
+  });
 }
 
 function renderResults() {
@@ -506,24 +515,6 @@ function render() {
 }
 
 function bindStaticControls() {
-  $("selectModeOn").addEventListener("click", () => {
-    state.selectMode = "on";
-    state.comboStale = true;
-    state.consumeChain = [];
-    state.normalPage = 1;
-    $("selectModeOn").classList.add("active");
-    $("selectModeOff").classList.remove("active");
-    render();
-  });
-  $("selectModeOff").addEventListener("click", () => {
-    state.selectMode = "off";
-    state.comboStale = true;
-    state.consumeChain = [];
-    state.normalPage = 1;
-    $("selectModeOff").classList.add("active");
-    $("selectModeOn").classList.remove("active");
-    render();
-  });
   $("selectAll").addEventListener("click", () => {
     state.selected = new Set(ALPHABET);
     state.comboStale = true;
@@ -558,7 +549,6 @@ function bindStaticControls() {
     document.querySelectorAll("#modeToggle .mode-btn").forEach((b) => {
       b.classList.toggle("active", b.dataset.mode === "normal");
     });
-    document.querySelectorAll("#sourceFilter .chip").forEach((c) => c.classList.add("active"));
     document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.remove("active"));
     render();
   });
@@ -589,12 +579,23 @@ function bindStaticControls() {
   document.querySelectorAll("#sourceFilter .chip").forEach((chip) => {
     chip.addEventListener("click", () => {
       const s = chip.dataset.source;
-      if (state.sources.has(s)) state.sources.delete(s);
-      else state.sources.add(s);
+      if (s === "song_album") {
+        const both = state.sources.has("song") && state.sources.has("song_album");
+        if (both) {
+          state.sources.delete("song");
+          state.sources.delete("song_album");
+        } else {
+          state.sources.add("song");
+          state.sources.add("song_album");
+        }
+      } else if (state.sources.has(s)) {
+        state.sources.delete(s);
+      } else {
+        state.sources.add(s);
+      }
       state.comboStale = true;
       state.consumeChain = [];
       state.normalPage = 1;
-      chip.classList.toggle("active");
       render();
     });
   });
