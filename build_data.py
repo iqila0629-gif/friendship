@@ -113,11 +113,11 @@ def normalize_title(raw):
 
 def clean_for_beads(text):
     """Keep only A-Z letters, uppercased."""
-    return re.sub(r"[^A-Za-z]", "", text).upper()
+    return re.sub(r"[^A-Za-z]", "", text.replace("$", "S")).upper()
 
 
 def digit_to_letter(text):
-    """Map digit 1 to I for spellable titles like 'the 1'."""
+    """Map digit 1 to I for opt-in entries like 'the 1'."""
     return text.replace("1", "I")
 
 
@@ -153,8 +153,9 @@ def main():
     entries = []
     seen_song = set()
 
-    def add(display, album_id, source, original=None):
-        cleaned = clean_for_beads(digit_to_letter(display))
+    def add(display, album_id, source, original=None, convert_ones=False):
+        shown = digit_to_letter(display) if convert_ones else display
+        cleaned = clean_for_beads(shown)
         if not cleaned or has_digit(cleaned):
             return None
         if source == "song":
@@ -169,9 +170,9 @@ def main():
         entries[:] = [e for e in entries if e is not None]
         entry = {
             "id": f"{source}:{len(entries)}",
-            "display": display,
+            "display": shown,
             "clean": cleaned,
-            "counts": letter_counts(display),
+            "counts": letter_counts(shown),
             "album": album_id,
             "source": source,
         }
@@ -205,7 +206,7 @@ def main():
         add(text, album_id, "related")
 
     for text, album_id in SPECIAL_SONGS:
-        add(text, album_id, "song")
+        add(text, album_id, "song", convert_ones=True)
 
     with open(CSV_PATH, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)

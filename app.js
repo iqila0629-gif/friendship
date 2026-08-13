@@ -412,12 +412,9 @@ function renderMax(entries, inventory, title, meta, body) {
     body.innerHTML = `<div class="empty">这些珠子暂时拼不出任何歌曲，试试扩大库存。</div>`;
     return;
   }
-  const sols = bestSolutions(all, inventory, 5);
-  const bestCount = sols.length ? sols[0].length : 0;
 
   if (state.comboStale) {
     state.comboChosen = [];
-    state.comboRounds = computeRounds(all, inventory);
     state.comboStale = false;
   }
 
@@ -425,14 +422,16 @@ function renderMax(entries, inventory, title, meta, body) {
     (inv, e) => useLetters(inv, e.counts),
     { ...inventory }
   );
+  const maxMore = bestSolutions(all, remaining, 1)[0]?.length || 0;
+  const sols = bestSolutions(all, remaining, 5);
   const chainHtml = state.comboChosen
     .map((e) => `<span class="pill" style="${pillStyle(albumById(e.album))}">${esc(e.display)}</span>`)
     .join("");
 
   body.innerHTML = `
     <div class="combo-block">
-      <h3>按组合挑歌（当前库存最多可拼 ${bestCount} 首）</h3>
-      <div class="hint">每个组合选 1 首；选完后按剩余珠子重算下一组合。</div>
+      <h3>按组合挑歌（已选 ${state.comboChosen.length} 首 · 剩余最多还可拼 ${maxMore} 首）</h3>
+      <div class="hint">每个组合选 1 首；选完该组合即消失，后续组合顺移补位。</div>
       <div class="chosen-list">
         <span class="chosen-label">已选：</span>
         <div class="alt-pills">${chainHtml || `<span class="alt-pill" style="background:#f2ede2;color:#888;">还没有选择</span>`}</div>
@@ -456,23 +455,23 @@ function renderMax(entries, inventory, title, meta, body) {
         .join("")}
     </div>`;
 
+  state.comboRounds = computeRounds(all, remaining);
   const roundsBox = $("roundsBox");
   roundsBox.innerHTML = "";
   state.comboRounds.forEach((round, ri) => {
+    const absIndex = state.comboChosen.length + ri + 1;
     const block = document.createElement("div");
     block.className = "combo-block";
-    block.innerHTML = `<h3>组合 ${ri + 1} · 最多 ${round.count} 首</h3><div class="pill-row"></div>`;
+    block.innerHTML = `<h3>组合 ${absIndex} · 最多 ${round.count} 首</h3><div class="pill-row"></div>`;
     const row = block.querySelector(".pill-row");
-    round.options.forEach((e) => {
+    round.options.slice(0, 12).forEach((e) => {
       const pill = document.createElement("span");
       pill.className = "pill clickable";
       pill.style.cssText = pillStyle(albumById(e.album));
       pill.textContent = e.display;
       pill.title = e.original ? `${e.original}（${sourceName(e.source)}）` : sourceName(e.source);
-      if (!songFits(e, remaining)) pill.classList.add("dim");
       pill.addEventListener("click", () => {
         state.comboChosen.push(e);
-        state.comboRounds = computeRounds(all, useLetters({ ...inventory }, combinedCounts(state.comboChosen)));
         render();
       });
       row.appendChild(pill);
@@ -482,12 +481,10 @@ function renderMax(entries, inventory, title, meta, body) {
 
   $("comboUndo").addEventListener("click", () => {
     state.comboChosen.pop();
-    state.comboRounds = computeRounds(all, useLetters({ ...inventory }, combinedCounts(state.comboChosen)));
     render();
   });
   $("comboClear").addEventListener("click", () => {
     state.comboChosen = [];
-    state.comboRounds = computeRounds(all, { ...inventory });
     render();
   });
 }
