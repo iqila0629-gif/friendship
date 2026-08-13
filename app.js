@@ -242,20 +242,25 @@ function renderBeadGrid() {
       input.className = "count-input";
       input.type = "number";
       input.min = "0";
+      input.autocomplete = "off";
+      input.inputMode = "numeric";
       input.value = state.counts[ch] == null ? "" : state.counts[ch];
       input.placeholder = "∞";
       input.dataset.letter = ch;
       input.title = `${ch} 的数量，留空为不限量`;
       input.addEventListener("click", (ev) => ev.stopPropagation());
       input.addEventListener("focus", () => { focusedCountLetter = ch; });
-      input.addEventListener("input", () => {
-        const v = input.value.trim();
-        if (v === "") delete state.counts[ch];
-        else state.counts[ch] = Math.max(0, Number(v));
+      input.addEventListener("blur", () => {
+        focusedCountLetter = null;
         state.comboStale = true;
         state.consumeChain = [];
         state.normalPage = 1;
         render();
+      });
+      input.addEventListener("input", () => {
+        const v = input.value.trim();
+        if (v === "") delete state.counts[ch];
+        else state.counts[ch] = Math.max(0, Number(v));
       });
       bead.appendChild(input);
     }
@@ -614,7 +619,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.1");
+  const res = await fetch("data/songs.json?v=20260813.2");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
