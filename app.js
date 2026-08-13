@@ -438,6 +438,10 @@ function renderMax(entries, inventory, title, meta, body) {
   );
   const maxMore = bestSolutions(all, remaining, 1)[0]?.length || 0;
   const sols = bestSolutions(all, remaining, 5);
+  const remainingText = ALPHABET
+    .filter((ch) => Number.isFinite(remaining[ch]) && remaining[ch] > 0)
+    .map((ch) => `${remaining[ch]}${ch}`)
+    .join("、");
   const chainHtml = state.comboChosen
     .map((e) => `<span class="pill" style="${pillStyle(albumById(e.album))}">${esc(e.display)}</span>`)
     .join("");
@@ -445,6 +449,7 @@ function renderMax(entries, inventory, title, meta, body) {
   body.innerHTML = `
     <div class="combo-block">
       <h3>按组合挑歌（已选 ${state.comboChosen.length} 首 · 剩余最多还可拼 ${maxMore} 首）</h3>
+      <p class="hint">剩余珠子：${remainingText || "全部不限量"}</p>
       <div class="hint">每个组合选 1 首；选完该组合即消失，后续组合顺移补位。</div>
       <div class="chosen-list">
         <span class="chosen-label">已选：</span>
@@ -620,7 +625,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.3");
+  const res = await fetch("data/songs.json?v=20260813.4");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
