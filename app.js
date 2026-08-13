@@ -616,7 +616,7 @@ function renderWeightGroups() {
       pill.className = "alt-pill weight-pill" + (state.weightSwapSel === ch ? " swap-sel" : "");
       pill.dataset.letter = ch;
       pill.textContent = ch;
-      pill.title = "点击与另一个字母互换位置";
+      pill.title = "越靠前权重越高；点击与另一个字母互换位置";
       pill.addEventListener("click", () => {
         if (!state.weightSwapSel) {
           state.weightSwapSel = ch;
@@ -869,7 +869,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.16");
+  const res = await fetch("data/songs.json?v=20260813.17");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
