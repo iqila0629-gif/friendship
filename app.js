@@ -15,7 +15,7 @@ const state = {
   prefMode: null,
   prefs: {},
   mode: "normal",
-  sources: new Set(["song_album", "abbr", "lyric", "related"]),
+  sources: new Set(["song", "song_album", "abbr", "lyric", "related"]),
   albums: new Set(),
   consumeChain: [],
   comboChosen: [],
@@ -540,7 +540,7 @@ function bindStaticControls() {
     state.prefMode = null;
     state.prefs = {};
     state.mode = "normal";
-    state.sources = new Set(["song_album", "abbr", "lyric", "related"]);
+    state.sources = new Set(["song", "song_album", "abbr", "lyric", "related"]);
     state.albums = new Set(DATA.albums.map((a) => a.id));
     state.consumeChain = [];
     state.comboStale = true;
