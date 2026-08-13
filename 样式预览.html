@@ -103,6 +103,30 @@
     }
     .song-circle.dim { opacity: 0.4; }
     .song-circle.pick { outline: 3px solid var(--accent); outline-offset: 2px; }
+    .alt-combos { margin-top: 18px; }
+    .alt-combo-row { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-top: 1px dashed var(--line); }
+    .alt-combo-row:first-child { border-top: 0; }
+    .alt-label {
+      flex: 0 0 54px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .alt-songs { display: flex; flex-wrap: wrap; gap: 6px; }
+    .alt-song {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1.1;
+      padding: 4px;
+      overflow-wrap: anywhere;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+    }
     .song-card {
       border-radius: 8px;
       border: 1px solid rgba(0, 0, 0, 0.08);
@@ -180,6 +204,14 @@
           <div class="song-circle" style="background:#2e4a8f;color:#fff;">Midnights</div>
           <div class="song-circle dim" style="background:#e5e3df;color:#222;">eras</div>
           <div class="song-circle" style="background:#cbb6e6;color:#32244a;">Speak Now</div>
+        </div>
+        <div class="alt-combos">
+          <div class="combo-title">最优组合备选（平行展示）</div>
+          <div class="alt-combo-row"><span class="alt-label">备选 1</span><div class="alt-songs"><span class="alt-song" style="background:#a9dced;color:#173947;">Blank</span><span class="alt-song" style="background:#2e4a8f;color:#fff;">Mid</span><span class="alt-song" style="background:#cbb6e6;color:#32244a;">Speak</span></div></div>
+          <div class="alt-combo-row"><span class="alt-label">备选 2</span><div class="alt-songs"><span class="alt-song" style="background:#f4d8de;color:#5b2431;">Lover</span><span class="alt-song" style="background:#e5e3df;color:#222;">eras</span><span class="alt-song" style="background:#dceccb;color:#24331c;">Our</span></div></div>
+          <div class="alt-combo-row"><span class="alt-label">备选 3</span><div class="alt-songs"><span class="alt-song" style="background:#9a6b45;color:#fff;">ivy</span><span class="alt-song" style="background:#e5e3df;color:#222;">TS</span><span class="alt-song" style="background:#f3e08b;color:#4c4212;">Red</span></div></div>
+          <div class="alt-combo-row"><span class="alt-label">备选 4</span><div class="alt-songs"><span class="alt-song" style="background:#dceccb;color:#24331c;">Stay</span><span class="alt-song" style="background:#f4d8de;color:#5b2431;">Archer</span><span class="alt-song" style="background:#a9dced;color:#173947;">Clean</span></div></div>
+          <div class="alt-combo-row"><span class="alt-label">备选 5</span><div class="alt-songs"><span class="alt-song" style="background:#25272b;color:#fff;">Dress</span><span class="alt-song" style="background:#cbb6e6;color:#32244a;">Paris</span><span class="alt-song" style="background:#e5e3df;color:#222;">salt air</span></div></div>
         </div>
       </div>
     </div>
