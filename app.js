@@ -444,7 +444,11 @@ function renderMax(entries, inventory, title, meta, body) {
     { ...inventory }
   );
   const maxMore = bestSolutions(all, remaining, 1)[0]?.length || 0;
-  const sols = bestSolutions(all, remaining, 5);
+  const unlimitedSongs = all.filter((e) =>
+    Object.entries(e.counts).every(([ch]) => remaining[ch] === Infinity)
+  );
+  const limitedAll = all.filter((e) => !unlimitedSongs.includes(e));
+  const sols = bestSolutions(limitedAll, remaining, 5);
   const remainingText = ALPHABET
     .filter((ch) => Number.isFinite(remaining[ch]) && remaining[ch] > 0)
     .map((ch) => `${remaining[ch]}${ch}`)
@@ -469,6 +473,14 @@ function renderMax(entries, inventory, title, meta, body) {
     <div class="alt-block">
       <h3>最优组合备选（${sols.length} 套）</h3>
       <div class="hint">每套都是当前库存下的完整最大组合，可整行照抄。</div>
+      ${unlimitedSongs.length
+        ? `<div class="alt-row"><span class="alt-label">可无限拼</span><div class="alt-pills">${unlimitedSongs
+            .map((e) => `<span class="alt-pill" style="${pillStyle(albumById(e.album))}" title="${esc(e.display)}">${esc(e.display)}</span>`)
+            .join("")}</div></div>`
+        : ""}
+      ${!limitedAll.length
+        ? `<div class="hint">其余歌曲均需要消耗珠子，当前没有更多可拼组合。</div>`
+        : ""}
       ${sols
         .map(
           (sol, i) => `<div class="alt-row">
@@ -659,7 +671,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.8");
+  const res = await fetch("data/songs.json?v=20260813.9");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
