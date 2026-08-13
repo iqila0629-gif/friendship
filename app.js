@@ -394,7 +394,7 @@ function renderResults() {
         ? rankable
             .slice(0, 40)
             .map(
-              (item) => `<div class="consume-card">
+              (item) => `<div class="consume-card" style="${pillStyle(albumById(item.e.album))}">
               <div class="consume-main">
               <div class="consume-name">${esc(item.e.display)}${item.e.original ? ` <span class="consume-sub">(${esc(item.e.original)})</span>` : ""}</div>
               <div class="consume-sub">${sourceName(item.e.source)} · ${esc(albumById(item.e.album).name)}</div>
@@ -583,6 +583,11 @@ function bindStaticControls() {
   document.querySelectorAll("#modeToggle .mode-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       state.mode = btn.dataset.mode;
+      if (state.mode !== "consume") {
+        state.prefs = {};
+        state.prefMode = null;
+        document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.remove("active"));
+      }
       state.comboStale = true;
       state.consumeChain = [];
       state.normalPage = 1;
@@ -628,7 +633,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.5");
+  const res = await fetch("data/songs.json?v=20260813.6");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
