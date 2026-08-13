@@ -184,6 +184,9 @@ def main():
         add(text, album_id, "lyric")
 
     for text, album_id in RELATED_WORDS:
+        cleaned = clean_for_beads(text)
+        if cleaned and not has_digit(cleaned) and any(e["clean"] == cleaned for e in entries):
+            continue
         add(text, album_id, "related")
 
     with open(CSV_PATH, encoding="utf-8", newline="") as f:

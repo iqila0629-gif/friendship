@@ -21,6 +21,7 @@ const state = {
   comboChosen: [],
   comboRounds: [],
   comboStale: true,
+  normalPage: 1,
 };
 
 let DATA = null;
@@ -208,6 +209,7 @@ function renderInventorySummary() {
 function renderBeadGrid() {
   const grid = $("beadGrid");
   grid.innerHTML = "";
+  grid.classList.toggle("with-counts", state.showCounts);
   for (const ch of ALPHABET) {
     const bead = document.createElement("div");
     const on = state.selectMode === "on" ? state.selected.has(ch) : !state.selected.has(ch);
@@ -227,6 +229,7 @@ function renderBeadGrid() {
     bead.addEventListener("click", () => {
       state.comboStale = true;
       state.consumeChain = [];
+      state.normalPage = 1;
       if (state.prefMode) {
         if (state.prefs[ch] === state.prefMode) delete state.prefs[ch];
         else state.prefs[ch] = state.prefMode;
@@ -254,6 +257,7 @@ function renderBeadGrid() {
         else state.counts[ch] = Math.max(0, Number(v));
         state.comboStale = true;
         state.consumeChain = [];
+        state.normalPage = 1;
         render();
       });
       bead.appendChild(input);
@@ -273,6 +277,7 @@ function renderFilters() {
       else state.albums.add(album.id);
       state.comboStale = true;
       state.consumeChain = [];
+      state.normalPage = 1;
       render();
     });
     $("albumFilter").appendChild(chip);
@@ -290,12 +295,17 @@ function renderResults() {
     const found = spellable(entries, inventory).sort(
       (a, b) => totalLetters(a.counts) - totalLetters(b.counts) || a.display.localeCompare(b.display)
     );
-    meta.textContent = `${found.length} 条`;
+    const pageSize = 24;
+    const pageCount = Math.max(1, Math.ceil(found.length / pageSize));
+    if (state.normalPage > pageCount) state.normalPage = pageCount;
+    const page = state.normalPage;
+    const pageItems = found.slice((page - 1) * pageSize, page * pageSize);
+    meta.textContent = `${found.length} 条 · 第 ${page} / ${pageCount} 页`;
     if (!found.length) {
       body.innerHTML = `<div class="empty">这些珠子暂时拼不出任何内容。<br>试试点亮更多字母，或放宽匹配条件。</div>`;
       return;
     }
-    body.innerHTML = `<div class="song-grid">${found
+    body.innerHTML = `<div class="song-grid">${pageItems
       .map((e) => {
         const album = albumById(e.album);
         return `<div class="song-card" style="${pillStyle(album)}">
@@ -306,7 +316,24 @@ function renderResults() {
           <div class="counts">${esc(letterSummary(e.counts))}</div>
         </div>`;
       })
-      .join("")}</div>`;
+      .join("")}</div>
+      <div class="pager">
+        <button class="reset-btn" id="pagePrev" ${page <= 1 ? "disabled" : ""}>上一页</button>
+        <span class="results-meta">${page} / ${pageCount}</span>
+        <button class="reset-btn" id="pageNext" ${page >= pageCount ? "disabled" : ""}>下一页</button>
+      </div>`;
+    $("pagePrev").addEventListener("click", () => {
+      if (state.normalPage > 1) {
+        state.normalPage -= 1;
+        render();
+      }
+    });
+    $("pageNext").addEventListener("click", () => {
+      if (state.normalPage < pageCount) {
+        state.normalPage += 1;
+        render();
+      }
+    });
     return;
   }
 
@@ -472,6 +499,7 @@ function bindStaticControls() {
     state.selectMode = "on";
     state.comboStale = true;
     state.consumeChain = [];
+    state.normalPage = 1;
     $("selectModeOn").classList.add("active");
     $("selectModeOff").classList.remove("active");
     render();
@@ -480,6 +508,7 @@ function bindStaticControls() {
     state.selectMode = "off";
     state.comboStale = true;
     state.consumeChain = [];
+    state.normalPage = 1;
     $("selectModeOff").classList.add("active");
     $("selectModeOn").classList.remove("active");
     render();
@@ -488,12 +517,14 @@ function bindStaticControls() {
     state.selected = new Set(ALPHABET);
     state.comboStale = true;
     state.consumeChain = [];
+    state.normalPage = 1;
     render();
   });
   $("clearAll").addEventListener("click", () => {
     state.selected.clear();
     state.comboStale = true;
     state.consumeChain = [];
+    state.normalPage = 1;
     render();
   });
   $("countToggle").addEventListener("click", () => {
@@ -512,6 +543,7 @@ function bindStaticControls() {
     state.albums = new Set(DATA.albums.map((a) => a.id));
     state.consumeChain = [];
     state.comboStale = true;
+    state.normalPage = 1;
     document.querySelectorAll("#modeToggle .mode-btn").forEach((b) => {
       b.classList.toggle("active", b.dataset.mode === "normal");
     });
@@ -524,6 +556,7 @@ function bindStaticControls() {
       state.mode = btn.dataset.mode;
       state.comboStale = true;
       state.consumeChain = [];
+      state.normalPage = 1;
       document.querySelectorAll("#modeToggle .mode-btn").forEach((b) => b.classList.toggle("active", b === btn));
       render();
     });
@@ -535,6 +568,7 @@ function bindStaticControls() {
       else state.sources.add(s);
       state.comboStale = true;
       state.consumeChain = [];
+      state.normalPage = 1;
       chip.classList.toggle("active");
       render();
     });
@@ -545,6 +579,7 @@ function bindStaticControls() {
       state.prefMode = state.prefMode === p ? null : p;
       state.comboStale = true;
       state.consumeChain = [];
+      state.normalPage = 1;
       document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.toggle("active", c === chip && state.prefMode === p));
       render();
     });

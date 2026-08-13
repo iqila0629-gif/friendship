@@ -102,7 +102,9 @@
     .select-btn.toggle-on { background: var(--accent-2); color: #fff; border-color: var(--accent-2); }
 
     .bead-grid { display: grid; grid-template-columns: repeat(13, 1fr); gap: 7px; }
+    .bead-grid.with-counts { row-gap: 28px; }
     .bead {
+      position: relative;
       aspect-ratio: 1 / 1;
       display: grid;
       place-items: center;
@@ -135,7 +137,7 @@
     .bead-flag.no { background: var(--danger); }
     .bead input.count-input {
       position: absolute;
-      bottom: -20px;
+      bottom: -24px;
       left: 50%;
       transform: translateX(-50%);
       width: 30px;
@@ -274,6 +276,14 @@
       font-size: 14px;
       line-height: 1.7;
     }
+    .pager {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .pager button[disabled] { opacity: 0.4; cursor: not-allowed; }
     .footer { margin-top: 18px; font-size: 12px; color: var(--muted); line-height: 1.7; }
     .hidden { display: none !important; }
   </style>
