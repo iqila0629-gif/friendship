@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>友谊手链 · Taylor Swift 拼珠</title>
+  <style>
+    :root {
+      --ink: #20202a;
+      --muted: #6f6f7a;
+      --paper: #fbf7ef;
+      --panel: #ffffff;
+      --line: #e4ded2;
+      --accent: #e4572e;
+      --accent-2: #2e7d6b;
+      --danger: #c0392b;
+      --bead-size: 44px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+    button { font-family: inherit; cursor: pointer; }
+    input { font-family: inherit; }
+
+    .app { max-width: 1280px; margin: 0 auto; padding: 18px 18px 48px; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; }
+    .brand-dot {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      flex: 0 0 auto;
+    }
+    .inventory-summary {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+      font-size: 13px; color: var(--muted);
+    }
+    .inventory-summary strong { color: var(--ink); }
+    .reset-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 13px;
+      color: var(--ink);
+    }
+
+    .layout { display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 14px; align-items: start; }
+    @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .panel + .panel { margin-top: 14px; }
+    .panel-title { font-size: 14px; font-weight: 800; margin: 0 0 10px; }
+
+    .mode-toggle { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .mode-btn {
+      flex: 1 1 0;
+      min-width: 76px;
+      padding: 9px 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      text-align: center;
+    }
+    .mode-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+    .select-row { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .select-btn {
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .select-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .select-btn.small { padding: 5px 9px; font-size: 11px; }
+    .select-btn.toggle-on { background: var(--accent-2); color: #fff; border-color: var(--accent-2); }
+
+    .bead-grid { display: grid; grid-template-columns: repeat(13, 1fr); gap: 7px; }
+    .bead {
+      aspect-ratio: 1 / 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid #d8d0c2;
+      border-radius: 50%;
+      background: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      user-select: none;
+      position: relative;
+      transition: background 0.12s ease, color 0.12s ease;
+    }
+    .bead.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .bead.missing { background: var(--danger); border-color: var(--danger); color: #fff; }
+    .bead.pref { outline: 3px solid var(--accent-2); outline-offset: 1px; }
+    .bead.no { outline: 3px dashed var(--danger); outline-offset: 1px; }
+    .bead-flag {
+      position: absolute;
+      right: -3px;
+      top: -3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      font-size: 9px;
+      line-height: 14px;
+      text-align: center;
+      background: var(--accent-2);
+      color: #fff;
+    }
+    .bead-flag.no { background: var(--danger); }
+    .bead input.count-input {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 20px;
+      font-size: 11px;
+      text-align: center;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: #fff;
+      color: var(--ink);
+    }
+    .count-note { font-size: 11px; color: var(--muted); margin-top: 22px; }
+
+    .filter-group { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .chip.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+    .results { min-width: 0; }
+    .results-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .results-title { font-size: 16px; font-weight: 800; margin: 0; }
+    .results-meta { font-size: 12px; color: var(--muted); }
+
+    .song-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+    .song-card {
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 12px;
+      min-height: 92px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    .song-card .name { font-weight: 800; font-size: 15px; line-height: 1.3; overflow-wrap: anywhere; }
+    .song-card .sub { font-size: 11px; opacity: 0.75; }
+    .song-card .counts { font-size: 12px; font-weight: 700; opacity: 0.85; overflow-wrap: anywhere; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      min-height: 32px;
+      padding: 5px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .pill.clickable { cursor: pointer; }
+    .pill.dim { opacity: 0.35; pointer-events: none; }
+    .pill.selected { outline: 3px solid var(--accent); outline-offset: 2px; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .combo-block { margin-top: 16px; }
+    .combo-block h3 { font-size: 14px; margin: 0 0 8px; }
+    .combo-block .hint { font-size: 12px; color: var(--muted); margin: 0 0 8px; }
+    .chosen-list {
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 12px;
+      background: #fffdf8;
+    }
+    .chosen-label { font-size: 12px; color: var(--muted); font-weight: 700; }
+    .alt-block { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 14px; }
+    .alt-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; }
+    .alt-label { flex: 0 0 54px; font-size: 12px; color: var(--muted); font-weight: 800; }
+    .alt-pills { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+    .alt-pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      min-height: 28px;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .consume-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 12px;
+      background: #fff;
+      margin-bottom: 8px;
+    }
+    .consume-main { min-width: 0; flex: 1; }
+    .consume-name { font-weight: 800; font-size: 14px; overflow-wrap: anywhere; }
+    .consume-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .score-badge {
+      flex: 0 0 auto;
+      font-size: 12px;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: #f2ede2;
+      color: var(--ink);
+    }
+
+    .empty {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 34px 18px;
+      text-align: center;
+      color: var(--muted);
+      background: #fffdf8;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .footer { margin-top: 18px; font-size: 12px; color: var(--muted); line-height: 1.7; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-dot"></span>友谊手链</div>
+      <div class="inventory-summary" id="inventorySummary"></div>
+      <button class="reset-btn" id="resetAll">重置全部</button>
+    </header>
+
+    <div class="layout">
+      <aside>
+        <div class="panel">
+          <h2 class="panel-title">我的珠子</h2>
+          <div class="select-row">
+            <button class="select-btn active" id="selectModeOn">正选</button>
+            <button class="select-btn" id="selectModeOff">反选</button>
+            <button class="select-btn small" id="selectAll">全选</button>
+            <button class="select-btn small" id="clearAll">清空</button>
+            <button class="select-btn small toggle-on" id="countToggle">数量</button>
+          </div>
+          <div class="bead-grid" id="beadGrid"></div>
+          <p class="count-note" id="countNote">开启数量后可输入每个字母的珠子数；留空表示不限量。</p>
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">珠子偏好</h2>
+          <div class="filter-group" id="prefControls">
+            <button class="chip" data-pref="pref">主要消耗</button>
+            <button class="chip" data-pref="no">不想消耗</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">找歌模式</h2>
+          <div class="mode-toggle" id="modeToggle">
+            <button class="mode-btn active" data-mode="normal">普通</button>
+            <button class="mode-btn" data-mode="max">拼最多歌曲</button>
+            <button class="mode-btn" data-mode="consume">消耗珠子</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">匹配内容</h2>
+          <div class="filter-group" id="sourceFilter">
+            <button class="chip active" data-source="song_album">歌曲/专辑名</button>
+            <button class="chip active" data-source="abbr">缩写变种</button>
+            <button class="chip active" data-source="lyric">关键歌词</button>
+            <button class="chip active" data-source="related">相关单词</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2 class="panel-title">专辑</h2>
+          <div class="filter-group" id="albumFilter"></div>
+        </div>
+      </aside>
+
+      <main class="results">
+        <div class="results-header">
+          <h2 class="results-title" id="resultsTitle">可拼内容</h2>
+          <div class="results-meta" id="resultsMeta"></div>
+        </div>
+        <div id="resultsBody"></div>
+        <div class="footer">
+          数据来源：shaynak/taylor-swift-lyrics 歌曲库。规则：不分大小写，只使用 A-Z 字母；
+          含数字的条目不计入；后缀版本与主版本算同一首；缩写的 U 变体与原缩写同时存在。
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6429 @@
+{
+  "version": 1,
+  "albums": [
+    {
+      "id": "taylor_swift",
+      "name": "Taylor Swift",
+      "color": "#dceccb",
+      "text": "#24331c"
+    },
+    {
+      "id": "fearless",
+      "name": "Fearless",
+      "color": "#f3e08b",
+      "text": "#4c4212"
+    },
+    {
+      "id": "speak_now",
+      "name": "Speak Now",
+      "color": "#cbb6e6",
+      "text": "#32244a"
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "color": "#e14b3d",
+      "text": "#ffffff"
+    },
+    {
+      "id": "1989",
+      "name": "1989",
+      "color": "#a9dced",
+      "text": "#173947"
+    },
+    {
+      "id": "reputation",
+      "name": "reputation",
+      "color": "#25272b",
+      "text": "#ffffff"
+    },
+    {
+      "id": "lover",
+      "name": "Lover",
+      "color": "#f3b9c4",
+      "text": "#5b2431"
+    },
+    {
+      "id": "folklore",
+      "name": "folklore",
+      "color": "#4a4a52",
+      "text": "#ffffff"
+    },
+    {
+      "id": "evermore",
+      "name": "evermore",
+      "color": "#9a6b45",
+      "text": "#ffffff"
+    },
+    {
+      "id": "midnights",
+      "name": "Midnights",
+      "color": "#243b5a",
+      "text": "#ffffff"
+    },
+    {
+      "id": "ttpd",
+      "name": "The Tortured Poets Department",
+      "color": "#f7f5f1",
+      "text": "#222222"
+    },
+    {
+      "id": "showgirl",
+      "name": "The Life of a Showgirl",
+      "color": "#e78a3f",
+      "text": "#ffffff"
+    },
+    {
+      "id": "other",
+      "name": "其他",
+      "color": "#e1ddd6",
+      "text": "#333333"
+    }
+  ],
+  "entries": [
+    {
+      "id": "song_album:0",
+      "display": "Taylor Swift",
+      "clean": "TAYLORSWIFT",
+      "counts": {
+        "A": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:1",
+      "display": "Fearless",
+      "clean": "FEARLESS",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "F": 1,
+        "L": 1,
+        "R": 1,
+        "S": 2
+      },
+      "album": "fearless",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:2",
+      "display": "Speak Now",
+      "clean": "SPEAKNOW",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "K": 1,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "S": 1,
+        "W": 1
+      },
+      "album": "speak_now",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:3",
+      "display": "Red",
+      "clean": "RED",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "R": 1
+      },
+      "album": "red",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:4",
+      "display": "reputation",
+      "clean": "REPUTATION",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "R": 1,
+        "T": 2,
+        "U": 1
+      },
+      "album": "reputation",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:5",
+      "display": "Lover",
+      "clean": "LOVER",
+      "counts": {
+        "E": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "V": 1
+      },
+      "album": "lover",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:6",
+      "display": "folklore",
+      "clean": "FOLKLORE",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "K": 1,
+        "L": 2,
+        "O": 2,
+        "R": 1
+      },
+      "album": "folklore",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:7",
+      "display": "evermore",
+      "clean": "EVERMORE",
+      "counts": {
+        "E": 3,
+        "M": 1,
+        "O": 1,
+        "R": 2,
+        "V": 1
+      },
+      "album": "evermore",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:8",
+      "display": "Midnights",
+      "clean": "MIDNIGHTS",
+      "counts": {
+        "D": 1,
+        "G": 1,
+        "H": 1,
+        "I": 2,
+        "M": 1,
+        "N": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "midnights",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:9",
+      "display": "The Tortured Poets Department",
+      "clean": "THETORTUREDPOETSDEPARTMENT",
+      "counts": {
+        "A": 1,
+        "D": 2,
+        "E": 5,
+        "H": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "P": 2,
+        "R": 3,
+        "S": 1,
+        "T": 6,
+        "U": 1
+      },
+      "album": "ttpd",
+      "source": "song_album"
+    },
+    {
+      "id": "song_album:10",
+      "display": "The Life of a Showgirl",
+      "clean": "THELIFEOFASHOWGIRL",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "F": 2,
+        "G": 1,
+        "H": 2,
+        "I": 2,
+        "L": 2,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "showgirl",
+      "source": "song_album"
+    },
+    {
+      "id": "abbr:11",
+      "display": "TTPD",
+      "clean": "TTPD",
+      "counts": {
+        "D": 1,
+        "P": 1,
+        "T": 2
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "The Tortured Poets Department"
+    },
+    {
+      "id": "abbr:12",
+      "display": "TLOAS",
+      "clean": "TLOAS",
+      "counts": {
+        "A": 1,
+        "L": 1,
+        "O": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "showgirl",
+      "source": "abbr",
+      "original": "The Life of a Showgirl"
+    },
+    {
+      "id": "abbr:13",
+      "display": "rep",
+      "clean": "REP",
+      "counts": {
+        "E": 1,
+        "P": 1,
+        "R": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "reputation"
+    },
+    {
+      "id": "abbr:14",
+      "display": "folkmore",
+      "clean": "FOLKMORE",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "K": 1,
+        "L": 1,
+        "M": 1,
+        "O": 2,
+        "R": 1
+      },
+      "album": "folklore",
+      "source": "abbr",
+      "original": "folklore"
+    },
+    {
+      "id": "abbr:15",
+      "display": "mid",
+      "clean": "MID",
+      "counts": {
+        "D": 1,
+        "I": 1,
+        "M": 1
+      },
+      "album": "midnights",
+      "source": "abbr",
+      "original": "Midnights"
+    },
+    {
+      "id": "abbr:16",
+      "display": "ATW",
+      "clean": "ATW",
+      "counts": {
+        "A": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "All Too Well"
+    },
+    {
+      "id": "lyric:17",
+      "display": "salt air",
+      "clean": "SALTAIR",
+      "counts": {
+        "A": 2,
+        "I": 1,
+        "L": 1,
+        "R": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "folklore",
+      "source": "lyric"
+    },
+    {
+      "id": "lyric:18",
+      "display": "rust on your door",
+      "clean": "RUSTONYOURDOOR",
+      "counts": {
+        "D": 1,
+        "N": 1,
+        "O": 4,
+        "R": 3,
+        "S": 1,
+        "T": 1,
+        "U": 2,
+        "Y": 1
+      },
+      "album": "folklore",
+      "source": "lyric"
+    },
+    {
+      "id": "lyric:19",
+      "display": "burning red",
+      "clean": "BURNINGRED",
+      "counts": {
+        "B": 1,
+        "D": 1,
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "N": 2,
+        "R": 2,
+        "U": 1
+      },
+      "album": "red",
+      "source": "lyric"
+    },
+    {
+      "id": "lyric:20",
+      "display": "fuck the patriarchy",
+      "clean": "FUCKTHEPATRIARCHY",
+      "counts": {
+        "A": 2,
+        "C": 2,
+        "E": 1,
+        "F": 1,
+        "H": 2,
+        "I": 1,
+        "K": 1,
+        "P": 1,
+        "R": 2,
+        "T": 2,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "lyric"
+    },
+    {
+      "id": "lyric:21",
+      "display": "fxxk the patriarchy",
+      "clean": "FXXKTHEPATRIARCHY",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "E": 1,
+        "F": 1,
+        "H": 2,
+        "I": 1,
+        "K": 1,
+        "P": 1,
+        "R": 2,
+        "T": 2,
+        "X": 2,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "lyric"
+    },
+    {
+      "id": "related:22",
+      "display": "Taylor Swift",
+      "clean": "TAYLORSWIFT",
+      "counts": {
+        "A": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "related"
+    },
+    {
+      "id": "related:23",
+      "display": "TS",
+      "clean": "TS",
+      "counts": {
+        "S": 1,
+        "T": 1
+      },
+      "album": "taylor_swift",
+      "source": "related"
+    },
+    {
+      "id": "related:24",
+      "display": "eras tour",
+      "clean": "ERASTOUR",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "O": 1,
+        "R": 2,
+        "S": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "other",
+      "source": "related"
+    },
+    {
+      "id": "related:25",
+      "display": "eras",
+      "clean": "ERAS",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "R": 1,
+        "S": 1
+      },
+      "album": "other",
+      "source": "related"
+    },
+    {
+      "id": "song:26",
+      "display": "Tim McGraw",
+      "clean": "TIMMCGRAW",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "G": 1,
+        "I": 1,
+        "M": 2,
+        "R": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:27",
+      "display": "Picture to Burn",
+      "clean": "PICTURETOBURN",
+      "counts": {
+        "B": 1,
+        "C": 1,
+        "E": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "R": 2,
+        "T": 2,
+        "U": 2
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:28",
+      "display": "Teardrops On My Guitar",
+      "clean": "TEARDROPSONMYGUITAR",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "P": 1,
+        "R": 3,
+        "S": 1,
+        "T": 2,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:29",
+      "display": "TOMG",
+      "clean": "TOMG",
+      "counts": {
+        "G": 1,
+        "M": 1,
+        "O": 1,
+        "T": 1
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "Teardrops On My Guitar"
+    },
+    {
+      "id": "song:30",
+      "display": "A Place In This World",
+      "clean": "APLACEINTHISWORLD",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "H": 1,
+        "I": 2,
+        "L": 2,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:31",
+      "display": "APITW",
+      "clean": "APITW",
+      "counts": {
+        "A": 1,
+        "I": 1,
+        "P": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "A Place In This World"
+    },
+    {
+      "id": "song:32",
+      "display": "Cold as You",
+      "clean": "COLDASYOU",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 1,
+        "L": 1,
+        "O": 2,
+        "S": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:33",
+      "display": "The Outside",
+      "clean": "THEOUTSIDE",
+      "counts": {
+        "D": 1,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "O": 1,
+        "S": 1,
+        "T": 2,
+        "U": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:34",
+      "display": "Tied Together with a Smile",
+      "clean": "TIEDTOGETHERWITHASMILE",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 4,
+        "G": 1,
+        "H": 2,
+        "I": 3,
+        "L": 1,
+        "M": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 4,
+        "W": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:35",
+      "display": "TTWAS",
+      "clean": "TTWAS",
+      "counts": {
+        "A": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "Tied Together with a Smile"
+    },
+    {
+      "id": "song:36",
+      "display": "Stay Beautiful",
+      "clean": "STAYBEAUTIFUL",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "E": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "S": 1,
+        "T": 2,
+        "U": 2,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:37",
+      "display": "Should've Said No",
+      "clean": "SHOULDVESAIDNO",
+      "counts": {
+        "A": 1,
+        "D": 2,
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 2,
+        "S": 2,
+        "U": 1,
+        "V": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:38",
+      "display": "Mary's Song (Oh My My My)",
+      "clean": "MARYSSONGOHMYMYMY",
+      "counts": {
+        "A": 1,
+        "G": 1,
+        "H": 1,
+        "M": 4,
+        "N": 1,
+        "O": 2,
+        "R": 1,
+        "S": 2,
+        "Y": 4
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:39",
+      "display": "MSOMMM",
+      "clean": "MSOMMM",
+      "counts": {
+        "M": 4,
+        "O": 1,
+        "S": 1
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "Mary's Song (Oh My My My)"
+    },
+    {
+      "id": "song:40",
+      "display": "Our Song",
+      "clean": "OURSONG",
+      "counts": {
+        "G": 1,
+        "N": 1,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:41",
+      "display": "I'm Only Me When I'm With You",
+      "clean": "IMONLYMEWHENIMWITHYOU",
+      "counts": {
+        "E": 2,
+        "H": 2,
+        "I": 3,
+        "L": 1,
+        "M": 3,
+        "N": 2,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "W": 2,
+        "Y": 2
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:42",
+      "display": "IOMWIWY",
+      "clean": "IOMWIWY",
+      "counts": {
+        "I": 2,
+        "M": 1,
+        "O": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "I'm Only Me When I'm With You"
+    },
+    {
+      "id": "abbr:43",
+      "display": "IOMWIWU",
+      "clean": "IOMWIWU",
+      "counts": {
+        "I": 2,
+        "M": 1,
+        "O": 1,
+        "U": 1,
+        "W": 2
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "I'm Only Me When I'm With You"
+    },
+    {
+      "id": "song:44",
+      "display": "Invisible",
+      "clean": "INVISIBLE",
+      "counts": {
+        "B": 1,
+        "E": 1,
+        "I": 3,
+        "L": 1,
+        "N": 1,
+        "S": 1,
+        "V": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:45",
+      "display": "A Perfectly Good Heart",
+      "clean": "APERFECTLYGOODHEART",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 1,
+        "E": 3,
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "O": 2,
+        "P": 1,
+        "R": 2,
+        "T": 2,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:46",
+      "display": "APGH",
+      "clean": "APGH",
+      "counts": {
+        "A": 1,
+        "G": 1,
+        "H": 1,
+        "P": 1
+      },
+      "album": "taylor_swift",
+      "source": "abbr",
+      "original": "A Perfectly Good Heart"
+    },
+    {
+      "id": "song:47",
+      "display": "Beautiful Eyes",
+      "clean": "BEAUTIFULEYES",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 3,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "S": 1,
+        "T": 1,
+        "U": 2,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:48",
+      "display": "I Heart ?",
+      "clean": "IHEART",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "R": 1,
+        "T": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:49",
+      "display": "Fearless",
+      "clean": "FEARLESS",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "F": 1,
+        "L": 1,
+        "R": 1,
+        "S": 2
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:50",
+      "display": "Fifteen",
+      "clean": "FIFTEEN",
+      "counts": {
+        "E": 2,
+        "F": 2,
+        "I": 1,
+        "N": 1,
+        "T": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:51",
+      "display": "Love Story",
+      "clean": "LOVESTORY",
+      "counts": {
+        "E": 1,
+        "L": 1,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:52",
+      "display": "Hey Stephen",
+      "clean": "HEYSTEPHEN",
+      "counts": {
+        "E": 3,
+        "H": 2,
+        "N": 1,
+        "P": 1,
+        "S": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:53",
+      "display": "White Horse",
+      "clean": "WHITEHORSE",
+      "counts": {
+        "E": 2,
+        "H": 2,
+        "I": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:54",
+      "display": "You Belong With Me",
+      "clean": "YOUBELONGWITHME",
+      "counts": {
+        "B": 1,
+        "E": 2,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:55",
+      "display": "YBWM",
+      "clean": "YBWM",
+      "counts": {
+        "B": 1,
+        "M": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "You Belong With Me"
+    },
+    {
+      "id": "abbr:56",
+      "display": "UBWM",
+      "clean": "UBWM",
+      "counts": {
+        "B": 1,
+        "M": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "You Belong With Me"
+    },
+    {
+      "id": "song:57",
+      "display": "Breathe",
+      "clean": "BREATHE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 2,
+        "H": 1,
+        "R": 1,
+        "T": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:58",
+      "display": "Tell Me Why",
+      "clean": "TELLMEWHY",
+      "counts": {
+        "E": 2,
+        "H": 1,
+        "L": 2,
+        "M": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:59",
+      "display": "You're Not Sorry",
+      "clean": "YOURENOTSORRY",
+      "counts": {
+        "E": 1,
+        "N": 1,
+        "O": 3,
+        "R": 3,
+        "S": 1,
+        "T": 1,
+        "U": 1,
+        "Y": 2
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:60",
+      "display": "The Way I Loved You",
+      "clean": "THEWAYILOVEDYOU",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "V": 1,
+        "W": 1,
+        "Y": 2
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:61",
+      "display": "TWILY",
+      "clean": "TWILY",
+      "counts": {
+        "I": 1,
+        "L": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "The Way I Loved You"
+    },
+    {
+      "id": "abbr:62",
+      "display": "TWILU",
+      "clean": "TWILU",
+      "counts": {
+        "I": 1,
+        "L": 1,
+        "T": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "The Way I Loved You"
+    },
+    {
+      "id": "song:63",
+      "display": "Forever & Always",
+      "clean": "FOREVERALWAYS",
+      "counts": {
+        "A": 2,
+        "E": 2,
+        "F": 1,
+        "L": 1,
+        "O": 1,
+        "R": 2,
+        "S": 1,
+        "V": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:64",
+      "display": "The Best Day",
+      "clean": "THEBESTDAY",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 1,
+        "E": 2,
+        "H": 1,
+        "S": 1,
+        "T": 2,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:65",
+      "display": "Change",
+      "clean": "CHANGE",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "N": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:66",
+      "display": "Jump Then Fall",
+      "clean": "JUMPTHENFALL",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "F": 1,
+        "H": 1,
+        "J": 1,
+        "L": 2,
+        "M": 1,
+        "N": 1,
+        "P": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:67",
+      "display": "Untouchable",
+      "clean": "UNTOUCHABLE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "E": 1,
+        "H": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "T": 1,
+        "U": 2
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:68",
+      "display": "Come In With The Rain",
+      "clean": "COMEINWITHTHERAIN",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "H": 2,
+        "I": 3,
+        "M": 1,
+        "N": 2,
+        "O": 1,
+        "R": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:69",
+      "display": "CIWTR",
+      "clean": "CIWTR",
+      "counts": {
+        "C": 1,
+        "I": 1,
+        "R": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "Come In With The Rain"
+    },
+    {
+      "id": "song:70",
+      "display": "Superstar",
+      "clean": "SUPERSTAR",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "P": 1,
+        "R": 2,
+        "S": 2,
+        "T": 1,
+        "U": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:71",
+      "display": "The Other Side of the Door",
+      "clean": "THEOTHERSIDEOFTHEDOOR",
+      "counts": {
+        "D": 2,
+        "E": 4,
+        "F": 1,
+        "H": 3,
+        "I": 1,
+        "O": 4,
+        "R": 2,
+        "S": 1,
+        "T": 3
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:72",
+      "display": "TOSOTD",
+      "clean": "TOSOTD",
+      "counts": {
+        "D": 1,
+        "O": 2,
+        "S": 1,
+        "T": 2
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "The Other Side of the Door"
+    },
+    {
+      "id": "song:73",
+      "display": "Today Was a Fairytale",
+      "clean": "TODAYWASAFAIRYTALE",
+      "counts": {
+        "A": 5,
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1,
+        "Y": 2
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:74",
+      "display": "TWAF",
+      "clean": "TWAF",
+      "counts": {
+        "A": 1,
+        "F": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "Today Was a Fairytale"
+    },
+    {
+      "id": "song:75",
+      "display": "You All Over Me",
+      "clean": "YOUALLOVERME",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "L": 2,
+        "M": 1,
+        "O": 2,
+        "R": 1,
+        "U": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:76",
+      "display": "YAOM",
+      "clean": "YAOM",
+      "counts": {
+        "A": 1,
+        "M": 1,
+        "O": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "You All Over Me"
+    },
+    {
+      "id": "abbr:77",
+      "display": "UAOM",
+      "clean": "UAOM",
+      "counts": {
+        "A": 1,
+        "M": 1,
+        "O": 1,
+        "U": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "You All Over Me"
+    },
+    {
+      "id": "song:78",
+      "display": "Mr. Perfectly Fine",
+      "clean": "MRPERFECTLYFINE",
+      "counts": {
+        "C": 1,
+        "E": 3,
+        "F": 2,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "P": 1,
+        "R": 2,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:79",
+      "display": "We Were Happy",
+      "clean": "WEWEREHAPPY",
+      "counts": {
+        "A": 1,
+        "E": 3,
+        "H": 1,
+        "P": 2,
+        "R": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:80",
+      "display": "That's When",
+      "clean": "THATSWHEN",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "H": 2,
+        "N": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:81",
+      "display": "Don't You",
+      "clean": "DONTYOU",
+      "counts": {
+        "D": 1,
+        "N": 1,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:82",
+      "display": "Bye Bye Baby",
+      "clean": "BYEBYEBABY",
+      "counts": {
+        "A": 1,
+        "B": 4,
+        "E": 2,
+        "Y": 3
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:83",
+      "display": "Mine",
+      "clean": "MINE",
+      "counts": {
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "N": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:84",
+      "display": "Sparks Fly",
+      "clean": "SPARKSFLY",
+      "counts": {
+        "A": 1,
+        "F": 1,
+        "K": 1,
+        "L": 1,
+        "P": 1,
+        "R": 1,
+        "S": 2,
+        "Y": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:85",
+      "display": "Back To December",
+      "clean": "BACKTODECEMBER",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "C": 2,
+        "D": 1,
+        "E": 3,
+        "K": 1,
+        "M": 1,
+        "O": 1,
+        "R": 1,
+        "T": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:86",
+      "display": "Speak Now",
+      "clean": "SPEAKNOW",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "K": 1,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "S": 1,
+        "W": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:87",
+      "display": "Dear John",
+      "clean": "DEARJOHN",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "H": 1,
+        "J": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:88",
+      "display": "Mean",
+      "clean": "MEAN",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "M": 1,
+        "N": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:89",
+      "display": "The Story Of Us",
+      "clean": "THESTORYOFUS",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "H": 1,
+        "O": 2,
+        "R": 1,
+        "S": 2,
+        "T": 2,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "abbr:90",
+      "display": "TSOU",
+      "clean": "TSOU",
+      "counts": {
+        "O": 1,
+        "S": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "abbr",
+      "original": "The Story Of Us"
+    },
+    {
+      "id": "song:91",
+      "display": "Never Grow Up",
+      "clean": "NEVERGROWUP",
+      "counts": {
+        "E": 2,
+        "G": 1,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "R": 2,
+        "U": 1,
+        "V": 1,
+        "W": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:92",
+      "display": "Enchanted",
+      "clean": "ENCHANTED",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 1,
+        "E": 2,
+        "H": 1,
+        "N": 2,
+        "T": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:93",
+      "display": "Better Than Revenge",
+      "clean": "BETTERTHANREVENGE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 5,
+        "G": 1,
+        "H": 1,
+        "N": 2,
+        "R": 2,
+        "T": 3,
+        "V": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:94",
+      "display": "Innocent",
+      "clean": "INNOCENT",
+      "counts": {
+        "C": 1,
+        "E": 1,
+        "I": 1,
+        "N": 3,
+        "O": 1,
+        "T": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:95",
+      "display": "Haunted",
+      "clean": "HAUNTED",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "H": 1,
+        "N": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:96",
+      "display": "Last Kiss",
+      "clean": "LASTKISS",
+      "counts": {
+        "A": 1,
+        "I": 1,
+        "K": 1,
+        "L": 1,
+        "S": 3,
+        "T": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:97",
+      "display": "Long Live",
+      "clean": "LONGLIVE",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "L": 2,
+        "N": 1,
+        "O": 1,
+        "V": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:98",
+      "display": "Ours",
+      "clean": "OURS",
+      "counts": {
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:99",
+      "display": "Superman",
+      "clean": "SUPERMAN",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "M": 1,
+        "N": 1,
+        "P": 1,
+        "R": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:100",
+      "display": "Electric Touch",
+      "clean": "ELECTRICTOUCH",
+      "counts": {
+        "C": 3,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "T": 2,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:101",
+      "display": "When Emma Falls in Love",
+      "clean": "WHENEMMAFALLSINLOVE",
+      "counts": {
+        "A": 2,
+        "E": 3,
+        "F": 1,
+        "H": 1,
+        "I": 1,
+        "L": 3,
+        "M": 2,
+        "N": 2,
+        "O": 1,
+        "S": 1,
+        "V": 1,
+        "W": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "abbr:102",
+      "display": "WEFIL",
+      "clean": "WEFIL",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "W": 1
+      },
+      "album": "speak_now",
+      "source": "abbr",
+      "original": "When Emma Falls in Love"
+    },
+    {
+      "id": "song:103",
+      "display": "I Can See You",
+      "clean": "ICANSEEYOU",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "S": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "abbr:104",
+      "display": "ICSY",
+      "clean": "ICSY",
+      "counts": {
+        "C": 1,
+        "I": 1,
+        "S": 1,
+        "Y": 1
+      },
+      "album": "speak_now",
+      "source": "abbr",
+      "original": "I Can See You"
+    },
+    {
+      "id": "abbr:105",
+      "display": "ICSU",
+      "clean": "ICSU",
+      "counts": {
+        "C": 1,
+        "I": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "abbr",
+      "original": "I Can See You"
+    },
+    {
+      "id": "song:106",
+      "display": "Castles Crumbling",
+      "clean": "CASTLESCRUMBLING",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 2,
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "L": 2,
+        "M": 1,
+        "N": 1,
+        "R": 1,
+        "S": 2,
+        "T": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:107",
+      "display": "Foolish One",
+      "clean": "FOOLISHONE",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 3,
+        "S": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:108",
+      "display": "Timeless",
+      "clean": "TIMELESS",
+      "counts": {
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "S": 2,
+        "T": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "song:109",
+      "display": "State of Grace",
+      "clean": "STATEOFGRACE",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "E": 2,
+        "F": 1,
+        "G": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:110",
+      "display": "Red",
+      "clean": "RED",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "R": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:111",
+      "display": "Treacherous",
+      "clean": "TREACHEROUS",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "H": 1,
+        "O": 1,
+        "R": 2,
+        "S": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:112",
+      "display": "I Knew You Were Trouble",
+      "clean": "IKNEWYOUWERETROUBLE",
+      "counts": {
+        "B": 1,
+        "E": 4,
+        "I": 1,
+        "K": 1,
+        "L": 1,
+        "N": 1,
+        "O": 2,
+        "R": 2,
+        "T": 1,
+        "U": 2,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:113",
+      "display": "IKYWT",
+      "clean": "IKYWT",
+      "counts": {
+        "I": 1,
+        "K": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "I Knew You Were Trouble"
+    },
+    {
+      "id": "abbr:114",
+      "display": "IKUWT",
+      "clean": "IKUWT",
+      "counts": {
+        "I": 1,
+        "K": 1,
+        "T": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "I Knew You Were Trouble"
+    },
+    {
+      "id": "song:115",
+      "display": "All Too Well",
+      "clean": "ALLTOOWELL",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "L": 4,
+        "O": 2,
+        "T": 1,
+        "W": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:116",
+      "display": "I Almost Do",
+      "clean": "IALMOSTDO",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "O": 2,
+        "S": 1,
+        "T": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:117",
+      "display": "We Are Never Ever Getting Back Together",
+      "clean": "WEARENEVEREVERGETTINGBACKTOGETHER",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "E": 9,
+        "G": 3,
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "N": 2,
+        "O": 1,
+        "R": 4,
+        "T": 4,
+        "V": 2,
+        "W": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:118",
+      "display": "WANEGBT",
+      "clean": "WANEGBT",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 1,
+        "G": 1,
+        "N": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "We Are Never Ever Getting Back Together"
+    },
+    {
+      "id": "song:119",
+      "display": "Stay Stay Stay",
+      "clean": "STAYSTAYSTAY",
+      "counts": {
+        "A": 3,
+        "S": 3,
+        "T": 3,
+        "Y": 3
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:120",
+      "display": "The Last Time",
+      "clean": "THELASTTIME",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "S": 1,
+        "T": 3
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:121",
+      "display": "Holy Ground",
+      "clean": "HOLYGROUND",
+      "counts": {
+        "D": 1,
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "N": 1,
+        "O": 2,
+        "R": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:122",
+      "display": "Sad Beautiful Tragic",
+      "clean": "SADBEAUTIFULTRAGIC",
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "I": 2,
+        "L": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "U": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:123",
+      "display": "The Lucky One",
+      "clean": "THELUCKYONE",
+      "counts": {
+        "C": 1,
+        "E": 2,
+        "H": 1,
+        "K": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:124",
+      "display": "Everything Has Changed",
+      "clean": "EVERYTHINGHASCHANGED",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 1,
+        "E": 3,
+        "G": 2,
+        "H": 3,
+        "I": 1,
+        "N": 2,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:125",
+      "display": "Starlight",
+      "clean": "STARLIGHT",
+      "counts": {
+        "A": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:126",
+      "display": "Begin Again",
+      "clean": "BEGINAGAIN",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "E": 1,
+        "G": 2,
+        "I": 2,
+        "N": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:127",
+      "display": "The Moment I Knew",
+      "clean": "THEMOMENTIKNEW",
+      "counts": {
+        "E": 3,
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "M": 2,
+        "N": 2,
+        "O": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:128",
+      "display": "TMIK",
+      "clean": "TMIK",
+      "counts": {
+        "I": 1,
+        "K": 1,
+        "M": 1,
+        "T": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "The Moment I Knew"
+    },
+    {
+      "id": "song:129",
+      "display": "Come Back...Be Here",
+      "clean": "COMEBACKBEHERE",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "C": 2,
+        "E": 4,
+        "H": 1,
+        "K": 1,
+        "M": 1,
+        "O": 1,
+        "R": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:130",
+      "display": "Girl At Home",
+      "clean": "GIRLATHOME",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "O": 1,
+        "R": 1,
+        "T": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:131",
+      "display": "Ronan",
+      "clean": "RONAN",
+      "counts": {
+        "A": 1,
+        "N": 2,
+        "O": 1,
+        "R": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:132",
+      "display": "Better Man",
+      "clean": "BETTERMAN",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 2,
+        "M": 1,
+        "N": 1,
+        "R": 1,
+        "T": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:133",
+      "display": "Nothing New",
+      "clean": "NOTHINGNEW",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "N": 3,
+        "O": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:134",
+      "display": "Babe",
+      "clean": "BABE",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "E": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:135",
+      "display": "Message In A Bottle",
+      "clean": "MESSAGEINABOTTLE",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "E": 3,
+        "G": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "S": 2,
+        "T": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:136",
+      "display": "MIAB",
+      "clean": "MIAB",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "I": 1,
+        "M": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "Message In A Bottle"
+    },
+    {
+      "id": "song:137",
+      "display": "I Bet You Think About Me",
+      "clean": "IBETYOUTHINKABOUTME",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "E": 2,
+        "H": 1,
+        "I": 2,
+        "K": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "T": 3,
+        "U": 2,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:138",
+      "display": "IBYTAM",
+      "clean": "IBYTAM",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "I": 1,
+        "M": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "I Bet You Think About Me"
+    },
+    {
+      "id": "abbr:139",
+      "display": "IBUTAM",
+      "clean": "IBUTAM",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "I": 1,
+        "M": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "I Bet You Think About Me"
+    },
+    {
+      "id": "song:140",
+      "display": "Forever Winter",
+      "clean": "FOREVERWINTER",
+      "counts": {
+        "E": 3,
+        "F": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "R": 3,
+        "T": 1,
+        "V": 1,
+        "W": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:141",
+      "display": "Run",
+      "clean": "RUN",
+      "counts": {
+        "N": 1,
+        "R": 1,
+        "U": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "song:142",
+      "display": "The Very First Night",
+      "clean": "THEVERYFIRSTNIGHT",
+      "counts": {
+        "E": 2,
+        "F": 1,
+        "G": 1,
+        "H": 2,
+        "I": 2,
+        "N": 1,
+        "R": 2,
+        "S": 1,
+        "T": 3,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:143",
+      "display": "TVFN",
+      "clean": "TVFN",
+      "counts": {
+        "F": 1,
+        "N": 1,
+        "T": 1,
+        "V": 1
+      },
+      "album": "red",
+      "source": "abbr",
+      "original": "The Very First Night"
+    },
+    {
+      "id": "song:144",
+      "display": "Welcome To New York",
+      "clean": "WELCOMETONEWYORK",
+      "counts": {
+        "C": 1,
+        "E": 3,
+        "K": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 3,
+        "R": 1,
+        "T": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:145",
+      "display": "WTNY",
+      "clean": "WTNY",
+      "counts": {
+        "N": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "Welcome To New York"
+    },
+    {
+      "id": "song:146",
+      "display": "Blank Space",
+      "clean": "BLANKSPACE",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "E": 1,
+        "K": 1,
+        "L": 1,
+        "N": 1,
+        "P": 1,
+        "S": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:147",
+      "display": "Style",
+      "clean": "STYLE",
+      "counts": {
+        "E": 1,
+        "L": 1,
+        "S": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:148",
+      "display": "Out Of The Woods",
+      "clean": "OUTOFTHEWOODS",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "H": 1,
+        "O": 4,
+        "S": 1,
+        "T": 2,
+        "U": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:149",
+      "display": "OOTW",
+      "clean": "OOTW",
+      "counts": {
+        "O": 2,
+        "T": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "Out Of The Woods"
+    },
+    {
+      "id": "song:150",
+      "display": "All You Had To Do Was Stay",
+      "clean": "ALLYOUHADTODOWASSTAY",
+      "counts": {
+        "A": 4,
+        "D": 2,
+        "H": 1,
+        "L": 2,
+        "O": 3,
+        "S": 2,
+        "T": 2,
+        "U": 1,
+        "W": 1,
+        "Y": 2
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:151",
+      "display": "AYHTDWS",
+      "clean": "AYHTDWS",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "H": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "All You Had To Do Was Stay"
+    },
+    {
+      "id": "abbr:152",
+      "display": "AUHTDWS",
+      "clean": "AUHTDWS",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "H": 1,
+        "S": 1,
+        "T": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "All You Had To Do Was Stay"
+    },
+    {
+      "id": "song:153",
+      "display": "Shake It Off",
+      "clean": "SHAKEITOFF",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "F": 2,
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "O": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:154",
+      "display": "I Wish You Would",
+      "clean": "IWISHYOUWOULD",
+      "counts": {
+        "D": 1,
+        "H": 1,
+        "I": 2,
+        "L": 1,
+        "O": 2,
+        "S": 1,
+        "U": 2,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:155",
+      "display": "IWYW",
+      "clean": "IWYW",
+      "counts": {
+        "I": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "I Wish You Would"
+    },
+    {
+      "id": "abbr:156",
+      "display": "IWUW",
+      "clean": "IWUW",
+      "counts": {
+        "I": 1,
+        "U": 1,
+        "W": 2
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "I Wish You Would"
+    },
+    {
+      "id": "song:157",
+      "display": "Bad Blood",
+      "clean": "BADBLOOD",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "D": 2,
+        "L": 1,
+        "O": 2
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:158",
+      "display": "Wildest Dreams",
+      "clean": "WILDESTDREAMS",
+      "counts": {
+        "A": 1,
+        "D": 2,
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "R": 1,
+        "S": 2,
+        "T": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:159",
+      "display": "How You Get The Girl",
+      "clean": "HOWYOUGETTHEGIRL",
+      "counts": {
+        "E": 2,
+        "G": 2,
+        "H": 2,
+        "I": 1,
+        "L": 1,
+        "O": 2,
+        "R": 1,
+        "T": 2,
+        "U": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:160",
+      "display": "HYGTG",
+      "clean": "HYGTG",
+      "counts": {
+        "G": 2,
+        "H": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "How You Get The Girl"
+    },
+    {
+      "id": "abbr:161",
+      "display": "HUGTG",
+      "clean": "HUGTG",
+      "counts": {
+        "G": 2,
+        "H": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "How You Get The Girl"
+    },
+    {
+      "id": "song:162",
+      "display": "This Love",
+      "clean": "THISLOVE",
+      "counts": {
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "S": 1,
+        "T": 1,
+        "V": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:163",
+      "display": "I Know Places",
+      "clean": "IKNOWPLACES",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "I": 1,
+        "K": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "S": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:164",
+      "display": "Clean",
+      "clean": "CLEAN",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "L": 1,
+        "N": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:165",
+      "display": "Wonderland",
+      "clean": "WONDERLAND",
+      "counts": {
+        "A": 1,
+        "D": 2,
+        "E": 1,
+        "L": 1,
+        "N": 2,
+        "O": 1,
+        "R": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:166",
+      "display": "You Are In Love",
+      "clean": "YOUAREINLOVE",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 2,
+        "R": 1,
+        "U": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:167",
+      "display": "YAIL",
+      "clean": "YAIL",
+      "counts": {
+        "A": 1,
+        "I": 1,
+        "L": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "You Are In Love"
+    },
+    {
+      "id": "abbr:168",
+      "display": "UAIL",
+      "clean": "UAIL",
+      "counts": {
+        "A": 1,
+        "I": 1,
+        "L": 1,
+        "U": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "You Are In Love"
+    },
+    {
+      "id": "song:169",
+      "display": "New Romantics",
+      "clean": "NEWROMANTICS",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "N": 2,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:170",
+      "display": "\"Slut!\"",
+      "clean": "SLUT",
+      "counts": {
+        "L": 1,
+        "S": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:171",
+      "display": "Say Don't Go",
+      "clean": "SAYDONTGO",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "G": 1,
+        "N": 1,
+        "O": 2,
+        "S": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:172",
+      "display": "Now That We Don't Talk",
+      "clean": "NOWTHATWEDONTTALK",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 1,
+        "H": 1,
+        "K": 1,
+        "L": 1,
+        "N": 2,
+        "O": 2,
+        "T": 4,
+        "W": 2
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:173",
+      "display": "NTWDT",
+      "clean": "NTWDT",
+      "counts": {
+        "D": 1,
+        "N": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "Now That We Don't Talk"
+    },
+    {
+      "id": "song:174",
+      "display": "Suburban Legends",
+      "clean": "SUBURBANLEGENDS",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "D": 1,
+        "E": 2,
+        "G": 1,
+        "L": 1,
+        "N": 2,
+        "R": 1,
+        "S": 2,
+        "U": 2
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:175",
+      "display": "Is It Over Now?",
+      "clean": "ISITOVERNOW",
+      "counts": {
+        "E": 1,
+        "I": 2,
+        "N": 1,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "V": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:176",
+      "display": "IION",
+      "clean": "IION",
+      "counts": {
+        "I": 2,
+        "N": 1,
+        "O": 1
+      },
+      "album": "1989",
+      "source": "abbr",
+      "original": "Is It Over Now?"
+    },
+    {
+      "id": "song:177",
+      "display": "Sweeter Than Fiction",
+      "clean": "SWEETERTHANFICTION",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 3,
+        "F": 1,
+        "H": 1,
+        "I": 2,
+        "N": 2,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 3,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:178",
+      "display": "...Ready for It?",
+      "clean": "READYFORIT",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "I": 1,
+        "O": 1,
+        "R": 2,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:179",
+      "display": "End Game",
+      "clean": "ENDGAME",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 2,
+        "G": 1,
+        "M": 1,
+        "N": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:180",
+      "display": "I Did Something Bad",
+      "clean": "IDIDSOMETHINGBAD",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 3,
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "I": 3,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:181",
+      "display": "IDSB",
+      "clean": "IDSB",
+      "counts": {
+        "B": 1,
+        "D": 1,
+        "I": 1,
+        "S": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "I Did Something Bad"
+    },
+    {
+      "id": "song:182",
+      "display": "Don't Blame Me",
+      "clean": "DONTBLAMEME",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 1,
+        "E": 2,
+        "L": 1,
+        "M": 2,
+        "N": 1,
+        "O": 1,
+        "T": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:183",
+      "display": "Delicate",
+      "clean": "DELICATE",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 1,
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "T": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:184",
+      "display": "Look What You Made Me Do",
+      "clean": "LOOKWHATYOUMADEMEDO",
+      "counts": {
+        "A": 2,
+        "D": 2,
+        "E": 2,
+        "H": 1,
+        "K": 1,
+        "L": 1,
+        "M": 2,
+        "O": 4,
+        "T": 1,
+        "U": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:185",
+      "display": "LWYMMD",
+      "clean": "LWYMMD",
+      "counts": {
+        "D": 1,
+        "L": 1,
+        "M": 2,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "Look What You Made Me Do"
+    },
+    {
+      "id": "abbr:186",
+      "display": "LWUMMD",
+      "clean": "LWUMMD",
+      "counts": {
+        "D": 1,
+        "L": 1,
+        "M": 2,
+        "U": 1,
+        "W": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "Look What You Made Me Do"
+    },
+    {
+      "id": "song:187",
+      "display": "So It Goes...",
+      "clean": "SOITGOES",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "O": 2,
+        "S": 2,
+        "T": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:188",
+      "display": "Gorgeous",
+      "clean": "GORGEOUS",
+      "counts": {
+        "E": 1,
+        "G": 2,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:189",
+      "display": "Getaway Car",
+      "clean": "GETAWAYCAR",
+      "counts": {
+        "A": 3,
+        "C": 1,
+        "E": 1,
+        "G": 1,
+        "R": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:190",
+      "display": "King of My Heart",
+      "clean": "KINGOFMYHEART",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:191",
+      "display": "KOMH",
+      "clean": "KOMH",
+      "counts": {
+        "H": 1,
+        "K": 1,
+        "M": 1,
+        "O": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "King of My Heart"
+    },
+    {
+      "id": "song:192",
+      "display": "Dancing With Our Hands Tied",
+      "clean": "DANCINGWITHOURHANDSTIED",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 3,
+        "E": 1,
+        "G": 1,
+        "H": 2,
+        "I": 3,
+        "N": 3,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "U": 1,
+        "W": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:193",
+      "display": "DWOHT",
+      "clean": "DWOHT",
+      "counts": {
+        "D": 1,
+        "H": 1,
+        "O": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "Dancing With Our Hands Tied"
+    },
+    {
+      "id": "song:194",
+      "display": "Dress",
+      "clean": "DRESS",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "R": 1,
+        "S": 2
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:195",
+      "display": "This Is Why We Can't Have Nice Things",
+      "clean": "THISISWHYWECANTHAVENICETHINGS",
+      "counts": {
+        "A": 2,
+        "C": 2,
+        "E": 3,
+        "G": 1,
+        "H": 4,
+        "I": 4,
+        "N": 3,
+        "S": 3,
+        "T": 3,
+        "V": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:196",
+      "display": "TIWWCHNT",
+      "clean": "TIWWCHNT",
+      "counts": {
+        "C": 1,
+        "H": 1,
+        "I": 1,
+        "N": 1,
+        "T": 2,
+        "W": 2
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "This Is Why We Can't Have Nice Things"
+    },
+    {
+      "id": "song:197",
+      "display": "Call It What You Want",
+      "clean": "CALLITWHATYOUWANT",
+      "counts": {
+        "A": 3,
+        "C": 1,
+        "H": 1,
+        "I": 1,
+        "L": 2,
+        "N": 1,
+        "O": 1,
+        "T": 3,
+        "U": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:198",
+      "display": "CIWYW",
+      "clean": "CIWYW",
+      "counts": {
+        "C": 1,
+        "I": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "Call It What You Want"
+    },
+    {
+      "id": "abbr:199",
+      "display": "CIWUW",
+      "clean": "CIWUW",
+      "counts": {
+        "C": 1,
+        "I": 1,
+        "U": 1,
+        "W": 2
+      },
+      "album": "reputation",
+      "source": "abbr",
+      "original": "Call It What You Want"
+    },
+    {
+      "id": "song:200",
+      "display": "New Year's Day",
+      "clean": "NEWYEARSDAY",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 2,
+        "N": 1,
+        "R": 1,
+        "S": 1,
+        "W": 1,
+        "Y": 2
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "song:201",
+      "display": "I Forgot That You Existed",
+      "clean": "IFORGOTTHATYOUEXISTED",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 2,
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 2,
+        "O": 3,
+        "R": 1,
+        "S": 1,
+        "T": 4,
+        "U": 1,
+        "X": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:202",
+      "display": "IFTYE",
+      "clean": "IFTYE",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "I": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "I Forgot That You Existed"
+    },
+    {
+      "id": "abbr:203",
+      "display": "IFTUE",
+      "clean": "IFTUE",
+      "counts": {
+        "E": 1,
+        "F": 1,
+        "I": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "I Forgot That You Existed"
+    },
+    {
+      "id": "song:204",
+      "display": "Cruel Summer",
+      "clean": "CRUELSUMMER",
+      "counts": {
+        "C": 1,
+        "E": 2,
+        "L": 1,
+        "M": 2,
+        "R": 2,
+        "S": 1,
+        "U": 2
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:205",
+      "display": "Lover",
+      "clean": "LOVER",
+      "counts": {
+        "E": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "V": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:206",
+      "display": "The Man",
+      "clean": "THEMAN",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "H": 1,
+        "M": 1,
+        "N": 1,
+        "T": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:207",
+      "display": "The Archer",
+      "clean": "THEARCHER",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "H": 2,
+        "R": 2,
+        "T": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:208",
+      "display": "I Think He Knows",
+      "clean": "ITHINKHEKNOWS",
+      "counts": {
+        "E": 1,
+        "H": 2,
+        "I": 2,
+        "K": 2,
+        "N": 2,
+        "O": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:209",
+      "display": "ITHK",
+      "clean": "ITHK",
+      "counts": {
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "T": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "I Think He Knows"
+    },
+    {
+      "id": "song:210",
+      "display": "Miss Americana & The Heartbreak Prince",
+      "clean": "MISSAMERICANATHEHEARTBREAKPRINCE",
+      "counts": {
+        "A": 5,
+        "B": 1,
+        "C": 2,
+        "E": 5,
+        "H": 2,
+        "I": 3,
+        "K": 1,
+        "M": 2,
+        "N": 2,
+        "P": 1,
+        "R": 4,
+        "S": 2,
+        "T": 2
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:211",
+      "display": "MATHP",
+      "clean": "MATHP",
+      "counts": {
+        "A": 1,
+        "H": 1,
+        "M": 1,
+        "P": 1,
+        "T": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "Miss Americana & The Heartbreak Prince"
+    },
+    {
+      "id": "song:212",
+      "display": "Paper Rings",
+      "clean": "PAPERRINGS",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "N": 1,
+        "P": 2,
+        "R": 2,
+        "S": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:213",
+      "display": "Cornelia Street",
+      "clean": "CORNELIASTREET",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 3,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "R": 2,
+        "S": 1,
+        "T": 2
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:214",
+      "display": "Death By A Thousand Cuts",
+      "clean": "DEATHBYATHOUSANDCUTS",
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 1,
+        "H": 2,
+        "N": 1,
+        "O": 1,
+        "S": 2,
+        "T": 3,
+        "U": 2,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:215",
+      "display": "DBATC",
+      "clean": "DBATC",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "T": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "Death By A Thousand Cuts"
+    },
+    {
+      "id": "song:216",
+      "display": "London Boy",
+      "clean": "LONDONBOY",
+      "counts": {
+        "B": 1,
+        "D": 1,
+        "L": 1,
+        "N": 2,
+        "O": 3,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:217",
+      "display": "Soon You'll Get Better",
+      "clean": "SOONYOULLGETBETTER",
+      "counts": {
+        "B": 1,
+        "E": 3,
+        "G": 1,
+        "L": 2,
+        "N": 1,
+        "O": 3,
+        "R": 1,
+        "S": 1,
+        "T": 3,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:218",
+      "display": "SYGB",
+      "clean": "SYGB",
+      "counts": {
+        "B": 1,
+        "G": 1,
+        "S": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "Soon You'll Get Better"
+    },
+    {
+      "id": "song:219",
+      "display": "False God",
+      "clean": "FALSEGOD",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "L": 1,
+        "O": 1,
+        "S": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:220",
+      "display": "You Need To Calm Down",
+      "clean": "YOUNEEDTOCALMDOWN",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 2,
+        "E": 2,
+        "L": 1,
+        "M": 1,
+        "N": 2,
+        "O": 3,
+        "T": 1,
+        "U": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:221",
+      "display": "YNTCD",
+      "clean": "YNTCD",
+      "counts": {
+        "C": 1,
+        "D": 1,
+        "N": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "You Need To Calm Down"
+    },
+    {
+      "id": "abbr:222",
+      "display": "UNTCD",
+      "clean": "UNTCD",
+      "counts": {
+        "C": 1,
+        "D": 1,
+        "N": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "You Need To Calm Down"
+    },
+    {
+      "id": "song:223",
+      "display": "Afterglow",
+      "clean": "AFTERGLOW",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:224",
+      "display": "ME!",
+      "clean": "ME",
+      "counts": {
+        "E": 1,
+        "M": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:225",
+      "display": "It's Nice To Have A Friend",
+      "clean": "ITSNICETOHAVEAFRIEND",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 1,
+        "E": 3,
+        "F": 1,
+        "H": 1,
+        "I": 3,
+        "N": 2,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "V": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:226",
+      "display": "INTHAF",
+      "clean": "INTHAF",
+      "counts": {
+        "A": 1,
+        "F": 1,
+        "H": 1,
+        "I": 1,
+        "N": 1,
+        "T": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "It's Nice To Have A Friend"
+    },
+    {
+      "id": "song:227",
+      "display": "Daylight",
+      "clean": "DAYLIGHT",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "song:228",
+      "display": "All Of The Girls You Loved Before",
+      "clean": "ALLOFTHEGIRLSYOULOVEDBEFORE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 1,
+        "E": 4,
+        "F": 2,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 4,
+        "O": 4,
+        "R": 2,
+        "S": 1,
+        "T": 1,
+        "U": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:229",
+      "display": "AOTGYLB",
+      "clean": "AOTGYLB",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "G": 1,
+        "L": 1,
+        "O": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "All Of The Girls You Loved Before"
+    },
+    {
+      "id": "abbr:230",
+      "display": "AOTGULB",
+      "clean": "AOTGULB",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "G": 1,
+        "L": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "lover",
+      "source": "abbr",
+      "original": "All Of The Girls You Loved Before"
+    },
+    {
+      "id": "song:231",
+      "display": "the 1",
+      "clean": "THE",
+      "counts": {
+        "E": 1,
+        "H": 1,
+        "T": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:232",
+      "display": "cardigan",
+      "clean": "CARDIGAN",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 1,
+        "G": 1,
+        "I": 1,
+        "N": 1,
+        "R": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:233",
+      "display": "the last great american dynasty",
+      "clean": "THELASTGREATAMERICANDYNASTY",
+      "counts": {
+        "A": 5,
+        "C": 1,
+        "D": 1,
+        "E": 3,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "N": 2,
+        "R": 2,
+        "S": 2,
+        "T": 4,
+        "Y": 2
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:234",
+      "display": "TLGAD",
+      "clean": "TLGAD",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "G": 1,
+        "L": 1,
+        "T": 1
+      },
+      "album": "folklore",
+      "source": "abbr",
+      "original": "the last great american dynasty"
+    },
+    {
+      "id": "song:235",
+      "display": "exile",
+      "clean": "EXILE",
+      "counts": {
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "X": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:236",
+      "display": "my tears ricochet",
+      "clean": "MYTEARSRICOCHET",
+      "counts": {
+        "A": 1,
+        "C": 2,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "M": 1,
+        "O": 1,
+        "R": 2,
+        "S": 1,
+        "T": 2,
+        "Y": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:237",
+      "display": "mirrorball",
+      "clean": "MIRRORBALL",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "I": 1,
+        "L": 2,
+        "M": 1,
+        "O": 1,
+        "R": 3
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:238",
+      "display": "seven",
+      "clean": "SEVEN",
+      "counts": {
+        "E": 2,
+        "N": 1,
+        "S": 1,
+        "V": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:239",
+      "display": "august",
+      "clean": "AUGUST",
+      "counts": {
+        "A": 1,
+        "G": 1,
+        "S": 1,
+        "T": 1,
+        "U": 2
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:240",
+      "display": "this is me trying",
+      "clean": "THISISMETRYING",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "I": 3,
+        "M": 1,
+        "N": 1,
+        "R": 1,
+        "S": 2,
+        "T": 2,
+        "Y": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:241",
+      "display": "TIMT",
+      "clean": "TIMT",
+      "counts": {
+        "I": 1,
+        "M": 1,
+        "T": 2
+      },
+      "album": "folklore",
+      "source": "abbr",
+      "original": "this is me trying"
+    },
+    {
+      "id": "song:242",
+      "display": "illicit affairs",
+      "clean": "ILLICITAFFAIRS",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "F": 2,
+        "I": 4,
+        "L": 2,
+        "R": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:243",
+      "display": "invisible string",
+      "clean": "INVISIBLESTRING",
+      "counts": {
+        "B": 1,
+        "E": 1,
+        "G": 1,
+        "I": 4,
+        "L": 1,
+        "N": 2,
+        "R": 1,
+        "S": 2,
+        "T": 1,
+        "V": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:244",
+      "display": "mad woman",
+      "clean": "MADWOMAN",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "M": 2,
+        "N": 1,
+        "O": 1,
+        "W": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:245",
+      "display": "epiphany",
+      "clean": "EPIPHANY",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "N": 1,
+        "P": 2,
+        "Y": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:246",
+      "display": "betty",
+      "clean": "BETTY",
+      "counts": {
+        "B": 1,
+        "E": 1,
+        "T": 2,
+        "Y": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:247",
+      "display": "peace",
+      "clean": "PEACE",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "P": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:248",
+      "display": "hoax",
+      "clean": "HOAX",
+      "counts": {
+        "A": 1,
+        "H": 1,
+        "O": 1,
+        "X": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:249",
+      "display": "the lakes",
+      "clean": "THELAKES",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "H": 1,
+        "K": 1,
+        "L": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "folklore",
+      "source": "song"
+    },
+    {
+      "id": "song:250",
+      "display": "willow",
+      "clean": "WILLOW",
+      "counts": {
+        "I": 1,
+        "L": 2,
+        "O": 1,
+        "W": 2
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:251",
+      "display": "champagne problems",
+      "clean": "CHAMPAGNEPROBLEMS",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "E": 2,
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "M": 2,
+        "N": 1,
+        "O": 1,
+        "P": 2,
+        "R": 1,
+        "S": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:252",
+      "display": "gold rush",
+      "clean": "GOLDRUSH",
+      "counts": {
+        "D": 1,
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:253",
+      "display": "'tis the damn season",
+      "clean": "TISTHEDAMNSEASON",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "M": 1,
+        "N": 2,
+        "O": 1,
+        "S": 3,
+        "T": 2
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:254",
+      "display": "TTDS",
+      "clean": "TTDS",
+      "counts": {
+        "D": 1,
+        "S": 1,
+        "T": 2
+      },
+      "album": "evermore",
+      "source": "abbr",
+      "original": "'tis the damn season"
+    },
+    {
+      "id": "song:255",
+      "display": "tolerate it",
+      "clean": "TOLERATEIT",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "T": 3
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:256",
+      "display": "no body, no crime",
+      "clean": "NOBODYNOCRIME",
+      "counts": {
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "N": 2,
+        "O": 3,
+        "R": 1,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:257",
+      "display": "NBNC",
+      "clean": "NBNC",
+      "counts": {
+        "B": 1,
+        "C": 1,
+        "N": 2
+      },
+      "album": "evermore",
+      "source": "abbr",
+      "original": "no body, no crime"
+    },
+    {
+      "id": "song:258",
+      "display": "happiness",
+      "clean": "HAPPINESS",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "N": 1,
+        "P": 2,
+        "S": 2
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:259",
+      "display": "dorothea",
+      "clean": "DOROTHEA",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "H": 1,
+        "O": 2,
+        "R": 1,
+        "T": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:260",
+      "display": "coney island",
+      "clean": "CONEYISLAND",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "I": 1,
+        "L": 1,
+        "N": 2,
+        "O": 1,
+        "S": 1,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:261",
+      "display": "ivy",
+      "clean": "IVY",
+      "counts": {
+        "I": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:262",
+      "display": "cowboy like me",
+      "clean": "COWBOYLIKEME",
+      "counts": {
+        "B": 1,
+        "C": 1,
+        "E": 2,
+        "I": 1,
+        "K": 1,
+        "L": 1,
+        "M": 1,
+        "O": 2,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:263",
+      "display": "long story short",
+      "clean": "LONGSTORYSHORT",
+      "counts": {
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "N": 1,
+        "O": 3,
+        "R": 2,
+        "S": 2,
+        "T": 2,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:264",
+      "display": "marjorie",
+      "clean": "MARJORIE",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "I": 1,
+        "J": 1,
+        "M": 1,
+        "O": 1,
+        "R": 2
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:265",
+      "display": "closure",
+      "clean": "CLOSURE",
+      "counts": {
+        "C": 1,
+        "E": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:266",
+      "display": "evermore",
+      "clean": "EVERMORE",
+      "counts": {
+        "E": 3,
+        "M": 1,
+        "O": 1,
+        "R": 2,
+        "V": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "song:267",
+      "display": "right where you left me",
+      "clean": "RIGHTWHEREYOULEFTME",
+      "counts": {
+        "E": 4,
+        "F": 1,
+        "G": 1,
+        "H": 2,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "O": 1,
+        "R": 2,
+        "T": 2,
+        "U": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:268",
+      "display": "RWYLM",
+      "clean": "RWYLM",
+      "counts": {
+        "L": 1,
+        "M": 1,
+        "R": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "evermore",
+      "source": "abbr",
+      "original": "right where you left me"
+    },
+    {
+      "id": "abbr:269",
+      "display": "RWULM",
+      "clean": "RWULM",
+      "counts": {
+        "L": 1,
+        "M": 1,
+        "R": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "evermore",
+      "source": "abbr",
+      "original": "right where you left me"
+    },
+    {
+      "id": "song:270",
+      "display": "it's time to go",
+      "clean": "ITSTIMETOGO",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "I": 2,
+        "M": 1,
+        "O": 2,
+        "S": 1,
+        "T": 3
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:271",
+      "display": "ITTG",
+      "clean": "ITTG",
+      "counts": {
+        "G": 1,
+        "I": 1,
+        "T": 2
+      },
+      "album": "evermore",
+      "source": "abbr",
+      "original": "it's time to go"
+    },
+    {
+      "id": "song:272",
+      "display": "Lavender Haze",
+      "clean": "LAVENDERHAZE",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 3,
+        "H": 1,
+        "L": 1,
+        "N": 1,
+        "R": 1,
+        "V": 1,
+        "Z": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:273",
+      "display": "Maroon",
+      "clean": "MAROON",
+      "counts": {
+        "A": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "R": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:274",
+      "display": "Anti-Hero",
+      "clean": "ANTIHERO",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "T": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:275",
+      "display": "Snow On The Beach",
+      "clean": "SNOWONTHEBEACH",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "E": 2,
+        "H": 2,
+        "N": 2,
+        "O": 2,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "abbr:276",
+      "display": "SOTB",
+      "clean": "SOTB",
+      "counts": {
+        "B": 1,
+        "O": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "midnights",
+      "source": "abbr",
+      "original": "Snow On The Beach"
+    },
+    {
+      "id": "song:277",
+      "display": "You're On Your Own, Kid",
+      "clean": "YOUREONYOUROWNKID",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "I": 1,
+        "K": 1,
+        "N": 2,
+        "O": 4,
+        "R": 2,
+        "U": 2,
+        "W": 1,
+        "Y": 2
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "abbr:278",
+      "display": "YOYOK",
+      "clean": "YOYOK",
+      "counts": {
+        "K": 1,
+        "O": 2,
+        "Y": 2
+      },
+      "album": "midnights",
+      "source": "abbr",
+      "original": "You're On Your Own, Kid"
+    },
+    {
+      "id": "song:279",
+      "display": "Midnight Rain",
+      "clean": "MIDNIGHTRAIN",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "G": 1,
+        "H": 1,
+        "I": 3,
+        "M": 1,
+        "N": 2,
+        "R": 1,
+        "T": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:280",
+      "display": "Question...?",
+      "clean": "QUESTION",
+      "counts": {
+        "E": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "Q": 1,
+        "S": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:281",
+      "display": "Vigilante Shit",
+      "clean": "VIGILANTESHIT",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "I": 3,
+        "L": 1,
+        "N": 1,
+        "S": 1,
+        "T": 2,
+        "V": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:282",
+      "display": "Bejeweled",
+      "clean": "BEJEWELED",
+      "counts": {
+        "B": 1,
+        "D": 1,
+        "E": 4,
+        "J": 1,
+        "L": 1,
+        "W": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:283",
+      "display": "Labyrinth",
+      "clean": "LABYRINTH",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "R": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:284",
+      "display": "Karma",
+      "clean": "KARMA",
+      "counts": {
+        "A": 2,
+        "K": 1,
+        "M": 1,
+        "R": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:285",
+      "display": "Sweet Nothing",
+      "clean": "SWEETNOTHING",
+      "counts": {
+        "E": 2,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "N": 2,
+        "O": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:286",
+      "display": "Mastermind",
+      "clean": "MASTERMIND",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "I": 1,
+        "M": 2,
+        "N": 1,
+        "R": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:287",
+      "display": "Hits Different",
+      "clean": "HITSDIFFERENT",
+      "counts": {
+        "D": 1,
+        "E": 2,
+        "F": 2,
+        "H": 1,
+        "I": 2,
+        "N": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:288",
+      "display": "The Great War",
+      "clean": "THEGREATWAR",
+      "counts": {
+        "A": 2,
+        "E": 2,
+        "G": 1,
+        "H": 1,
+        "R": 2,
+        "T": 2,
+        "W": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:289",
+      "display": "Bigger Than The Whole Sky",
+      "clean": "BIGGERTHANTHEWHOLESKY",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 3,
+        "G": 2,
+        "H": 3,
+        "I": 1,
+        "K": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "abbr:290",
+      "display": "BTTWS",
+      "clean": "BTTWS",
+      "counts": {
+        "B": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "midnights",
+      "source": "abbr",
+      "original": "Bigger Than The Whole Sky"
+    },
+    {
+      "id": "song:291",
+      "display": "High Infidelity",
+      "clean": "HIGHINFIDELITY",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "H": 2,
+        "I": 4,
+        "L": 1,
+        "N": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:292",
+      "display": "Would've, Could've, Should've",
+      "clean": "WOULDVECOULDVESHOULDVE",
+      "counts": {
+        "C": 1,
+        "D": 3,
+        "E": 3,
+        "H": 1,
+        "L": 3,
+        "O": 3,
+        "S": 1,
+        "U": 3,
+        "V": 3,
+        "W": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:293",
+      "display": "Dear Reader",
+      "clean": "DEARREADER",
+      "counts": {
+        "A": 2,
+        "D": 2,
+        "E": 3,
+        "R": 3
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:294",
+      "display": "You're Losing Me",
+      "clean": "YOURELOSINGME",
+      "counts": {
+        "E": 2,
+        "G": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:295",
+      "display": "Fortnight",
+      "clean": "FORTNIGHT",
+      "counts": {
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "T": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:296",
+      "display": "The Tortured Poets Department",
+      "clean": "THETORTUREDPOETSDEPARTMENT",
+      "counts": {
+        "A": 1,
+        "D": 2,
+        "E": 5,
+        "H": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "P": 2,
+        "R": 3,
+        "S": 1,
+        "T": 6,
+        "U": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:297",
+      "display": "My Boy Only Breaks His Favorite Toys",
+      "clean": "MYBOYONLYBREAKSHISFAVORITETOYS",
+      "counts": {
+        "A": 2,
+        "B": 2,
+        "E": 2,
+        "F": 1,
+        "H": 1,
+        "I": 2,
+        "K": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 4,
+        "R": 2,
+        "S": 3,
+        "T": 2,
+        "V": 1,
+        "Y": 4
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:298",
+      "display": "MBOBHFT",
+      "clean": "MBOBHFT",
+      "counts": {
+        "B": 2,
+        "F": 1,
+        "H": 1,
+        "M": 1,
+        "O": 1,
+        "T": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "My Boy Only Breaks His Favorite Toys"
+    },
+    {
+      "id": "song:299",
+      "display": "Down Bad",
+      "clean": "DOWNBAD",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 2,
+        "N": 1,
+        "O": 1,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:300",
+      "display": "So Long, London",
+      "clean": "SOLONGLONDON",
+      "counts": {
+        "D": 1,
+        "G": 1,
+        "L": 2,
+        "N": 3,
+        "O": 4,
+        "S": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:301",
+      "display": "But Daddy I Love Him",
+      "clean": "BUTDADDYILOVEHIM",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 3,
+        "E": 1,
+        "H": 1,
+        "I": 2,
+        "L": 1,
+        "M": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:302",
+      "display": "BDILH",
+      "clean": "BDILH",
+      "counts": {
+        "B": 1,
+        "D": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "But Daddy I Love Him"
+    },
+    {
+      "id": "song:303",
+      "display": "Fresh Out The Slammer",
+      "clean": "FRESHOUTTHESLAMMER",
+      "counts": {
+        "A": 1,
+        "E": 3,
+        "F": 1,
+        "H": 2,
+        "L": 1,
+        "M": 2,
+        "O": 1,
+        "R": 2,
+        "S": 2,
+        "T": 2,
+        "U": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:304",
+      "display": "FOTS",
+      "clean": "FOTS",
+      "counts": {
+        "F": 1,
+        "O": 1,
+        "S": 1,
+        "T": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "Fresh Out The Slammer"
+    },
+    {
+      "id": "song:305",
+      "display": "Florida!!!",
+      "clean": "FLORIDA",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:306",
+      "display": "Guilty as Sin?",
+      "clean": "GUILTYASSIN",
+      "counts": {
+        "A": 1,
+        "G": 1,
+        "I": 2,
+        "L": 1,
+        "N": 1,
+        "S": 2,
+        "T": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:307",
+      "display": "Who's Afraid of Little Old Me?",
+      "clean": "WHOSAFRAIDOFLITTLEOLDME",
+      "counts": {
+        "A": 2,
+        "D": 2,
+        "E": 2,
+        "F": 2,
+        "H": 1,
+        "I": 2,
+        "L": 3,
+        "M": 1,
+        "O": 3,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:308",
+      "display": "WAOLOM",
+      "clean": "WAOLOM",
+      "counts": {
+        "A": 1,
+        "L": 1,
+        "M": 1,
+        "O": 2,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "Who's Afraid of Little Old Me?"
+    },
+    {
+      "id": "song:309",
+      "display": "I Can Fix Him (No Really I Can)",
+      "clean": "ICANFIXHIMNOREALLYICAN",
+      "counts": {
+        "A": 3,
+        "C": 2,
+        "E": 1,
+        "F": 1,
+        "H": 1,
+        "I": 4,
+        "L": 2,
+        "M": 1,
+        "N": 3,
+        "O": 1,
+        "R": 1,
+        "X": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:310",
+      "display": "ICFHNRIC",
+      "clean": "ICFHNRIC",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 1,
+        "I": 2,
+        "N": 1,
+        "R": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "I Can Fix Him (No Really I Can)"
+    },
+    {
+      "id": "song:311",
+      "display": "loml",
+      "clean": "LOML",
+      "counts": {
+        "L": 2,
+        "M": 1,
+        "O": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:312",
+      "display": "I Can Do It With A Broken Heart",
+      "clean": "ICANDOITWITHABROKENHEART",
+      "counts": {
+        "A": 3,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 2,
+        "H": 2,
+        "I": 3,
+        "K": 1,
+        "N": 2,
+        "O": 2,
+        "R": 2,
+        "T": 3,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:313",
+      "display": "ICDIWABH",
+      "clean": "ICDIWABH",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "H": 1,
+        "I": 2,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "I Can Do It With A Broken Heart"
+    },
+    {
+      "id": "song:314",
+      "display": "The Smallest Man Who Ever Lived",
+      "clean": "THESMALLESTMANWHOEVERLIVED",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 5,
+        "H": 2,
+        "I": 1,
+        "L": 3,
+        "M": 2,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "S": 2,
+        "T": 2,
+        "V": 2,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:315",
+      "display": "TSMWEL",
+      "clean": "TSMWEL",
+      "counts": {
+        "E": 1,
+        "L": 1,
+        "M": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "The Smallest Man Who Ever Lived"
+    },
+    {
+      "id": "song:316",
+      "display": "The Alchemy",
+      "clean": "THEALCHEMY",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "H": 2,
+        "L": 1,
+        "M": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:317",
+      "display": "Clara Bow",
+      "clean": "CLARABOW",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:318",
+      "display": "The Black Dog",
+      "clean": "THEBLACKDOG",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "K": 1,
+        "L": 1,
+        "O": 1,
+        "T": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:319",
+      "display": "imgonnagetyouback",
+      "clean": "IMGONNAGETYOUBACK",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "E": 1,
+        "G": 2,
+        "I": 1,
+        "K": 1,
+        "M": 1,
+        "N": 2,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:320",
+      "display": "The Albatross",
+      "clean": "THEALBATROSS",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "E": 1,
+        "H": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "S": 2,
+        "T": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:321",
+      "display": "Chloe or Sam or Sophia or Marcus",
+      "clean": "CHLOEORSAMORSOPHIAORMARCUS",
+      "counts": {
+        "A": 3,
+        "C": 2,
+        "E": 1,
+        "H": 2,
+        "I": 1,
+        "L": 1,
+        "M": 2,
+        "O": 5,
+        "P": 1,
+        "R": 4,
+        "S": 3,
+        "U": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:322",
+      "display": "COSOSOM",
+      "clean": "COSOSOM",
+      "counts": {
+        "C": 1,
+        "M": 1,
+        "O": 3,
+        "S": 2
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "Chloe or Sam or Sophia or Marcus"
+    },
+    {
+      "id": "song:323",
+      "display": "How Did It End?",
+      "clean": "HOWDIDITEND",
+      "counts": {
+        "D": 3,
+        "E": 1,
+        "H": 1,
+        "I": 2,
+        "N": 1,
+        "O": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:324",
+      "display": "HDIE",
+      "clean": "HDIE",
+      "counts": {
+        "D": 1,
+        "E": 1,
+        "H": 1,
+        "I": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "How Did It End?"
+    },
+    {
+      "id": "song:325",
+      "display": "So High School",
+      "clean": "SOHIGHSCHOOL",
+      "counts": {
+        "C": 1,
+        "G": 1,
+        "H": 3,
+        "I": 1,
+        "L": 1,
+        "O": 3,
+        "S": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:326",
+      "display": "I Hate It Here",
+      "clean": "IHATEITHERE",
+      "counts": {
+        "A": 1,
+        "E": 3,
+        "H": 2,
+        "I": 2,
+        "R": 1,
+        "T": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:327",
+      "display": "IHIH",
+      "clean": "IHIH",
+      "counts": {
+        "H": 2,
+        "I": 2
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "I Hate It Here"
+    },
+    {
+      "id": "song:328",
+      "display": "thanK you aIMee",
+      "clean": "THANKYOUAIMEE",
+      "counts": {
+        "A": 2,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:329",
+      "display": "I Look in People's Windows",
+      "clean": "ILOOKINPEOPLESWINDOWS",
+      "counts": {
+        "D": 1,
+        "E": 2,
+        "I": 3,
+        "K": 1,
+        "L": 2,
+        "N": 2,
+        "O": 4,
+        "P": 2,
+        "S": 2,
+        "W": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:330",
+      "display": "ILIPW",
+      "clean": "ILIPW",
+      "counts": {
+        "I": 2,
+        "L": 1,
+        "P": 1,
+        "W": 1
+      },
+      "album": "ttpd",
+      "source": "abbr",
+      "original": "I Look in People's Windows"
+    },
+    {
+      "id": "song:331",
+      "display": "The Prophecy",
+      "clean": "THEPROPHECY",
+      "counts": {
+        "C": 1,
+        "E": 2,
+        "H": 2,
+        "O": 1,
+        "P": 2,
+        "R": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:332",
+      "display": "Cassandra",
+      "clean": "CASSANDRA",
+      "counts": {
+        "A": 3,
+        "C": 1,
+        "D": 1,
+        "N": 1,
+        "R": 1,
+        "S": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:333",
+      "display": "Peter",
+      "clean": "PETER",
+      "counts": {
+        "E": 2,
+        "P": 1,
+        "R": 1,
+        "T": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:334",
+      "display": "The Bolter",
+      "clean": "THEBOLTER",
+      "counts": {
+        "B": 1,
+        "E": 2,
+        "H": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "T": 2
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:335",
+      "display": "Robin",
+      "clean": "ROBIN",
+      "counts": {
+        "B": 1,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:336",
+      "display": "The Manuscript",
+      "clean": "THEMANUSCRIPT",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "H": 1,
+        "I": 1,
+        "M": 1,
+        "N": 1,
+        "P": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "U": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:337",
+      "display": "Last Christmas",
+      "clean": "LASTCHRISTMAS",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "R": 1,
+        "S": 3,
+        "T": 2
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:338",
+      "display": "Christmases When You Were Mine",
+      "clean": "CHRISTMASESWHENYOUWEREMINE",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 5,
+        "H": 2,
+        "I": 2,
+        "M": 2,
+        "N": 2,
+        "O": 1,
+        "R": 2,
+        "S": 3,
+        "T": 1,
+        "U": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "abbr:339",
+      "display": "CWYWM",
+      "clean": "CWYWM",
+      "counts": {
+        "C": 1,
+        "M": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "abbr",
+      "original": "Christmases When You Were Mine"
+    },
+    {
+      "id": "abbr:340",
+      "display": "CWUWM",
+      "clean": "CWUWM",
+      "counts": {
+        "C": 1,
+        "M": 1,
+        "U": 1,
+        "W": 2
+      },
+      "album": "other",
+      "source": "abbr",
+      "original": "Christmases When You Were Mine"
+    },
+    {
+      "id": "song:341",
+      "display": "Santa Baby",
+      "clean": "SANTABABY",
+      "counts": {
+        "A": 3,
+        "B": 2,
+        "N": 1,
+        "S": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:342",
+      "display": "Silent Night",
+      "clean": "SILENTNIGHT",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "I": 2,
+        "L": 1,
+        "N": 2,
+        "S": 1,
+        "T": 2
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:343",
+      "display": "Christmas Must Be Something More",
+      "clean": "CHRISTMASMUSTBESOMETHINGMORE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "E": 3,
+        "G": 1,
+        "H": 2,
+        "I": 2,
+        "M": 4,
+        "N": 1,
+        "O": 2,
+        "R": 2,
+        "S": 4,
+        "T": 3,
+        "U": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "abbr:344",
+      "display": "CMBSM",
+      "clean": "CMBSM",
+      "counts": {
+        "B": 1,
+        "C": 1,
+        "M": 2,
+        "S": 1
+      },
+      "album": "other",
+      "source": "abbr",
+      "original": "Christmas Must Be Something More"
+    },
+    {
+      "id": "song:345",
+      "display": "White Christmas",
+      "clean": "WHITECHRISTMAS",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "H": 2,
+        "I": 2,
+        "M": 1,
+        "R": 1,
+        "S": 2,
+        "T": 2,
+        "W": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:346",
+      "display": "Eyes Open",
+      "clean": "EYESOPEN",
+      "counts": {
+        "E": 3,
+        "N": 1,
+        "O": 1,
+        "P": 1,
+        "S": 1,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:347",
+      "display": "Safe & Sound",
+      "clean": "SAFESOUND",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "N": 1,
+        "O": 1,
+        "S": 2,
+        "U": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:348",
+      "display": "Renegade",
+      "clean": "RENEGADE",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 3,
+        "G": 1,
+        "N": 1,
+        "R": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:349",
+      "display": "Beautiful Ghosts",
+      "clean": "BEAUTIFULGHOSTS",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "S": 2,
+        "T": 2,
+        "U": 2
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:350",
+      "display": "Macavity",
+      "clean": "MACAVITY",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "I": 1,
+        "M": 1,
+        "T": 1,
+        "V": 1,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:351",
+      "display": "Carolina",
+      "clean": "CAROLINA",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:352",
+      "display": "Christmas Tree Farm",
+      "clean": "CHRISTMASTREEFARM",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "E": 2,
+        "F": 1,
+        "H": 1,
+        "I": 1,
+        "M": 2,
+        "R": 3,
+        "S": 2,
+        "T": 2
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:353",
+      "display": "I Don't Wanna Live Forever",
+      "clean": "IDONTWANNALIVEFOREVER",
+      "counts": {
+        "A": 2,
+        "D": 1,
+        "E": 3,
+        "F": 1,
+        "I": 2,
+        "L": 1,
+        "N": 3,
+        "O": 2,
+        "R": 2,
+        "T": 1,
+        "V": 2,
+        "W": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "abbr:354",
+      "display": "IDWLF",
+      "clean": "IDWLF",
+      "counts": {
+        "D": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "W": 1
+      },
+      "album": "other",
+      "source": "abbr",
+      "original": "I Don't Wanna Live Forever"
+    },
+    {
+      "id": "song:355",
+      "display": "Only The Young",
+      "clean": "ONLYTHEYOUNG",
+      "counts": {
+        "E": 1,
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "N": 2,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "Y": 2
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:356",
+      "display": "Two Is Better Than One",
+      "clean": "TWOISBETTERTHANONE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "E": 3,
+        "H": 1,
+        "I": 1,
+        "N": 2,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "T": 4,
+        "W": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "abbr:357",
+      "display": "TIBTO",
+      "clean": "TIBTO",
+      "counts": {
+        "B": 1,
+        "I": 1,
+        "O": 1,
+        "T": 2
+      },
+      "album": "other",
+      "source": "abbr",
+      "original": "Two Is Better Than One"
+    },
+    {
+      "id": "song:358",
+      "display": "Gasoline",
+      "clean": "GASOLINE",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "G": 1,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "S": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:359",
+      "display": "Highway Don't Care",
+      "clean": "HIGHWAYDONTCARE",
+      "counts": {
+        "A": 2,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "G": 1,
+        "H": 2,
+        "I": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:360",
+      "display": "Paris",
+      "clean": "PARIS",
+      "counts": {
+        "A": 1,
+        "I": 1,
+        "P": 1,
+        "R": 1,
+        "S": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:361",
+      "display": "Glitch",
+      "clean": "GLITCH",
+      "counts": {
+        "C": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "T": 1
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:362",
+      "display": "Crazier",
+      "clean": "CRAZIER",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 1,
+        "I": 1,
+        "R": 2,
+        "Z": 1
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "song:363",
+      "display": "If This Was a Movie",
+      "clean": "IFTHISWASAMOVIE",
+      "counts": {
+        "A": 2,
+        "E": 1,
+        "F": 1,
+        "H": 1,
+        "I": 3,
+        "M": 1,
+        "O": 1,
+        "S": 2,
+        "T": 1,
+        "V": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:364",
+      "display": "ITWAM",
+      "clean": "ITWAM",
+      "counts": {
+        "A": 1,
+        "I": 1,
+        "M": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "abbr",
+      "original": "If This Was a Movie"
+    },
+    {
+      "id": "song:365",
+      "display": "The Fate of Ophelia",
+      "clean": "THEFATEOFOPHELIA",
+      "counts": {
+        "A": 2,
+        "E": 3,
+        "F": 2,
+        "H": 2,
+        "I": 1,
+        "L": 1,
+        "O": 2,
+        "P": 1,
+        "T": 2
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "abbr:366",
+      "display": "TFOO",
+      "clean": "TFOO",
+      "counts": {
+        "F": 1,
+        "O": 2,
+        "T": 1
+      },
+      "album": "showgirl",
+      "source": "abbr",
+      "original": "The Fate of Ophelia"
+    },
+    {
+      "id": "song:367",
+      "display": "Elizabeth Taylor",
+      "clean": "ELIZABETHTAYLOR",
+      "counts": {
+        "A": 2,
+        "B": 1,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "L": 2,
+        "O": 1,
+        "R": 1,
+        "T": 2,
+        "Y": 1,
+        "Z": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:368",
+      "display": "Opalite",
+      "clean": "OPALITE",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "P": 1,
+        "T": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:369",
+      "display": "Father Figure",
+      "clean": "FATHERFIGURE",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "F": 2,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "R": 2,
+        "T": 1,
+        "U": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:370",
+      "display": "Eldest Daughter",
+      "clean": "ELDESTDAUGHTER",
+      "counts": {
+        "A": 1,
+        "D": 2,
+        "E": 3,
+        "G": 1,
+        "H": 1,
+        "L": 1,
+        "R": 1,
+        "S": 1,
+        "T": 2,
+        "U": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:371",
+      "display": "Ruin The Friendship",
+      "clean": "RUINTHEFRIENDSHIP",
+      "counts": {
+        "D": 1,
+        "E": 2,
+        "F": 1,
+        "H": 2,
+        "I": 3,
+        "N": 2,
+        "P": 1,
+        "R": 2,
+        "S": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:372",
+      "display": "Actually Romantic",
+      "clean": "ACTUALLYROMANTIC",
+      "counts": {
+        "A": 3,
+        "C": 2,
+        "I": 1,
+        "L": 2,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "T": 2,
+        "U": 1,
+        "Y": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:373",
+      "display": "Wi$h Li$t",
+      "clean": "WIHLIT",
+      "counts": {
+        "H": 1,
+        "I": 2,
+        "L": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:374",
+      "display": "Wood",
+      "clean": "WOOD",
+      "counts": {
+        "D": 1,
+        "O": 2,
+        "W": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:375",
+      "display": "CANCELLED!",
+      "clean": "CANCELLED",
+      "counts": {
+        "A": 1,
+        "C": 2,
+        "D": 1,
+        "E": 2,
+        "L": 2,
+        "N": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:376",
+      "display": "Honey",
+      "clean": "HONEY",
+      "counts": {
+        "E": 1,
+        "H": 1,
+        "N": 1,
+        "O": 1,
+        "Y": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    },
+    {
+      "id": "song:377",
+      "display": "The Life of a Showgirl",
+      "clean": "THELIFEOFASHOWGIRL",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "F": 2,
+        "G": 1,
+        "H": 2,
+        "I": 2,
+        "L": 2,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "T": 1,
+        "W": 1
+      },
+      "album": "showgirl",
+      "source": "song"
+    }
+  ]
+}
