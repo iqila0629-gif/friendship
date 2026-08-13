@@ -286,6 +286,23 @@
     .pager button[disabled] { opacity: 0.4; cursor: not-allowed; }
     .footer { margin-top: 18px; font-size: 12px; color: var(--muted); line-height: 1.7; }
     .hidden { display: none !important; }
+
+    @media (max-width: 640px) {
+      .app { padding: 12px 10px 32px; }
+      .bead-grid { grid-template-columns: repeat(7, 1fr); gap: 10px; }
+      .bead-grid.with-counts { row-gap: 38px; }
+      .bead { font-size: 21px; }
+      .bead input.count-input {
+        width: 46px;
+        height: 28px;
+        font-size: 16px;
+        bottom: -32px;
+      }
+      .bead-flag { width: 18px; height: 18px; font-size: 11px; line-height: 18px; right: -5px; top: -5px; }
+      .count-note { margin-top: 34px; }
+      .mode-btn { min-width: 0; }
+      .song-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    }
   </style>
 </head>
 <body>
