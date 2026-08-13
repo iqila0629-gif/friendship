@@ -376,6 +376,7 @@ function renderResults() {
   const chain = state.consumeChain;
   const chainCounts = combinedCounts(chain);
   const remainingAfterChain = useLetters({ ...inventory }, chainCounts);
+  const rankable = found.filter((item) => songFits(item.e, remainingAfterChain));
   body.innerHTML = `
     <div class="combo-block">
       <h3>贪心搭配（按当前偏好连续消耗）</h3>
@@ -389,18 +390,20 @@ function renderResults() {
     </div>
     <div class="combo-block">
       <h3>分数排行（优先消耗主要珠子，避开不想消耗）</h3>
-      ${found
-        .slice(0, 40)
-        .map(
-          (item) => `<div class="consume-card">
+      ${rankable.length
+        ? rankable
+            .slice(0, 40)
+            .map(
+              (item) => `<div class="consume-card">
               <div class="consume-main">
               <div class="consume-name">${esc(item.e.display)}${item.e.original ? ` <span class="consume-sub">(${esc(item.e.original)})</span>` : ""}</div>
               <div class="consume-sub">${sourceName(item.e.source)} · ${esc(albumById(item.e.album).name)}</div>
             </div>
-            <button class="score-badge" data-add="${item.e.id}" ${songFits(item.e, remainingAfterChain) ? "" : "disabled style='opacity:.35;cursor:not-allowed;'"}>+ 拼</button>
+            <button class="score-badge" data-add="${item.e.id}">+ 拼</button>
           </div>`
-        )
-        .join("")}
+            )
+            .join("")
+        : `<div class="empty">当前剩余珠子已拼不出任何歌曲，撤销后再试。</div>`}
     </div>`;
   body.querySelectorAll("[data-add]").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -625,7 +628,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.4");
+  const res = await fetch("data/songs.json?v=20260813.5");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
