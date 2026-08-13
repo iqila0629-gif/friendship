@@ -176,6 +176,7 @@ function computeRounds(entries, inventory) {
       .sort((a, b) => a.cost - b.cost || a.e.display.localeCompare(b.e.display))
       .slice(0, 12)
       .map((o) => o.e);
+    if (!options.length) break;
     rounds.push({ count: solutions[0].length, options, chosen: null });
     const pick = options[0];
     inv = useLetters(inv, pick.counts);
@@ -713,7 +714,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.12");
+  const res = await fetch("data/songs.json?v=20260813.13");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
