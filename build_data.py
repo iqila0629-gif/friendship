@@ -73,13 +73,15 @@ KEY_LYRICS = [
 
 RELATED_WORDS = [
     ("Taylor Swift", "taylor_swift"),
-    ("TS", "taylor_swift"),
+    ("TS", "other"),
     ("eras tour", "other"),
     ("eras", "other"),
 ]
 
 SPECIAL_SONGS = [
     ("the 1", "folklore"),
+    ("Welcome to NY", "1989"),
+    ("Vigilante Sxxt", "midnights"),
 ]
 
 ALBUM_ABBREVIATIONS = [
@@ -191,18 +193,15 @@ def main():
                 add(abbr, album["id"], "abbr", album["name"])
 
     for abbr, album_id in ALBUM_ABBREVIATIONS:
-        add(abbr, album_id, "abbr", ALBUM_IDS[album_id]["name"])
+        add(abbr, album_id, "song_album", ALBUM_IDS[album_id]["name"])
 
     for abbr, display in [("ATW", "All Too Well")]:
-        add(abbr, "red", "abbr", display)
+        add(abbr, "red", "song_album", display)
 
     for text, album_id in KEY_LYRICS:
         add(text, album_id, "lyric")
 
     for text, album_id in RELATED_WORDS:
-        cleaned = clean_for_beads(text)
-        if cleaned and not has_digit(cleaned) and any(e["clean"] == cleaned for e in entries):
-            continue
         add(text, album_id, "related")
 
     for text, album_id in SPECIAL_SONGS:
@@ -217,7 +216,14 @@ def main():
             display = normalize_title(row["Title"])
             if not display:
                 continue
-            add(display, album_id, "song")
+            base = re.sub(r"\s*\([^()]*\)", " ", display)
+            base = re.sub(r"\s+", " ", base).strip()
+            add(display, album_id, "song", convert_ones=True)
+            if base and base != display:
+                add(base, album_id, "song", convert_ones=True)
+            you_variant = re.sub(r"\byou\b(?!['\u2019])", lambda m: "u" if m.group(0).islower() else "U", display, flags=re.IGNORECASE)
+            if you_variant != display:
+                add(you_variant, album_id, "song", convert_ones=True)
             if word_count(display) >= 4:
                 abbr = abbreviate(display)
                 if abbr and not has_digit(abbr):

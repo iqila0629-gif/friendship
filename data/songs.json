@@ -179,7 +179,7 @@
       "original": "The Life of a Showgirl"
     },
     {
-      "id": "abbr:13",
+      "id": "song_album:13",
       "display": "rep",
       "clean": "REP",
       "counts": {
@@ -188,11 +188,11 @@
         "R": 1
       },
       "album": "reputation",
-      "source": "abbr",
+      "source": "song_album",
       "original": "reputation"
     },
     {
-      "id": "abbr:14",
+      "id": "song_album:14",
       "display": "folkmore",
       "clean": "FOLKMORE",
       "counts": {
@@ -205,11 +205,11 @@
         "R": 1
       },
       "album": "folklore",
-      "source": "abbr",
+      "source": "song_album",
       "original": "folklore"
     },
     {
-      "id": "abbr:15",
+      "id": "song_album:15",
       "display": "mid",
       "clean": "MID",
       "counts": {
@@ -218,11 +218,11 @@
         "M": 1
       },
       "album": "midnights",
-      "source": "abbr",
+      "source": "song_album",
       "original": "Midnights"
     },
     {
-      "id": "abbr:16",
+      "id": "song_album:16",
       "display": "ATW",
       "clean": "ATW",
       "counts": {
@@ -231,7 +231,7 @@
         "W": 1
       },
       "album": "red",
-      "source": "abbr",
+      "source": "song_album",
       "original": "All Too Well"
     },
     {
@@ -327,17 +327,36 @@
     },
     {
       "id": "related:22",
-      "display": "TS",
-      "clean": "TS",
+      "display": "Taylor Swift",
+      "clean": "TAYLORSWIFT",
       "counts": {
+        "A": 1,
+        "F": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
         "S": 1,
-        "T": 1
+        "T": 2,
+        "W": 1,
+        "Y": 1
       },
       "album": "taylor_swift",
       "source": "related"
     },
     {
       "id": "related:23",
+      "display": "TS",
+      "clean": "TS",
+      "counts": {
+        "S": 1,
+        "T": 1
+      },
+      "album": "other",
+      "source": "related"
+    },
+    {
+      "id": "related:24",
       "display": "eras tour",
       "clean": "ERASTOUR",
       "counts": {
@@ -353,7 +372,7 @@
       "source": "related"
     },
     {
-      "id": "related:24",
+      "id": "related:25",
       "display": "eras",
       "clean": "ERAS",
       "counts": {
@@ -366,7 +385,7 @@
       "source": "related"
     },
     {
-      "id": "song:25",
+      "id": "song:26",
       "display": "the I",
       "clean": "THEI",
       "counts": {
@@ -379,7 +398,44 @@
       "source": "song"
     },
     {
-      "id": "song:26",
+      "id": "song:27",
+      "display": "Welcome to NY",
+      "clean": "WELCOMETONY",
+      "counts": {
+        "C": 1,
+        "E": 2,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 2,
+        "T": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "song:28",
+      "display": "Vigilante Sxxt",
+      "clean": "VIGILANTESXXT",
+      "counts": {
+        "A": 1,
+        "E": 1,
+        "G": 1,
+        "I": 2,
+        "L": 1,
+        "N": 1,
+        "S": 1,
+        "T": 2,
+        "V": 1,
+        "X": 2
+      },
+      "album": "midnights",
+      "source": "song"
+    },
+    {
+      "id": "song:29",
       "display": "Tim McGraw",
       "clean": "TIMMCGRAW",
       "counts": {
@@ -396,7 +452,7 @@
       "source": "song"
     },
     {
-      "id": "song:27",
+      "id": "song:30",
       "display": "Picture to Burn",
       "clean": "PICTURETOBURN",
       "counts": {
@@ -415,7 +471,7 @@
       "source": "song"
     },
     {
-      "id": "song:28",
+      "id": "song:31",
       "display": "Teardrops On My Guitar",
       "clean": "TEARDROPSONMYGUITAR",
       "counts": {
@@ -438,7 +494,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:29",
+      "id": "abbr:32",
       "display": "TOMG",
       "clean": "TOMG",
       "counts": {
@@ -452,7 +508,7 @@
       "original": "Teardrops On My Guitar"
     },
     {
-      "id": "song:30",
+      "id": "song:33",
       "display": "A Place In This World",
       "clean": "APLACEINTHISWORLD",
       "counts": {
@@ -475,7 +531,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:31",
+      "id": "abbr:34",
       "display": "APITW",
       "clean": "APITW",
       "counts": {
@@ -490,7 +546,7 @@
       "original": "A Place In This World"
     },
     {
-      "id": "song:32",
+      "id": "song:35",
       "display": "Cold as You",
       "clean": "COLDASYOU",
       "counts": {
@@ -507,7 +563,23 @@
       "source": "song"
     },
     {
-      "id": "song:33",
+      "id": "song:36",
+      "display": "Cold as U",
+      "clean": "COLDASU",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 1,
+        "L": 1,
+        "O": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "song:37",
       "display": "The Outside",
       "clean": "THEOUTSIDE",
       "counts": {
@@ -524,7 +596,7 @@
       "source": "song"
     },
     {
-      "id": "song:34",
+      "id": "song:38",
       "display": "Tied Together with a Smile",
       "clean": "TIEDTOGETHERWITHASMILE",
       "counts": {
@@ -546,7 +618,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:35",
+      "id": "abbr:39",
       "display": "TTWAS",
       "clean": "TTWAS",
       "counts": {
@@ -560,7 +632,7 @@
       "original": "Tied Together with a Smile"
     },
     {
-      "id": "song:36",
+      "id": "song:40",
       "display": "Stay Beautiful",
       "clean": "STAYBEAUTIFUL",
       "counts": {
@@ -579,7 +651,7 @@
       "source": "song"
     },
     {
-      "id": "song:37",
+      "id": "song:41",
       "display": "Should've Said No",
       "clean": "SHOULDVESAIDNO",
       "counts": {
@@ -599,7 +671,7 @@
       "source": "song"
     },
     {
-      "id": "song:38",
+      "id": "song:42",
       "display": "Mary's Song (Oh My My My)",
       "clean": "MARYSSONGOHMYMYMY",
       "counts": {
@@ -617,7 +689,24 @@
       "source": "song"
     },
     {
-      "id": "abbr:39",
+      "id": "song:43",
+      "display": "Mary's Song",
+      "clean": "MARYSSONG",
+      "counts": {
+        "A": 1,
+        "G": 1,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "S": 2,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:44",
       "display": "MSOMMM",
       "clean": "MSOMMM",
       "counts": {
@@ -630,7 +719,7 @@
       "original": "Mary's Song (Oh My My My)"
     },
     {
-      "id": "song:40",
+      "id": "song:45",
       "display": "Our Song",
       "clean": "OURSONG",
       "counts": {
@@ -645,7 +734,7 @@
       "source": "song"
     },
     {
-      "id": "song:41",
+      "id": "song:46",
       "display": "I'm Only Me When I'm With You",
       "clean": "IMONLYMEWHENIMWITHYOU",
       "counts": {
@@ -665,7 +754,27 @@
       "source": "song"
     },
     {
-      "id": "abbr:42",
+      "id": "song:47",
+      "display": "I'm Only Me When I'm With U",
+      "clean": "IMONLYMEWHENIMWITHU",
+      "counts": {
+        "E": 2,
+        "H": 2,
+        "I": 3,
+        "L": 1,
+        "M": 3,
+        "N": 2,
+        "O": 1,
+        "T": 1,
+        "U": 1,
+        "W": 2,
+        "Y": 1
+      },
+      "album": "taylor_swift",
+      "source": "song"
+    },
+    {
+      "id": "abbr:48",
       "display": "IOMWIWY",
       "clean": "IOMWIWY",
       "counts": {
@@ -680,7 +789,7 @@
       "original": "I'm Only Me When I'm With You"
     },
     {
-      "id": "abbr:43",
+      "id": "abbr:49",
       "display": "IOMWIWU",
       "clean": "IOMWIWU",
       "counts": {
@@ -695,7 +804,7 @@
       "original": "I'm Only Me When I'm With You"
     },
     {
-      "id": "song:44",
+      "id": "song:50",
       "display": "Invisible",
       "clean": "INVISIBLE",
       "counts": {
@@ -711,7 +820,7 @@
       "source": "song"
     },
     {
-      "id": "song:45",
+      "id": "song:51",
       "display": "A Perfectly Good Heart",
       "clean": "APERFECTLYGOODHEART",
       "counts": {
@@ -733,7 +842,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:46",
+      "id": "abbr:52",
       "display": "APGH",
       "clean": "APGH",
       "counts": {
@@ -747,7 +856,7 @@
       "original": "A Perfectly Good Heart"
     },
     {
-      "id": "song:47",
+      "id": "song:53",
       "display": "Beautiful Eyes",
       "clean": "BEAUTIFULEYES",
       "counts": {
@@ -766,7 +875,7 @@
       "source": "song"
     },
     {
-      "id": "song:48",
+      "id": "song:54",
       "display": "I Heart ?",
       "clean": "IHEART",
       "counts": {
@@ -781,7 +890,7 @@
       "source": "song"
     },
     {
-      "id": "song:48",
+      "id": "song:54",
       "display": "Fearless",
       "clean": "FEARLESS",
       "counts": {
@@ -796,7 +905,7 @@
       "source": "song"
     },
     {
-      "id": "song:49",
+      "id": "song:55",
       "display": "Fifteen",
       "clean": "FIFTEEN",
       "counts": {
@@ -810,7 +919,7 @@
       "source": "song"
     },
     {
-      "id": "song:50",
+      "id": "song:56",
       "display": "Love Story",
       "clean": "LOVESTORY",
       "counts": {
@@ -827,7 +936,7 @@
       "source": "song"
     },
     {
-      "id": "song:51",
+      "id": "song:57",
       "display": "Hey Stephen",
       "clean": "HEYSTEPHEN",
       "counts": {
@@ -843,7 +952,7 @@
       "source": "song"
     },
     {
-      "id": "song:52",
+      "id": "song:58",
       "display": "White Horse",
       "clean": "WHITEHORSE",
       "counts": {
@@ -860,7 +969,7 @@
       "source": "song"
     },
     {
-      "id": "song:53",
+      "id": "song:59",
       "display": "You Belong With Me",
       "clean": "YOUBELONGWITHME",
       "counts": {
@@ -882,7 +991,28 @@
       "source": "song"
     },
     {
-      "id": "abbr:54",
+      "id": "song:60",
+      "display": "U Belong With Me",
+      "clean": "UBELONGWITHME",
+      "counts": {
+        "B": 1,
+        "E": 2,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:61",
       "display": "YBWM",
       "clean": "YBWM",
       "counts": {
@@ -896,7 +1026,7 @@
       "original": "You Belong With Me"
     },
     {
-      "id": "abbr:55",
+      "id": "abbr:62",
       "display": "UBWM",
       "clean": "UBWM",
       "counts": {
@@ -910,7 +1040,7 @@
       "original": "You Belong With Me"
     },
     {
-      "id": "song:56",
+      "id": "song:63",
       "display": "Breathe",
       "clean": "BREATHE",
       "counts": {
@@ -925,7 +1055,7 @@
       "source": "song"
     },
     {
-      "id": "song:57",
+      "id": "song:64",
       "display": "Tell Me Why",
       "clean": "TELLMEWHY",
       "counts": {
@@ -941,7 +1071,7 @@
       "source": "song"
     },
     {
-      "id": "song:58",
+      "id": "song:65",
       "display": "You're Not Sorry",
       "clean": "YOURENOTSORRY",
       "counts": {
@@ -958,7 +1088,7 @@
       "source": "song"
     },
     {
-      "id": "song:59",
+      "id": "song:66",
       "display": "The Way I Loved You",
       "clean": "THEWAYILOVEDYOU",
       "counts": {
@@ -979,7 +1109,28 @@
       "source": "song"
     },
     {
-      "id": "abbr:60",
+      "id": "song:67",
+      "display": "The Way I Loved U",
+      "clean": "THEWAYILOVEDU",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1,
+        "V": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:68",
       "display": "TWILY",
       "clean": "TWILY",
       "counts": {
@@ -994,7 +1145,7 @@
       "original": "The Way I Loved You"
     },
     {
-      "id": "abbr:61",
+      "id": "abbr:69",
       "display": "TWILU",
       "clean": "TWILU",
       "counts": {
@@ -1009,7 +1160,7 @@
       "original": "The Way I Loved You"
     },
     {
-      "id": "song:62",
+      "id": "song:70",
       "display": "Forever & Always",
       "clean": "FOREVERALWAYS",
       "counts": {
@@ -1028,7 +1179,7 @@
       "source": "song"
     },
     {
-      "id": "song:63",
+      "id": "song:71",
       "display": "The Best Day",
       "clean": "THEBESTDAY",
       "counts": {
@@ -1045,7 +1196,7 @@
       "source": "song"
     },
     {
-      "id": "song:64",
+      "id": "song:72",
       "display": "Change",
       "clean": "CHANGE",
       "counts": {
@@ -1060,7 +1211,7 @@
       "source": "song"
     },
     {
-      "id": "song:65",
+      "id": "song:73",
       "display": "Jump Then Fall",
       "clean": "JUMPTHENFALL",
       "counts": {
@@ -1080,7 +1231,7 @@
       "source": "song"
     },
     {
-      "id": "song:66",
+      "id": "song:74",
       "display": "Untouchable",
       "clean": "UNTOUCHABLE",
       "counts": {
@@ -1099,7 +1250,7 @@
       "source": "song"
     },
     {
-      "id": "song:67",
+      "id": "song:75",
       "display": "Come In With The Rain",
       "clean": "COMEINWITHTHERAIN",
       "counts": {
@@ -1119,7 +1270,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:68",
+      "id": "abbr:76",
       "display": "CIWTR",
       "clean": "CIWTR",
       "counts": {
@@ -1134,7 +1285,7 @@
       "original": "Come In With The Rain"
     },
     {
-      "id": "song:69",
+      "id": "song:77",
       "display": "Superstar",
       "clean": "SUPERSTAR",
       "counts": {
@@ -1150,7 +1301,7 @@
       "source": "song"
     },
     {
-      "id": "song:70",
+      "id": "song:78",
       "display": "The Other Side of the Door",
       "clean": "THEOTHERSIDEOFTHEDOOR",
       "counts": {
@@ -1168,7 +1319,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:71",
+      "id": "abbr:79",
       "display": "TOSOTD",
       "clean": "TOSOTD",
       "counts": {
@@ -1182,7 +1333,7 @@
       "original": "The Other Side of the Door"
     },
     {
-      "id": "song:72",
+      "id": "song:80",
       "display": "Today Was a Fairytale",
       "clean": "TODAYWASAFAIRYTALE",
       "counts": {
@@ -1203,7 +1354,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:73",
+      "id": "abbr:81",
       "display": "TWAF",
       "clean": "TWAF",
       "counts": {
@@ -1217,7 +1368,7 @@
       "original": "Today Was a Fairytale"
     },
     {
-      "id": "song:74",
+      "id": "song:82",
       "display": "You All Over Me",
       "clean": "YOUALLOVERME",
       "counts": {
@@ -1235,7 +1386,24 @@
       "source": "song"
     },
     {
-      "id": "abbr:75",
+      "id": "song:83",
+      "display": "U All Over Me",
+      "clean": "UALLOVERME",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "L": 2,
+        "M": 1,
+        "O": 1,
+        "R": 1,
+        "U": 1,
+        "V": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "abbr:84",
       "display": "YAOM",
       "clean": "YAOM",
       "counts": {
@@ -1249,7 +1417,7 @@
       "original": "You All Over Me"
     },
     {
-      "id": "abbr:76",
+      "id": "abbr:85",
       "display": "UAOM",
       "clean": "UAOM",
       "counts": {
@@ -1263,7 +1431,7 @@
       "original": "You All Over Me"
     },
     {
-      "id": "song:77",
+      "id": "song:86",
       "display": "Mr. Perfectly Fine",
       "clean": "MRPERFECTLYFINE",
       "counts": {
@@ -1283,7 +1451,7 @@
       "source": "song"
     },
     {
-      "id": "song:78",
+      "id": "song:87",
       "display": "We Were Happy",
       "clean": "WEWEREHAPPY",
       "counts": {
@@ -1299,7 +1467,7 @@
       "source": "song"
     },
     {
-      "id": "song:79",
+      "id": "song:88",
       "display": "That's When",
       "clean": "THATSWHEN",
       "counts": {
@@ -1315,7 +1483,7 @@
       "source": "song"
     },
     {
-      "id": "song:80",
+      "id": "song:89",
       "display": "Don't You",
       "clean": "DONTYOU",
       "counts": {
@@ -1330,7 +1498,21 @@
       "source": "song"
     },
     {
-      "id": "song:81",
+      "id": "song:90",
+      "display": "Don't U",
+      "clean": "DONTU",
+      "counts": {
+        "D": 1,
+        "N": 1,
+        "O": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "fearless",
+      "source": "song"
+    },
+    {
+      "id": "song:91",
       "display": "Bye Bye Baby",
       "clean": "BYEBYEBABY",
       "counts": {
@@ -1343,7 +1525,7 @@
       "source": "song"
     },
     {
-      "id": "song:82",
+      "id": "song:92",
       "display": "Mine",
       "clean": "MINE",
       "counts": {
@@ -1356,7 +1538,7 @@
       "source": "song"
     },
     {
-      "id": "song:83",
+      "id": "song:93",
       "display": "Sparks Fly",
       "clean": "SPARKSFLY",
       "counts": {
@@ -1373,7 +1555,7 @@
       "source": "song"
     },
     {
-      "id": "song:84",
+      "id": "song:94",
       "display": "Back To December",
       "clean": "BACKTODECEMBER",
       "counts": {
@@ -1392,7 +1574,7 @@
       "source": "song"
     },
     {
-      "id": "song:84",
+      "id": "song:94",
       "display": "Speak Now",
       "clean": "SPEAKNOW",
       "counts": {
@@ -1409,7 +1591,7 @@
       "source": "song"
     },
     {
-      "id": "song:85",
+      "id": "song:95",
       "display": "Dear John",
       "clean": "DEARJOHN",
       "counts": {
@@ -1426,7 +1608,7 @@
       "source": "song"
     },
     {
-      "id": "song:86",
+      "id": "song:96",
       "display": "Mean",
       "clean": "MEAN",
       "counts": {
@@ -1439,7 +1621,7 @@
       "source": "song"
     },
     {
-      "id": "song:87",
+      "id": "song:97",
       "display": "The Story Of Us",
       "clean": "THESTORYOFUS",
       "counts": {
@@ -1457,7 +1639,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:88",
+      "id": "abbr:98",
       "display": "TSOU",
       "clean": "TSOU",
       "counts": {
@@ -1471,7 +1653,7 @@
       "original": "The Story Of Us"
     },
     {
-      "id": "song:89",
+      "id": "song:99",
       "display": "Never Grow Up",
       "clean": "NEVERGROWUP",
       "counts": {
@@ -1489,7 +1671,7 @@
       "source": "song"
     },
     {
-      "id": "song:90",
+      "id": "song:100",
       "display": "Enchanted",
       "clean": "ENCHANTED",
       "counts": {
@@ -1505,7 +1687,7 @@
       "source": "song"
     },
     {
-      "id": "song:91",
+      "id": "song:101",
       "display": "Better Than Revenge",
       "clean": "BETTERTHANREVENGE",
       "counts": {
@@ -1523,7 +1705,7 @@
       "source": "song"
     },
     {
-      "id": "song:92",
+      "id": "song:102",
       "display": "Innocent",
       "clean": "INNOCENT",
       "counts": {
@@ -1538,7 +1720,7 @@
       "source": "song"
     },
     {
-      "id": "song:93",
+      "id": "song:103",
       "display": "Haunted",
       "clean": "HAUNTED",
       "counts": {
@@ -1554,7 +1736,7 @@
       "source": "song"
     },
     {
-      "id": "song:94",
+      "id": "song:104",
       "display": "Last Kiss",
       "clean": "LASTKISS",
       "counts": {
@@ -1569,7 +1751,7 @@
       "source": "song"
     },
     {
-      "id": "song:95",
+      "id": "song:105",
       "display": "Long Live",
       "clean": "LONGLIVE",
       "counts": {
@@ -1585,7 +1767,7 @@
       "source": "song"
     },
     {
-      "id": "song:96",
+      "id": "song:106",
       "display": "Ours",
       "clean": "OURS",
       "counts": {
@@ -1598,7 +1780,7 @@
       "source": "song"
     },
     {
-      "id": "song:97",
+      "id": "song:107",
       "display": "Superman",
       "clean": "SUPERMAN",
       "counts": {
@@ -1615,7 +1797,7 @@
       "source": "song"
     },
     {
-      "id": "song:98",
+      "id": "song:108",
       "display": "Electric Touch",
       "clean": "ELECTRICTOUCH",
       "counts": {
@@ -1633,7 +1815,7 @@
       "source": "song"
     },
     {
-      "id": "song:99",
+      "id": "song:109",
       "display": "When Emma Falls in Love",
       "clean": "WHENEMMAFALLSINLOVE",
       "counts": {
@@ -1654,7 +1836,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:100",
+      "id": "abbr:110",
       "display": "WEFIL",
       "clean": "WEFIL",
       "counts": {
@@ -1669,7 +1851,7 @@
       "original": "When Emma Falls in Love"
     },
     {
-      "id": "song:101",
+      "id": "song:111",
       "display": "I Can See You",
       "clean": "ICANSEEYOU",
       "counts": {
@@ -1687,7 +1869,23 @@
       "source": "song"
     },
     {
-      "id": "abbr:102",
+      "id": "song:112",
+      "display": "I Can See U",
+      "clean": "ICANSEEU",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 2,
+        "I": 1,
+        "N": 1,
+        "S": 1,
+        "U": 1
+      },
+      "album": "speak_now",
+      "source": "song"
+    },
+    {
+      "id": "abbr:113",
       "display": "ICSY",
       "clean": "ICSY",
       "counts": {
@@ -1701,7 +1899,7 @@
       "original": "I Can See You"
     },
     {
-      "id": "abbr:103",
+      "id": "abbr:114",
       "display": "ICSU",
       "clean": "ICSU",
       "counts": {
@@ -1715,7 +1913,7 @@
       "original": "I Can See You"
     },
     {
-      "id": "song:104",
+      "id": "song:115",
       "display": "Castles Crumbling",
       "clean": "CASTLESCRUMBLING",
       "counts": {
@@ -1737,7 +1935,7 @@
       "source": "song"
     },
     {
-      "id": "song:105",
+      "id": "song:116",
       "display": "Foolish One",
       "clean": "FOOLISHONE",
       "counts": {
@@ -1754,7 +1952,7 @@
       "source": "song"
     },
     {
-      "id": "song:106",
+      "id": "song:117",
       "display": "Timeless",
       "clean": "TIMELESS",
       "counts": {
@@ -1769,7 +1967,7 @@
       "source": "song"
     },
     {
-      "id": "song:107",
+      "id": "song:118",
       "display": "State of Grace",
       "clean": "STATEOFGRACE",
       "counts": {
@@ -1787,7 +1985,7 @@
       "source": "song"
     },
     {
-      "id": "song:107",
+      "id": "song:118",
       "display": "Red",
       "clean": "RED",
       "counts": {
@@ -1799,7 +1997,7 @@
       "source": "song"
     },
     {
-      "id": "song:108",
+      "id": "song:119",
       "display": "Treacherous",
       "clean": "TREACHEROUS",
       "counts": {
@@ -1817,7 +2015,7 @@
       "source": "song"
     },
     {
-      "id": "song:109",
+      "id": "song:120",
       "display": "I Knew You Were Trouble",
       "clean": "IKNEWYOUWERETROUBLE",
       "counts": {
@@ -1838,7 +2036,27 @@
       "source": "song"
     },
     {
-      "id": "abbr:110",
+      "id": "song:121",
+      "display": "I Knew U Were Trouble",
+      "clean": "IKNEWUWERETROUBLE",
+      "counts": {
+        "B": 1,
+        "E": 4,
+        "I": 1,
+        "K": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "R": 2,
+        "T": 1,
+        "U": 2,
+        "W": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:122",
       "display": "IKYWT",
       "clean": "IKYWT",
       "counts": {
@@ -1853,7 +2071,7 @@
       "original": "I Knew You Were Trouble"
     },
     {
-      "id": "abbr:111",
+      "id": "abbr:123",
       "display": "IKUWT",
       "clean": "IKUWT",
       "counts": {
@@ -1868,7 +2086,7 @@
       "original": "I Knew You Were Trouble"
     },
     {
-      "id": "song:112",
+      "id": "song:124",
       "display": "All Too Well",
       "clean": "ALLTOOWELL",
       "counts": {
@@ -1883,7 +2101,7 @@
       "source": "song"
     },
     {
-      "id": "song:113",
+      "id": "song:125",
       "display": "I Almost Do",
       "clean": "IALMOSTDO",
       "counts": {
@@ -1900,7 +2118,7 @@
       "source": "song"
     },
     {
-      "id": "song:114",
+      "id": "song:126",
       "display": "We Are Never Ever Getting Back Together",
       "clean": "WEARENEVEREVERGETTINGBACKTOGETHER",
       "counts": {
@@ -1923,7 +2141,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:115",
+      "id": "abbr:127",
       "display": "WANEGBT",
       "clean": "WANEGBT",
       "counts": {
@@ -1940,7 +2158,7 @@
       "original": "We Are Never Ever Getting Back Together"
     },
     {
-      "id": "song:116",
+      "id": "song:128",
       "display": "Stay Stay Stay",
       "clean": "STAYSTAYSTAY",
       "counts": {
@@ -1953,7 +2171,7 @@
       "source": "song"
     },
     {
-      "id": "song:117",
+      "id": "song:129",
       "display": "The Last Time",
       "clean": "THELASTTIME",
       "counts": {
@@ -1970,7 +2188,7 @@
       "source": "song"
     },
     {
-      "id": "song:118",
+      "id": "song:130",
       "display": "Holy Ground",
       "clean": "HOLYGROUND",
       "counts": {
@@ -1988,7 +2206,7 @@
       "source": "song"
     },
     {
-      "id": "song:119",
+      "id": "song:131",
       "display": "Sad Beautiful Tragic",
       "clean": "SADBEAUTIFULTRAGIC",
       "counts": {
@@ -2010,7 +2228,7 @@
       "source": "song"
     },
     {
-      "id": "song:120",
+      "id": "song:132",
       "display": "The Lucky One",
       "clean": "THELUCKYONE",
       "counts": {
@@ -2029,7 +2247,7 @@
       "source": "song"
     },
     {
-      "id": "song:121",
+      "id": "song:133",
       "display": "Everything Has Changed",
       "clean": "EVERYTHINGHASCHANGED",
       "counts": {
@@ -2051,7 +2269,7 @@
       "source": "song"
     },
     {
-      "id": "song:122",
+      "id": "song:134",
       "display": "Starlight",
       "clean": "STARLIGHT",
       "counts": {
@@ -2068,7 +2286,7 @@
       "source": "song"
     },
     {
-      "id": "song:123",
+      "id": "song:135",
       "display": "Begin Again",
       "clean": "BEGINAGAIN",
       "counts": {
@@ -2083,7 +2301,7 @@
       "source": "song"
     },
     {
-      "id": "song:124",
+      "id": "song:136",
       "display": "The Moment I Knew",
       "clean": "THEMOMENTIKNEW",
       "counts": {
@@ -2101,7 +2319,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:125",
+      "id": "abbr:137",
       "display": "TMIK",
       "clean": "TMIK",
       "counts": {
@@ -2115,7 +2333,7 @@
       "original": "The Moment I Knew"
     },
     {
-      "id": "song:126",
+      "id": "song:138",
       "display": "Come Back...Be Here",
       "clean": "COMEBACKBEHERE",
       "counts": {
@@ -2133,7 +2351,7 @@
       "source": "song"
     },
     {
-      "id": "song:127",
+      "id": "song:139",
       "display": "Girl At Home",
       "clean": "GIRLATHOME",
       "counts": {
@@ -2152,7 +2370,7 @@
       "source": "song"
     },
     {
-      "id": "song:128",
+      "id": "song:140",
       "display": "Ronan",
       "clean": "RONAN",
       "counts": {
@@ -2165,7 +2383,7 @@
       "source": "song"
     },
     {
-      "id": "song:129",
+      "id": "song:141",
       "display": "Better Man",
       "clean": "BETTERMAN",
       "counts": {
@@ -2181,7 +2399,7 @@
       "source": "song"
     },
     {
-      "id": "song:130",
+      "id": "song:142",
       "display": "Nothing New",
       "clean": "NOTHINGNEW",
       "counts": {
@@ -2198,7 +2416,7 @@
       "source": "song"
     },
     {
-      "id": "song:131",
+      "id": "song:143",
       "display": "Babe",
       "clean": "BABE",
       "counts": {
@@ -2210,7 +2428,7 @@
       "source": "song"
     },
     {
-      "id": "song:132",
+      "id": "song:144",
       "display": "Message In A Bottle",
       "clean": "MESSAGEINABOTTLE",
       "counts": {
@@ -2230,7 +2448,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:133",
+      "id": "abbr:145",
       "display": "MIAB",
       "clean": "MIAB",
       "counts": {
@@ -2244,7 +2462,7 @@
       "original": "Message In A Bottle"
     },
     {
-      "id": "song:134",
+      "id": "song:146",
       "display": "I Bet You Think About Me",
       "clean": "IBETYOUTHINKABOUTME",
       "counts": {
@@ -2265,7 +2483,27 @@
       "source": "song"
     },
     {
-      "id": "abbr:135",
+      "id": "song:147",
+      "display": "I Bet U Think About Me",
+      "clean": "IBETUTHINKABOUTME",
+      "counts": {
+        "A": 1,
+        "B": 2,
+        "E": 2,
+        "H": 1,
+        "I": 2,
+        "K": 1,
+        "M": 1,
+        "N": 1,
+        "O": 1,
+        "T": 3,
+        "U": 2
+      },
+      "album": "red",
+      "source": "song"
+    },
+    {
+      "id": "abbr:148",
       "display": "IBYTAM",
       "clean": "IBYTAM",
       "counts": {
@@ -2281,7 +2519,7 @@
       "original": "I Bet You Think About Me"
     },
     {
-      "id": "abbr:136",
+      "id": "abbr:149",
       "display": "IBUTAM",
       "clean": "IBUTAM",
       "counts": {
@@ -2297,7 +2535,7 @@
       "original": "I Bet You Think About Me"
     },
     {
-      "id": "song:137",
+      "id": "song:150",
       "display": "Forever Winter",
       "clean": "FOREVERWINTER",
       "counts": {
@@ -2315,7 +2553,7 @@
       "source": "song"
     },
     {
-      "id": "song:138",
+      "id": "song:151",
       "display": "Run",
       "clean": "RUN",
       "counts": {
@@ -2327,7 +2565,7 @@
       "source": "song"
     },
     {
-      "id": "song:139",
+      "id": "song:152",
       "display": "The Very First Night",
       "clean": "THEVERYFIRSTNIGHT",
       "counts": {
@@ -2347,7 +2585,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:140",
+      "id": "abbr:153",
       "display": "TVFN",
       "clean": "TVFN",
       "counts": {
@@ -2361,7 +2599,7 @@
       "original": "The Very First Night"
     },
     {
-      "id": "song:141",
+      "id": "song:154",
       "display": "Welcome To New York",
       "clean": "WELCOMETONEWYORK",
       "counts": {
@@ -2381,7 +2619,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:142",
+      "id": "abbr:155",
       "display": "WTNY",
       "clean": "WTNY",
       "counts": {
@@ -2395,7 +2633,7 @@
       "original": "Welcome To New York"
     },
     {
-      "id": "song:143",
+      "id": "song:156",
       "display": "Blank Space",
       "clean": "BLANKSPACE",
       "counts": {
@@ -2413,7 +2651,7 @@
       "source": "song"
     },
     {
-      "id": "song:144",
+      "id": "song:157",
       "display": "Style",
       "clean": "STYLE",
       "counts": {
@@ -2427,7 +2665,7 @@
       "source": "song"
     },
     {
-      "id": "song:145",
+      "id": "song:158",
       "display": "Out Of The Woods",
       "clean": "OUTOFTHEWOODS",
       "counts": {
@@ -2445,7 +2683,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:146",
+      "id": "abbr:159",
       "display": "OOTW",
       "clean": "OOTW",
       "counts": {
@@ -2458,7 +2696,7 @@
       "original": "Out Of The Woods"
     },
     {
-      "id": "song:147",
+      "id": "song:160",
       "display": "All You Had To Do Was Stay",
       "clean": "ALLYOUHADTODOWASSTAY",
       "counts": {
@@ -2477,7 +2715,26 @@
       "source": "song"
     },
     {
-      "id": "abbr:148",
+      "id": "song:161",
+      "display": "All U Had To Do Was Stay",
+      "clean": "ALLUHADTODOWASSTAY",
+      "counts": {
+        "A": 4,
+        "D": 2,
+        "H": 1,
+        "L": 2,
+        "O": 2,
+        "S": 2,
+        "T": 2,
+        "U": 1,
+        "W": 1,
+        "Y": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:162",
       "display": "AYHTDWS",
       "clean": "AYHTDWS",
       "counts": {
@@ -2494,7 +2751,7 @@
       "original": "All You Had To Do Was Stay"
     },
     {
-      "id": "abbr:149",
+      "id": "abbr:163",
       "display": "AUHTDWS",
       "clean": "AUHTDWS",
       "counts": {
@@ -2511,7 +2768,7 @@
       "original": "All You Had To Do Was Stay"
     },
     {
-      "id": "song:150",
+      "id": "song:164",
       "display": "Shake It Off",
       "clean": "SHAKEITOFF",
       "counts": {
@@ -2529,7 +2786,7 @@
       "source": "song"
     },
     {
-      "id": "song:151",
+      "id": "song:165",
       "display": "I Wish You Would",
       "clean": "IWISHYOUWOULD",
       "counts": {
@@ -2547,7 +2804,24 @@
       "source": "song"
     },
     {
-      "id": "abbr:152",
+      "id": "song:166",
+      "display": "I Wish U Would",
+      "clean": "IWISHUWOULD",
+      "counts": {
+        "D": 1,
+        "H": 1,
+        "I": 2,
+        "L": 1,
+        "O": 1,
+        "S": 1,
+        "U": 2,
+        "W": 2
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:167",
       "display": "IWYW",
       "clean": "IWYW",
       "counts": {
@@ -2560,7 +2834,7 @@
       "original": "I Wish You Would"
     },
     {
-      "id": "abbr:153",
+      "id": "abbr:168",
       "display": "IWUW",
       "clean": "IWUW",
       "counts": {
@@ -2573,7 +2847,7 @@
       "original": "I Wish You Would"
     },
     {
-      "id": "song:154",
+      "id": "song:169",
       "display": "Bad Blood",
       "clean": "BADBLOOD",
       "counts": {
@@ -2587,7 +2861,7 @@
       "source": "song"
     },
     {
-      "id": "song:155",
+      "id": "song:170",
       "display": "Wildest Dreams",
       "clean": "WILDESTDREAMS",
       "counts": {
@@ -2606,7 +2880,7 @@
       "source": "song"
     },
     {
-      "id": "song:156",
+      "id": "song:171",
       "display": "How You Get The Girl",
       "clean": "HOWYOUGETTHEGIRL",
       "counts": {
@@ -2626,7 +2900,26 @@
       "source": "song"
     },
     {
-      "id": "abbr:157",
+      "id": "song:172",
+      "display": "How U Get The Girl",
+      "clean": "HOWUGETTHEGIRL",
+      "counts": {
+        "E": 2,
+        "G": 2,
+        "H": 2,
+        "I": 1,
+        "L": 1,
+        "O": 1,
+        "R": 1,
+        "T": 2,
+        "U": 1,
+        "W": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:173",
       "display": "HYGTG",
       "clean": "HYGTG",
       "counts": {
@@ -2640,7 +2933,7 @@
       "original": "How You Get The Girl"
     },
     {
-      "id": "abbr:158",
+      "id": "abbr:174",
       "display": "HUGTG",
       "clean": "HUGTG",
       "counts": {
@@ -2654,7 +2947,7 @@
       "original": "How You Get The Girl"
     },
     {
-      "id": "song:159",
+      "id": "song:175",
       "display": "This Love",
       "clean": "THISLOVE",
       "counts": {
@@ -2671,7 +2964,7 @@
       "source": "song"
     },
     {
-      "id": "song:160",
+      "id": "song:176",
       "display": "I Know Places",
       "clean": "IKNOWPLACES",
       "counts": {
@@ -2691,7 +2984,7 @@
       "source": "song"
     },
     {
-      "id": "song:161",
+      "id": "song:177",
       "display": "Clean",
       "clean": "CLEAN",
       "counts": {
@@ -2705,7 +2998,7 @@
       "source": "song"
     },
     {
-      "id": "song:162",
+      "id": "song:178",
       "display": "Wonderland",
       "clean": "WONDERLAND",
       "counts": {
@@ -2722,7 +3015,7 @@
       "source": "song"
     },
     {
-      "id": "song:163",
+      "id": "song:179",
       "display": "You Are In Love",
       "clean": "YOUAREINLOVE",
       "counts": {
@@ -2741,7 +3034,25 @@
       "source": "song"
     },
     {
-      "id": "abbr:164",
+      "id": "song:180",
+      "display": "U Are In Love",
+      "clean": "UAREINLOVE",
+      "counts": {
+        "A": 1,
+        "E": 2,
+        "I": 1,
+        "L": 1,
+        "N": 1,
+        "O": 1,
+        "R": 1,
+        "U": 1,
+        "V": 1
+      },
+      "album": "1989",
+      "source": "song"
+    },
+    {
+      "id": "abbr:181",
       "display": "YAIL",
       "clean": "YAIL",
       "counts": {
@@ -2755,7 +3066,7 @@
       "original": "You Are In Love"
     },
     {
-      "id": "abbr:165",
+      "id": "abbr:182",
       "display": "UAIL",
       "clean": "UAIL",
       "counts": {
@@ -2769,7 +3080,7 @@
       "original": "You Are In Love"
     },
     {
-      "id": "song:166",
+      "id": "song:183",
       "display": "New Romantics",
       "clean": "NEWROMANTICS",
       "counts": {
@@ -2789,7 +3100,7 @@
       "source": "song"
     },
     {
-      "id": "song:167",
+      "id": "song:184",
       "display": "\"Slut!\"",
       "clean": "SLUT",
       "counts": {
@@ -2802,7 +3113,7 @@
       "source": "song"
     },
     {
-      "id": "song:168",
+      "id": "song:185",
       "display": "Say Don't Go",
       "clean": "SAYDONTGO",
       "counts": {
@@ -2819,7 +3130,7 @@
       "source": "song"
     },
     {
-      "id": "song:169",
+      "id": "song:186",
       "display": "Now That We Don't Talk",
       "clean": "NOWTHATWEDONTTALK",
       "counts": {
@@ -2838,7 +3149,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:170",
+      "id": "abbr:187",
       "display": "NTWDT",
       "clean": "NTWDT",
       "counts": {
@@ -2852,7 +3163,7 @@
       "original": "Now That We Don't Talk"
     },
     {
-      "id": "song:171",
+      "id": "song:188",
       "display": "Suburban Legends",
       "clean": "SUBURBANLEGENDS",
       "counts": {
@@ -2871,7 +3182,7 @@
       "source": "song"
     },
     {
-      "id": "song:172",
+      "id": "song:189",
       "display": "Is It Over Now?",
       "clean": "ISITOVERNOW",
       "counts": {
@@ -2889,7 +3200,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:173",
+      "id": "abbr:190",
       "display": "IION",
       "clean": "IION",
       "counts": {
@@ -2902,7 +3213,7 @@
       "original": "Is It Over Now?"
     },
     {
-      "id": "song:174",
+      "id": "song:191",
       "display": "Sweeter Than Fiction",
       "clean": "SWEETERTHANFICTION",
       "counts": {
@@ -2923,7 +3234,7 @@
       "source": "song"
     },
     {
-      "id": "song:175",
+      "id": "song:192",
       "display": "...Ready for It?",
       "clean": "READYFORIT",
       "counts": {
@@ -2941,7 +3252,7 @@
       "source": "song"
     },
     {
-      "id": "song:176",
+      "id": "song:193",
       "display": "End Game",
       "clean": "ENDGAME",
       "counts": {
@@ -2956,7 +3267,7 @@
       "source": "song"
     },
     {
-      "id": "song:177",
+      "id": "song:194",
       "display": "I Did Something Bad",
       "clean": "IDIDSOMETHINGBAD",
       "counts": {
@@ -2977,7 +3288,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:178",
+      "id": "abbr:195",
       "display": "IDSB",
       "clean": "IDSB",
       "counts": {
@@ -2991,7 +3302,7 @@
       "original": "I Did Something Bad"
     },
     {
-      "id": "song:179",
+      "id": "song:196",
       "display": "Don't Blame Me",
       "clean": "DONTBLAMEME",
       "counts": {
@@ -3009,7 +3320,7 @@
       "source": "song"
     },
     {
-      "id": "song:180",
+      "id": "song:197",
       "display": "Delicate",
       "clean": "DELICATE",
       "counts": {
@@ -3025,7 +3336,7 @@
       "source": "song"
     },
     {
-      "id": "song:181",
+      "id": "song:198",
       "display": "Look What You Made Me Do",
       "clean": "LOOKWHATYOUMADEMEDO",
       "counts": {
@@ -3046,7 +3357,27 @@
       "source": "song"
     },
     {
-      "id": "abbr:182",
+      "id": "song:199",
+      "display": "Look What U Made Me Do",
+      "clean": "LOOKWHATUMADEMEDO",
+      "counts": {
+        "A": 2,
+        "D": 2,
+        "E": 2,
+        "H": 1,
+        "K": 1,
+        "L": 1,
+        "M": 2,
+        "O": 3,
+        "T": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:200",
       "display": "LWYMMD",
       "clean": "LWYMMD",
       "counts": {
@@ -3061,7 +3392,7 @@
       "original": "Look What You Made Me Do"
     },
     {
-      "id": "abbr:183",
+      "id": "abbr:201",
       "display": "LWUMMD",
       "clean": "LWUMMD",
       "counts": {
@@ -3076,7 +3407,7 @@
       "original": "Look What You Made Me Do"
     },
     {
-      "id": "song:184",
+      "id": "song:202",
       "display": "So It Goes...",
       "clean": "SOITGOES",
       "counts": {
@@ -3091,7 +3422,7 @@
       "source": "song"
     },
     {
-      "id": "song:185",
+      "id": "song:203",
       "display": "Gorgeous",
       "clean": "GORGEOUS",
       "counts": {
@@ -3106,7 +3437,7 @@
       "source": "song"
     },
     {
-      "id": "song:186",
+      "id": "song:204",
       "display": "Getaway Car",
       "clean": "GETAWAYCAR",
       "counts": {
@@ -3123,7 +3454,7 @@
       "source": "song"
     },
     {
-      "id": "song:187",
+      "id": "song:205",
       "display": "King of My Heart",
       "clean": "KINGOFMYHEART",
       "counts": {
@@ -3145,7 +3476,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:188",
+      "id": "abbr:206",
       "display": "KOMH",
       "clean": "KOMH",
       "counts": {
@@ -3159,7 +3490,7 @@
       "original": "King of My Heart"
     },
     {
-      "id": "song:189",
+      "id": "song:207",
       "display": "Dancing With Our Hands Tied",
       "clean": "DANCINGWITHOURHANDSTIED",
       "counts": {
@@ -3182,7 +3513,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:190",
+      "id": "abbr:208",
       "display": "DWOHT",
       "clean": "DWOHT",
       "counts": {
@@ -3197,7 +3528,7 @@
       "original": "Dancing With Our Hands Tied"
     },
     {
-      "id": "song:191",
+      "id": "song:209",
       "display": "Dress",
       "clean": "DRESS",
       "counts": {
@@ -3210,7 +3541,7 @@
       "source": "song"
     },
     {
-      "id": "song:192",
+      "id": "song:210",
       "display": "This Is Why We Can't Have Nice Things",
       "clean": "THISISWHYWECANTHAVENICETHINGS",
       "counts": {
@@ -3231,7 +3562,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:193",
+      "id": "abbr:211",
       "display": "TIWWCHNT",
       "clean": "TIWWCHNT",
       "counts": {
@@ -3247,7 +3578,7 @@
       "original": "This Is Why We Can't Have Nice Things"
     },
     {
-      "id": "song:194",
+      "id": "song:212",
       "display": "Call It What You Want",
       "clean": "CALLITWHATYOUWANT",
       "counts": {
@@ -3267,7 +3598,25 @@
       "source": "song"
     },
     {
-      "id": "abbr:195",
+      "id": "song:213",
+      "display": "Call It What U Want",
+      "clean": "CALLITWHATUWANT",
+      "counts": {
+        "A": 3,
+        "C": 1,
+        "H": 1,
+        "I": 1,
+        "L": 2,
+        "N": 1,
+        "T": 3,
+        "U": 1,
+        "W": 2
+      },
+      "album": "reputation",
+      "source": "song"
+    },
+    {
+      "id": "abbr:214",
       "display": "CIWYW",
       "clean": "CIWYW",
       "counts": {
@@ -3281,7 +3630,7 @@
       "original": "Call It What You Want"
     },
     {
-      "id": "abbr:196",
+      "id": "abbr:215",
       "display": "CIWUW",
       "clean": "CIWUW",
       "counts": {
@@ -3295,7 +3644,7 @@
       "original": "Call It What You Want"
     },
     {
-      "id": "song:197",
+      "id": "song:216",
       "display": "New Year's Day",
       "clean": "NEWYEARSDAY",
       "counts": {
@@ -3312,7 +3661,7 @@
       "source": "song"
     },
     {
-      "id": "song:198",
+      "id": "song:217",
       "display": "I Forgot That You Existed",
       "clean": "IFORGOTTHATYOUEXISTED",
       "counts": {
@@ -3335,7 +3684,29 @@
       "source": "song"
     },
     {
-      "id": "abbr:199",
+      "id": "song:218",
+      "display": "I Forgot That U Existed",
+      "clean": "IFORGOTTHATUEXISTED",
+      "counts": {
+        "A": 1,
+        "D": 1,
+        "E": 2,
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 2,
+        "O": 2,
+        "R": 1,
+        "S": 1,
+        "T": 4,
+        "U": 1,
+        "X": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:219",
       "display": "IFTYE",
       "clean": "IFTYE",
       "counts": {
@@ -3350,7 +3721,7 @@
       "original": "I Forgot That You Existed"
     },
     {
-      "id": "abbr:200",
+      "id": "abbr:220",
       "display": "IFTUE",
       "clean": "IFTUE",
       "counts": {
@@ -3365,7 +3736,7 @@
       "original": "I Forgot That You Existed"
     },
     {
-      "id": "song:201",
+      "id": "song:221",
       "display": "Cruel Summer",
       "clean": "CRUELSUMMER",
       "counts": {
@@ -3381,7 +3752,7 @@
       "source": "song"
     },
     {
-      "id": "song:201",
+      "id": "song:221",
       "display": "Lover",
       "clean": "LOVER",
       "counts": {
@@ -3395,7 +3766,7 @@
       "source": "song"
     },
     {
-      "id": "song:202",
+      "id": "song:222",
       "display": "The Man",
       "clean": "THEMAN",
       "counts": {
@@ -3410,7 +3781,7 @@
       "source": "song"
     },
     {
-      "id": "song:203",
+      "id": "song:223",
       "display": "The Archer",
       "clean": "THEARCHER",
       "counts": {
@@ -3425,7 +3796,7 @@
       "source": "song"
     },
     {
-      "id": "song:204",
+      "id": "song:224",
       "display": "I Think He Knows",
       "clean": "ITHINKHEKNOWS",
       "counts": {
@@ -3443,7 +3814,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:205",
+      "id": "abbr:225",
       "display": "ITHK",
       "clean": "ITHK",
       "counts": {
@@ -3457,7 +3828,7 @@
       "original": "I Think He Knows"
     },
     {
-      "id": "song:206",
+      "id": "song:226",
       "display": "Miss Americana & The Heartbreak Prince",
       "clean": "MISSAMERICANATHEHEARTBREAKPRINCE",
       "counts": {
@@ -3479,7 +3850,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:207",
+      "id": "abbr:227",
       "display": "MATHP",
       "clean": "MATHP",
       "counts": {
@@ -3494,7 +3865,7 @@
       "original": "Miss Americana & The Heartbreak Prince"
     },
     {
-      "id": "song:208",
+      "id": "song:228",
       "display": "Paper Rings",
       "clean": "PAPERRINGS",
       "counts": {
@@ -3511,7 +3882,7 @@
       "source": "song"
     },
     {
-      "id": "song:209",
+      "id": "song:229",
       "display": "Cornelia Street",
       "clean": "CORNELIASTREET",
       "counts": {
@@ -3530,7 +3901,7 @@
       "source": "song"
     },
     {
-      "id": "song:210",
+      "id": "song:230",
       "display": "Death By A Thousand Cuts",
       "clean": "DEATHBYATHOUSANDCUTS",
       "counts": {
@@ -3551,7 +3922,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:211",
+      "id": "abbr:231",
       "display": "DBATC",
       "clean": "DBATC",
       "counts": {
@@ -3566,7 +3937,7 @@
       "original": "Death By A Thousand Cuts"
     },
     {
-      "id": "song:212",
+      "id": "song:232",
       "display": "London Boy",
       "clean": "LONDONBOY",
       "counts": {
@@ -3581,7 +3952,7 @@
       "source": "song"
     },
     {
-      "id": "song:213",
+      "id": "song:233",
       "display": "Soon You'll Get Better",
       "clean": "SOONYOULLGETBETTER",
       "counts": {
@@ -3601,7 +3972,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:214",
+      "id": "abbr:234",
       "display": "SYGB",
       "clean": "SYGB",
       "counts": {
@@ -3615,7 +3986,7 @@
       "original": "Soon You'll Get Better"
     },
     {
-      "id": "song:215",
+      "id": "song:235",
       "display": "False God",
       "clean": "FALSEGOD",
       "counts": {
@@ -3632,7 +4003,7 @@
       "source": "song"
     },
     {
-      "id": "song:216",
+      "id": "song:236",
       "display": "You Need To Calm Down",
       "clean": "YOUNEEDTOCALMDOWN",
       "counts": {
@@ -3653,7 +4024,27 @@
       "source": "song"
     },
     {
-      "id": "abbr:217",
+      "id": "song:237",
+      "display": "U Need To Calm Down",
+      "clean": "UNEEDTOCALMDOWN",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "D": 2,
+        "E": 2,
+        "L": 1,
+        "M": 1,
+        "N": 2,
+        "O": 2,
+        "T": 1,
+        "U": 1,
+        "W": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:238",
       "display": "YNTCD",
       "clean": "YNTCD",
       "counts": {
@@ -3668,7 +4059,7 @@
       "original": "You Need To Calm Down"
     },
     {
-      "id": "abbr:218",
+      "id": "abbr:239",
       "display": "UNTCD",
       "clean": "UNTCD",
       "counts": {
@@ -3683,7 +4074,7 @@
       "original": "You Need To Calm Down"
     },
     {
-      "id": "song:219",
+      "id": "song:240",
       "display": "Afterglow",
       "clean": "AFTERGLOW",
       "counts": {
@@ -3701,7 +4092,7 @@
       "source": "song"
     },
     {
-      "id": "song:220",
+      "id": "song:241",
       "display": "ME!",
       "clean": "ME",
       "counts": {
@@ -3712,7 +4103,7 @@
       "source": "song"
     },
     {
-      "id": "song:221",
+      "id": "song:242",
       "display": "It's Nice To Have A Friend",
       "clean": "ITSNICETOHAVEAFRIEND",
       "counts": {
@@ -3734,7 +4125,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:222",
+      "id": "abbr:243",
       "display": "INTHAF",
       "clean": "INTHAF",
       "counts": {
@@ -3750,7 +4141,7 @@
       "original": "It's Nice To Have A Friend"
     },
     {
-      "id": "song:223",
+      "id": "song:244",
       "display": "Daylight",
       "clean": "DAYLIGHT",
       "counts": {
@@ -3767,7 +4158,7 @@
       "source": "song"
     },
     {
-      "id": "song:224",
+      "id": "song:245",
       "display": "All Of The Girls You Loved Before",
       "clean": "ALLOFTHEGIRLSYOULOVEDBEFORE",
       "counts": {
@@ -3792,7 +4183,31 @@
       "source": "song"
     },
     {
-      "id": "abbr:225",
+      "id": "song:246",
+      "display": "All Of The Girls U Loved Before",
+      "clean": "ALLOFTHEGIRLSULOVEDBEFORE",
+      "counts": {
+        "A": 1,
+        "B": 1,
+        "D": 1,
+        "E": 4,
+        "F": 2,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "L": 4,
+        "O": 3,
+        "R": 2,
+        "S": 1,
+        "T": 1,
+        "U": 1,
+        "V": 1
+      },
+      "album": "lover",
+      "source": "song"
+    },
+    {
+      "id": "abbr:247",
       "display": "AOTGYLB",
       "clean": "AOTGYLB",
       "counts": {
@@ -3809,7 +4224,7 @@
       "original": "All Of The Girls You Loved Before"
     },
     {
-      "id": "abbr:226",
+      "id": "abbr:248",
       "display": "AOTGULB",
       "clean": "AOTGULB",
       "counts": {
@@ -3826,20 +4241,7 @@
       "original": "All Of The Girls You Loved Before"
     },
     {
-      "id": "song:227",
-      "display": "the 1",
-      "clean": "THE",
-      "counts": {
-        "E": 1,
-        "H": 1,
-        "I": 1,
-        "T": 1
-      },
-      "album": "folklore",
-      "source": "song"
-    },
-    {
-      "id": "song:228",
+      "id": "song:249",
       "display": "cardigan",
       "clean": "CARDIGAN",
       "counts": {
@@ -3855,7 +4257,7 @@
       "source": "song"
     },
     {
-      "id": "song:229",
+      "id": "song:250",
       "display": "the last great american dynasty",
       "clean": "THELASTGREATAMERICANDYNASTY",
       "counts": {
@@ -3878,7 +4280,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:230",
+      "id": "abbr:251",
       "display": "TLGAD",
       "clean": "TLGAD",
       "counts": {
@@ -3893,7 +4295,7 @@
       "original": "the last great american dynasty"
     },
     {
-      "id": "song:231",
+      "id": "song:252",
       "display": "exile",
       "clean": "EXILE",
       "counts": {
@@ -3906,7 +4308,7 @@
       "source": "song"
     },
     {
-      "id": "song:232",
+      "id": "song:253",
       "display": "my tears ricochet",
       "clean": "MYTEARSRICOCHET",
       "counts": {
@@ -3926,7 +4328,7 @@
       "source": "song"
     },
     {
-      "id": "song:233",
+      "id": "song:254",
       "display": "mirrorball",
       "clean": "MIRRORBALL",
       "counts": {
@@ -3942,7 +4344,7 @@
       "source": "song"
     },
     {
-      "id": "song:234",
+      "id": "song:255",
       "display": "seven",
       "clean": "SEVEN",
       "counts": {
@@ -3955,7 +4357,7 @@
       "source": "song"
     },
     {
-      "id": "song:235",
+      "id": "song:256",
       "display": "august",
       "clean": "AUGUST",
       "counts": {
@@ -3969,7 +4371,7 @@
       "source": "song"
     },
     {
-      "id": "song:236",
+      "id": "song:257",
       "display": "this is me trying",
       "clean": "THISISMETRYING",
       "counts": {
@@ -3988,7 +4390,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:237",
+      "id": "abbr:258",
       "display": "TIMT",
       "clean": "TIMT",
       "counts": {
@@ -4001,7 +4403,7 @@
       "original": "this is me trying"
     },
     {
-      "id": "song:238",
+      "id": "song:259",
       "display": "illicit affairs",
       "clean": "ILLICITAFFAIRS",
       "counts": {
@@ -4018,7 +4420,7 @@
       "source": "song"
     },
     {
-      "id": "song:239",
+      "id": "song:260",
       "display": "invisible string",
       "clean": "INVISIBLESTRING",
       "counts": {
@@ -4037,7 +4439,7 @@
       "source": "song"
     },
     {
-      "id": "song:240",
+      "id": "song:261",
       "display": "mad woman",
       "clean": "MADWOMAN",
       "counts": {
@@ -4052,7 +4454,7 @@
       "source": "song"
     },
     {
-      "id": "song:241",
+      "id": "song:262",
       "display": "epiphany",
       "clean": "EPIPHANY",
       "counts": {
@@ -4068,7 +4470,7 @@
       "source": "song"
     },
     {
-      "id": "song:242",
+      "id": "song:263",
       "display": "betty",
       "clean": "BETTY",
       "counts": {
@@ -4081,7 +4483,7 @@
       "source": "song"
     },
     {
-      "id": "song:243",
+      "id": "song:264",
       "display": "peace",
       "clean": "PEACE",
       "counts": {
@@ -4094,7 +4496,7 @@
       "source": "song"
     },
     {
-      "id": "song:244",
+      "id": "song:265",
       "display": "hoax",
       "clean": "HOAX",
       "counts": {
@@ -4107,7 +4509,7 @@
       "source": "song"
     },
     {
-      "id": "song:245",
+      "id": "song:266",
       "display": "the lakes",
       "clean": "THELAKES",
       "counts": {
@@ -4123,7 +4525,7 @@
       "source": "song"
     },
     {
-      "id": "song:246",
+      "id": "song:267",
       "display": "willow",
       "clean": "WILLOW",
       "counts": {
@@ -4136,7 +4538,7 @@
       "source": "song"
     },
     {
-      "id": "song:247",
+      "id": "song:268",
       "display": "champagne problems",
       "clean": "CHAMPAGNEPROBLEMS",
       "counts": {
@@ -4158,7 +4560,7 @@
       "source": "song"
     },
     {
-      "id": "song:248",
+      "id": "song:269",
       "display": "gold rush",
       "clean": "GOLDRUSH",
       "counts": {
@@ -4175,7 +4577,7 @@
       "source": "song"
     },
     {
-      "id": "song:249",
+      "id": "song:270",
       "display": "'tis the damn season",
       "clean": "TISTHEDAMNSEASON",
       "counts": {
@@ -4194,7 +4596,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:250",
+      "id": "abbr:271",
       "display": "TTDS",
       "clean": "TTDS",
       "counts": {
@@ -4207,7 +4609,7 @@
       "original": "'tis the damn season"
     },
     {
-      "id": "song:251",
+      "id": "song:272",
       "display": "tolerate it",
       "clean": "TOLERATEIT",
       "counts": {
@@ -4223,7 +4625,7 @@
       "source": "song"
     },
     {
-      "id": "song:252",
+      "id": "song:273",
       "display": "no body, no crime",
       "clean": "NOBODYNOCRIME",
       "counts": {
@@ -4242,7 +4644,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:253",
+      "id": "abbr:274",
       "display": "NBNC",
       "clean": "NBNC",
       "counts": {
@@ -4255,7 +4657,7 @@
       "original": "no body, no crime"
     },
     {
-      "id": "song:254",
+      "id": "song:275",
       "display": "happiness",
       "clean": "HAPPINESS",
       "counts": {
@@ -4271,7 +4673,7 @@
       "source": "song"
     },
     {
-      "id": "song:255",
+      "id": "song:276",
       "display": "dorothea",
       "clean": "DOROTHEA",
       "counts": {
@@ -4287,7 +4689,7 @@
       "source": "song"
     },
     {
-      "id": "song:256",
+      "id": "song:277",
       "display": "coney island",
       "clean": "CONEYISLAND",
       "counts": {
@@ -4306,7 +4708,7 @@
       "source": "song"
     },
     {
-      "id": "song:257",
+      "id": "song:278",
       "display": "ivy",
       "clean": "IVY",
       "counts": {
@@ -4318,7 +4720,7 @@
       "source": "song"
     },
     {
-      "id": "song:258",
+      "id": "song:279",
       "display": "cowboy like me",
       "clean": "COWBOYLIKEME",
       "counts": {
@@ -4337,7 +4739,7 @@
       "source": "song"
     },
     {
-      "id": "song:259",
+      "id": "song:280",
       "display": "long story short",
       "clean": "LONGSTORYSHORT",
       "counts": {
@@ -4355,7 +4757,7 @@
       "source": "song"
     },
     {
-      "id": "song:260",
+      "id": "song:281",
       "display": "marjorie",
       "clean": "MARJORIE",
       "counts": {
@@ -4371,7 +4773,7 @@
       "source": "song"
     },
     {
-      "id": "song:261",
+      "id": "song:282",
       "display": "closure",
       "clean": "CLOSURE",
       "counts": {
@@ -4387,7 +4789,7 @@
       "source": "song"
     },
     {
-      "id": "song:261",
+      "id": "song:282",
       "display": "evermore",
       "clean": "EVERMORE",
       "counts": {
@@ -4401,7 +4803,7 @@
       "source": "song"
     },
     {
-      "id": "song:262",
+      "id": "song:283",
       "display": "right where you left me",
       "clean": "RIGHTWHEREYOULEFTME",
       "counts": {
@@ -4423,7 +4825,27 @@
       "source": "song"
     },
     {
-      "id": "abbr:263",
+      "id": "song:284",
+      "display": "right where u left me",
+      "clean": "RIGHTWHEREULEFTME",
+      "counts": {
+        "E": 4,
+        "F": 1,
+        "G": 1,
+        "H": 2,
+        "I": 1,
+        "L": 1,
+        "M": 1,
+        "R": 2,
+        "T": 2,
+        "U": 1,
+        "W": 1
+      },
+      "album": "evermore",
+      "source": "song"
+    },
+    {
+      "id": "abbr:285",
       "display": "RWYLM",
       "clean": "RWYLM",
       "counts": {
@@ -4438,7 +4860,7 @@
       "original": "right where you left me"
     },
     {
-      "id": "abbr:264",
+      "id": "abbr:286",
       "display": "RWULM",
       "clean": "RWULM",
       "counts": {
@@ -4453,7 +4875,7 @@
       "original": "right where you left me"
     },
     {
-      "id": "song:265",
+      "id": "song:287",
       "display": "it's time to go",
       "clean": "ITSTIMETOGO",
       "counts": {
@@ -4469,7 +4891,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:266",
+      "id": "abbr:288",
       "display": "ITTG",
       "clean": "ITTG",
       "counts": {
@@ -4482,7 +4904,7 @@
       "original": "it's time to go"
     },
     {
-      "id": "song:267",
+      "id": "song:289",
       "display": "Lavender Haze",
       "clean": "LAVENDERHAZE",
       "counts": {
@@ -4500,7 +4922,7 @@
       "source": "song"
     },
     {
-      "id": "song:268",
+      "id": "song:290",
       "display": "Maroon",
       "clean": "MAROON",
       "counts": {
@@ -4514,7 +4936,7 @@
       "source": "song"
     },
     {
-      "id": "song:269",
+      "id": "song:291",
       "display": "Anti-Hero",
       "clean": "ANTIHERO",
       "counts": {
@@ -4531,7 +4953,7 @@
       "source": "song"
     },
     {
-      "id": "song:270",
+      "id": "song:292",
       "display": "Snow On The Beach",
       "clean": "SNOWONTHEBEACH",
       "counts": {
@@ -4550,7 +4972,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:271",
+      "id": "abbr:293",
       "display": "SOTB",
       "clean": "SOTB",
       "counts": {
@@ -4564,7 +4986,7 @@
       "original": "Snow On The Beach"
     },
     {
-      "id": "song:272",
+      "id": "song:294",
       "display": "You're On Your Own, Kid",
       "clean": "YOUREONYOUROWNKID",
       "counts": {
@@ -4583,7 +5005,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:273",
+      "id": "abbr:295",
       "display": "YOYOK",
       "clean": "YOYOK",
       "counts": {
@@ -4596,7 +5018,7 @@
       "original": "You're On Your Own, Kid"
     },
     {
-      "id": "song:274",
+      "id": "song:296",
       "display": "Midnight Rain",
       "clean": "MIDNIGHTRAIN",
       "counts": {
@@ -4614,7 +5036,7 @@
       "source": "song"
     },
     {
-      "id": "song:275",
+      "id": "song:297",
       "display": "Question...?",
       "clean": "QUESTION",
       "counts": {
@@ -4631,7 +5053,7 @@
       "source": "song"
     },
     {
-      "id": "song:276",
+      "id": "song:298",
       "display": "Vigilante Shit",
       "clean": "VIGILANTESHIT",
       "counts": {
@@ -4650,7 +5072,7 @@
       "source": "song"
     },
     {
-      "id": "song:277",
+      "id": "song:299",
       "display": "Bejeweled",
       "clean": "BEJEWELED",
       "counts": {
@@ -4665,7 +5087,7 @@
       "source": "song"
     },
     {
-      "id": "song:278",
+      "id": "song:300",
       "display": "Labyrinth",
       "clean": "LABYRINTH",
       "counts": {
@@ -4683,7 +5105,7 @@
       "source": "song"
     },
     {
-      "id": "song:279",
+      "id": "song:301",
       "display": "Karma",
       "clean": "KARMA",
       "counts": {
@@ -4696,7 +5118,7 @@
       "source": "song"
     },
     {
-      "id": "song:280",
+      "id": "song:302",
       "display": "Sweet Nothing",
       "clean": "SWEETNOTHING",
       "counts": {
@@ -4714,7 +5136,7 @@
       "source": "song"
     },
     {
-      "id": "song:281",
+      "id": "song:303",
       "display": "Mastermind",
       "clean": "MASTERMIND",
       "counts": {
@@ -4732,7 +5154,7 @@
       "source": "song"
     },
     {
-      "id": "song:282",
+      "id": "song:304",
       "display": "Hits Different",
       "clean": "HITSDIFFERENT",
       "counts": {
@@ -4750,7 +5172,7 @@
       "source": "song"
     },
     {
-      "id": "song:283",
+      "id": "song:305",
       "display": "The Great War",
       "clean": "THEGREATWAR",
       "counts": {
@@ -4766,7 +5188,7 @@
       "source": "song"
     },
     {
-      "id": "song:284",
+      "id": "song:306",
       "display": "Bigger Than The Whole Sky",
       "clean": "BIGGERTHANTHEWHOLESKY",
       "counts": {
@@ -4790,7 +5212,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:285",
+      "id": "abbr:307",
       "display": "BTTWS",
       "clean": "BTTWS",
       "counts": {
@@ -4804,7 +5226,7 @@
       "original": "Bigger Than The Whole Sky"
     },
     {
-      "id": "song:286",
+      "id": "song:308",
       "display": "High Infidelity",
       "clean": "HIGHINFIDELITY",
       "counts": {
@@ -4823,7 +5245,7 @@
       "source": "song"
     },
     {
-      "id": "song:287",
+      "id": "song:309",
       "display": "Would've, Could've, Should've",
       "clean": "WOULDVECOULDVESHOULDVE",
       "counts": {
@@ -4842,7 +5264,7 @@
       "source": "song"
     },
     {
-      "id": "song:288",
+      "id": "song:310",
       "display": "Dear Reader",
       "clean": "DEARREADER",
       "counts": {
@@ -4855,7 +5277,7 @@
       "source": "song"
     },
     {
-      "id": "song:289",
+      "id": "song:311",
       "display": "You're Losing Me",
       "clean": "YOURELOSINGME",
       "counts": {
@@ -4875,7 +5297,7 @@
       "source": "song"
     },
     {
-      "id": "song:290",
+      "id": "song:312",
       "display": "Fortnight",
       "clean": "FORTNIGHT",
       "counts": {
@@ -4892,7 +5314,7 @@
       "source": "song"
     },
     {
-      "id": "song:290",
+      "id": "song:312",
       "display": "The Tortured Poets Department",
       "clean": "THETORTUREDPOETSDEPARTMENT",
       "counts": {
@@ -4913,7 +5335,7 @@
       "source": "song"
     },
     {
-      "id": "song:291",
+      "id": "song:313",
       "display": "My Boy Only Breaks His Favorite Toys",
       "clean": "MYBOYONLYBREAKSHISFAVORITETOYS",
       "counts": {
@@ -4938,7 +5360,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:292",
+      "id": "abbr:314",
       "display": "MBOBHFT",
       "clean": "MBOBHFT",
       "counts": {
@@ -4954,7 +5376,7 @@
       "original": "My Boy Only Breaks His Favorite Toys"
     },
     {
-      "id": "song:293",
+      "id": "song:315",
       "display": "Down Bad",
       "clean": "DOWNBAD",
       "counts": {
@@ -4969,7 +5391,7 @@
       "source": "song"
     },
     {
-      "id": "song:294",
+      "id": "song:316",
       "display": "So Long, London",
       "clean": "SOLONGLONDON",
       "counts": {
@@ -4984,7 +5406,7 @@
       "source": "song"
     },
     {
-      "id": "song:295",
+      "id": "song:317",
       "display": "But Daddy I Love Him",
       "clean": "BUTDADDYILOVEHIM",
       "counts": {
@@ -5006,7 +5428,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:296",
+      "id": "abbr:318",
       "display": "BDILH",
       "clean": "BDILH",
       "counts": {
@@ -5021,7 +5443,7 @@
       "original": "But Daddy I Love Him"
     },
     {
-      "id": "song:297",
+      "id": "song:319",
       "display": "Fresh Out The Slammer",
       "clean": "FRESHOUTTHESLAMMER",
       "counts": {
@@ -5041,7 +5463,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:298",
+      "id": "abbr:320",
       "display": "FOTS",
       "clean": "FOTS",
       "counts": {
@@ -5055,7 +5477,7 @@
       "original": "Fresh Out The Slammer"
     },
     {
-      "id": "song:299",
+      "id": "song:321",
       "display": "Florida!!!",
       "clean": "FLORIDA",
       "counts": {
@@ -5071,7 +5493,7 @@
       "source": "song"
     },
     {
-      "id": "song:300",
+      "id": "song:322",
       "display": "Guilty as Sin?",
       "clean": "GUILTYASSIN",
       "counts": {
@@ -5089,7 +5511,7 @@
       "source": "song"
     },
     {
-      "id": "song:301",
+      "id": "song:323",
       "display": "Who's Afraid of Little Old Me?",
       "clean": "WHOSAFRAIDOFLITTLEOLDME",
       "counts": {
@@ -5111,7 +5533,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:302",
+      "id": "abbr:324",
       "display": "WAOLOM",
       "clean": "WAOLOM",
       "counts": {
@@ -5126,7 +5548,7 @@
       "original": "Who's Afraid of Little Old Me?"
     },
     {
-      "id": "song:303",
+      "id": "song:325",
       "display": "I Can Fix Him (No Really I Can)",
       "clean": "ICANFIXHIMNOREALLYICAN",
       "counts": {
@@ -5148,7 +5570,24 @@
       "source": "song"
     },
     {
-      "id": "abbr:304",
+      "id": "song:326",
+      "display": "I Can Fix Him",
+      "clean": "ICANFIXHIM",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "I": 3,
+        "M": 1,
+        "N": 1,
+        "X": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "abbr:327",
       "display": "ICFHNRIC",
       "clean": "ICFHNRIC",
       "counts": {
@@ -5164,7 +5603,7 @@
       "original": "I Can Fix Him (No Really I Can)"
     },
     {
-      "id": "song:305",
+      "id": "song:328",
       "display": "loml",
       "clean": "LOML",
       "counts": {
@@ -5176,7 +5615,7 @@
       "source": "song"
     },
     {
-      "id": "song:306",
+      "id": "song:329",
       "display": "I Can Do It With A Broken Heart",
       "clean": "ICANDOITWITHABROKENHEART",
       "counts": {
@@ -5198,7 +5637,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:307",
+      "id": "abbr:330",
       "display": "ICDIWABH",
       "clean": "ICDIWABH",
       "counts": {
@@ -5215,7 +5654,7 @@
       "original": "I Can Do It With A Broken Heart"
     },
     {
-      "id": "song:308",
+      "id": "song:331",
       "display": "The Smallest Man Who Ever Lived",
       "clean": "THESMALLESTMANWHOEVERLIVED",
       "counts": {
@@ -5238,7 +5677,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:309",
+      "id": "abbr:332",
       "display": "TSMWEL",
       "clean": "TSMWEL",
       "counts": {
@@ -5254,7 +5693,7 @@
       "original": "The Smallest Man Who Ever Lived"
     },
     {
-      "id": "song:310",
+      "id": "song:333",
       "display": "The Alchemy",
       "clean": "THEALCHEMY",
       "counts": {
@@ -5271,7 +5710,7 @@
       "source": "song"
     },
     {
-      "id": "song:311",
+      "id": "song:334",
       "display": "Clara Bow",
       "clean": "CLARABOW",
       "counts": {
@@ -5287,7 +5726,7 @@
       "source": "song"
     },
     {
-      "id": "song:312",
+      "id": "song:335",
       "display": "The Black Dog",
       "clean": "THEBLACKDOG",
       "counts": {
@@ -5307,7 +5746,7 @@
       "source": "song"
     },
     {
-      "id": "song:313",
+      "id": "song:336",
       "display": "imgonnagetyouback",
       "clean": "IMGONNAGETYOUBACK",
       "counts": {
@@ -5329,7 +5768,7 @@
       "source": "song"
     },
     {
-      "id": "song:314",
+      "id": "song:337",
       "display": "The Albatross",
       "clean": "THEALBATROSS",
       "counts": {
@@ -5347,7 +5786,7 @@
       "source": "song"
     },
     {
-      "id": "song:315",
+      "id": "song:338",
       "display": "Chloe or Sam or Sophia or Marcus",
       "clean": "CHLOEORSAMORSOPHIAORMARCUS",
       "counts": {
@@ -5368,7 +5807,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:316",
+      "id": "abbr:339",
       "display": "COSOSOM",
       "clean": "COSOSOM",
       "counts": {
@@ -5382,7 +5821,7 @@
       "original": "Chloe or Sam or Sophia or Marcus"
     },
     {
-      "id": "song:317",
+      "id": "song:340",
       "display": "How Did It End?",
       "clean": "HOWDIDITEND",
       "counts": {
@@ -5399,7 +5838,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:318",
+      "id": "abbr:341",
       "display": "HDIE",
       "clean": "HDIE",
       "counts": {
@@ -5413,7 +5852,7 @@
       "original": "How Did It End?"
     },
     {
-      "id": "song:319",
+      "id": "song:342",
       "display": "So High School",
       "clean": "SOHIGHSCHOOL",
       "counts": {
@@ -5429,7 +5868,7 @@
       "source": "song"
     },
     {
-      "id": "song:320",
+      "id": "song:343",
       "display": "I Hate It Here",
       "clean": "IHATEITHERE",
       "counts": {
@@ -5444,7 +5883,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:321",
+      "id": "abbr:344",
       "display": "IHIH",
       "clean": "IHIH",
       "counts": {
@@ -5456,7 +5895,7 @@
       "original": "I Hate It Here"
     },
     {
-      "id": "song:322",
+      "id": "song:345",
       "display": "thanK you aIMee",
       "clean": "THANKYOUAIMEE",
       "counts": {
@@ -5476,7 +5915,25 @@
       "source": "song"
     },
     {
-      "id": "song:323",
+      "id": "song:346",
+      "display": "thanK u aIMee",
+      "clean": "THANKUAIMEE",
+      "counts": {
+        "A": 2,
+        "E": 2,
+        "H": 1,
+        "I": 1,
+        "K": 1,
+        "M": 1,
+        "N": 1,
+        "T": 1,
+        "U": 1
+      },
+      "album": "ttpd",
+      "source": "song"
+    },
+    {
+      "id": "song:347",
       "display": "I Look in People's Windows",
       "clean": "ILOOKINPEOPLESWINDOWS",
       "counts": {
@@ -5495,7 +5952,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:324",
+      "id": "abbr:348",
       "display": "ILIPW",
       "clean": "ILIPW",
       "counts": {
@@ -5509,7 +5966,7 @@
       "original": "I Look in People's Windows"
     },
     {
-      "id": "song:325",
+      "id": "song:349",
       "display": "The Prophecy",
       "clean": "THEPROPHECY",
       "counts": {
@@ -5526,7 +5983,7 @@
       "source": "song"
     },
     {
-      "id": "song:326",
+      "id": "song:350",
       "display": "Cassandra",
       "clean": "CASSANDRA",
       "counts": {
@@ -5541,7 +5998,7 @@
       "source": "song"
     },
     {
-      "id": "song:327",
+      "id": "song:351",
       "display": "Peter",
       "clean": "PETER",
       "counts": {
@@ -5554,7 +6011,7 @@
       "source": "song"
     },
     {
-      "id": "song:328",
+      "id": "song:352",
       "display": "The Bolter",
       "clean": "THEBOLTER",
       "counts": {
@@ -5570,7 +6027,7 @@
       "source": "song"
     },
     {
-      "id": "song:329",
+      "id": "song:353",
       "display": "Robin",
       "clean": "ROBIN",
       "counts": {
@@ -5584,7 +6041,7 @@
       "source": "song"
     },
     {
-      "id": "song:330",
+      "id": "song:354",
       "display": "The Manuscript",
       "clean": "THEMANUSCRIPT",
       "counts": {
@@ -5605,7 +6062,7 @@
       "source": "song"
     },
     {
-      "id": "song:331",
+      "id": "song:355",
       "display": "Last Christmas",
       "clean": "LASTCHRISTMAS",
       "counts": {
@@ -5623,7 +6080,7 @@
       "source": "song"
     },
     {
-      "id": "song:332",
+      "id": "song:356",
       "display": "Christmases When You Were Mine",
       "clean": "CHRISTMASESWHENYOUWEREMINE",
       "counts": {
@@ -5646,7 +6103,28 @@
       "source": "song"
     },
     {
-      "id": "abbr:333",
+      "id": "song:357",
+      "display": "Christmases When U Were Mine",
+      "clean": "CHRISTMASESWHENUWEREMINE",
+      "counts": {
+        "A": 1,
+        "C": 1,
+        "E": 5,
+        "H": 2,
+        "I": 2,
+        "M": 2,
+        "N": 2,
+        "R": 2,
+        "S": 3,
+        "T": 1,
+        "U": 1,
+        "W": 2
+      },
+      "album": "other",
+      "source": "song"
+    },
+    {
+      "id": "abbr:358",
       "display": "CWYWM",
       "clean": "CWYWM",
       "counts": {
@@ -5660,7 +6138,7 @@
       "original": "Christmases When You Were Mine"
     },
     {
-      "id": "abbr:334",
+      "id": "abbr:359",
       "display": "CWUWM",
       "clean": "CWUWM",
       "counts": {
@@ -5674,7 +6152,7 @@
       "original": "Christmases When You Were Mine"
     },
     {
-      "id": "song:335",
+      "id": "song:360",
       "display": "Santa Baby",
       "clean": "SANTABABY",
       "counts": {
@@ -5689,7 +6167,7 @@
       "source": "song"
     },
     {
-      "id": "song:336",
+      "id": "song:361",
       "display": "Silent Night",
       "clean": "SILENTNIGHT",
       "counts": {
@@ -5706,7 +6184,7 @@
       "source": "song"
     },
     {
-      "id": "song:337",
+      "id": "song:362",
       "display": "Christmas Must Be Something More",
       "clean": "CHRISTMASMUSTBESOMETHINGMORE",
       "counts": {
@@ -5729,7 +6207,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:338",
+      "id": "abbr:363",
       "display": "CMBSM",
       "clean": "CMBSM",
       "counts": {
@@ -5743,7 +6221,7 @@
       "original": "Christmas Must Be Something More"
     },
     {
-      "id": "song:339",
+      "id": "song:364",
       "display": "White Christmas",
       "clean": "WHITECHRISTMAS",
       "counts": {
@@ -5762,7 +6240,7 @@
       "source": "song"
     },
     {
-      "id": "song:340",
+      "id": "song:365",
       "display": "Eyes Open",
       "clean": "EYESOPEN",
       "counts": {
@@ -5777,7 +6255,7 @@
       "source": "song"
     },
     {
-      "id": "song:341",
+      "id": "song:366",
       "display": "Safe & Sound",
       "clean": "SAFESOUND",
       "counts": {
@@ -5794,7 +6272,7 @@
       "source": "song"
     },
     {
-      "id": "song:342",
+      "id": "song:367",
       "display": "Renegade",
       "clean": "RENEGADE",
       "counts": {
@@ -5809,7 +6287,7 @@
       "source": "song"
     },
     {
-      "id": "song:343",
+      "id": "song:368",
       "display": "Beautiful Ghosts",
       "clean": "BEAUTIFULGHOSTS",
       "counts": {
@@ -5830,7 +6308,7 @@
       "source": "song"
     },
     {
-      "id": "song:344",
+      "id": "song:369",
       "display": "Macavity",
       "clean": "MACAVITY",
       "counts": {
@@ -5846,7 +6324,7 @@
       "source": "song"
     },
     {
-      "id": "song:345",
+      "id": "song:370",
       "display": "Carolina",
       "clean": "CAROLINA",
       "counts": {
@@ -5862,7 +6340,7 @@
       "source": "song"
     },
     {
-      "id": "song:346",
+      "id": "song:371",
       "display": "Christmas Tree Farm",
       "clean": "CHRISTMASTREEFARM",
       "counts": {
@@ -5881,7 +6359,7 @@
       "source": "song"
     },
     {
-      "id": "song:347",
+      "id": "song:372",
       "display": "I Don't Wanna Live Forever",
       "clean": "IDONTWANNALIVEFOREVER",
       "counts": {
@@ -5902,7 +6380,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:348",
+      "id": "abbr:373",
       "display": "IDWLF",
       "clean": "IDWLF",
       "counts": {
@@ -5917,7 +6395,7 @@
       "original": "I Don't Wanna Live Forever"
     },
     {
-      "id": "song:349",
+      "id": "song:374",
       "display": "Only The Young",
       "clean": "ONLYTHEYOUNG",
       "counts": {
@@ -5935,7 +6413,7 @@
       "source": "song"
     },
     {
-      "id": "song:350",
+      "id": "song:375",
       "display": "Two Is Better Than One",
       "clean": "TWOISBETTERTHANONE",
       "counts": {
@@ -5955,7 +6433,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:351",
+      "id": "abbr:376",
       "display": "TIBTO",
       "clean": "TIBTO",
       "counts": {
@@ -5969,7 +6447,7 @@
       "original": "Two Is Better Than One"
     },
     {
-      "id": "song:352",
+      "id": "song:377",
       "display": "Gasoline",
       "clean": "GASOLINE",
       "counts": {
@@ -5986,7 +6464,7 @@
       "source": "song"
     },
     {
-      "id": "song:353",
+      "id": "song:378",
       "display": "Highway Don't Care",
       "clean": "HIGHWAYDONTCARE",
       "counts": {
@@ -6008,7 +6486,7 @@
       "source": "song"
     },
     {
-      "id": "song:354",
+      "id": "song:379",
       "display": "Paris",
       "clean": "PARIS",
       "counts": {
@@ -6022,7 +6500,7 @@
       "source": "song"
     },
     {
-      "id": "song:355",
+      "id": "song:380",
       "display": "Glitch",
       "clean": "GLITCH",
       "counts": {
@@ -6037,7 +6515,7 @@
       "source": "song"
     },
     {
-      "id": "song:356",
+      "id": "song:381",
       "display": "Crazier",
       "clean": "CRAZIER",
       "counts": {
@@ -6052,7 +6530,7 @@
       "source": "song"
     },
     {
-      "id": "song:357",
+      "id": "song:382",
       "display": "If This Was a Movie",
       "clean": "IFTHISWASAMOVIE",
       "counts": {
@@ -6072,7 +6550,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:358",
+      "id": "abbr:383",
       "display": "ITWAM",
       "clean": "ITWAM",
       "counts": {
@@ -6087,7 +6565,7 @@
       "original": "If This Was a Movie"
     },
     {
-      "id": "song:359",
+      "id": "song:384",
       "display": "The Fate of Ophelia",
       "clean": "THEFATEOFOPHELIA",
       "counts": {
@@ -6105,7 +6583,7 @@
       "source": "song"
     },
     {
-      "id": "abbr:360",
+      "id": "abbr:385",
       "display": "TFOO",
       "clean": "TFOO",
       "counts": {
@@ -6118,7 +6596,7 @@
       "original": "The Fate of Ophelia"
     },
     {
-      "id": "song:361",
+      "id": "song:386",
       "display": "Elizabeth Taylor",
       "clean": "ELIZABETHTAYLOR",
       "counts": {
@@ -6138,7 +6616,7 @@
       "source": "song"
     },
     {
-      "id": "song:362",
+      "id": "song:387",
       "display": "Opalite",
       "clean": "OPALITE",
       "counts": {
@@ -6154,7 +6632,7 @@
       "source": "song"
     },
     {
-      "id": "song:363",
+      "id": "song:388",
       "display": "Father Figure",
       "clean": "FATHERFIGURE",
       "counts": {
@@ -6172,7 +6650,7 @@
       "source": "song"
     },
     {
-      "id": "song:364",
+      "id": "song:389",
       "display": "Eldest Daughter",
       "clean": "ELDESTDAUGHTER",
       "counts": {
@@ -6191,7 +6669,7 @@
       "source": "song"
     },
     {
-      "id": "song:365",
+      "id": "song:390",
       "display": "Ruin The Friendship",
       "clean": "RUINTHEFRIENDSHIP",
       "counts": {
@@ -6211,7 +6689,7 @@
       "source": "song"
     },
     {
-      "id": "song:366",
+      "id": "song:391",
       "display": "Actually Romantic",
       "clean": "ACTUALLYROMANTIC",
       "counts": {
@@ -6231,7 +6709,7 @@
       "source": "song"
     },
     {
-      "id": "song:367",
+      "id": "song:392",
       "display": "Wi$h Li$t",
       "clean": "WISHLIST",
       "counts": {
@@ -6246,7 +6724,7 @@
       "source": "song"
     },
     {
-      "id": "song:368",
+      "id": "song:393",
       "display": "Wood",
       "clean": "WOOD",
       "counts": {
@@ -6258,7 +6736,7 @@
       "source": "song"
     },
     {
-      "id": "song:369",
+      "id": "song:394",
       "display": "CANCELLED!",
       "clean": "CANCELLED",
       "counts": {
@@ -6273,7 +6751,7 @@
       "source": "song"
     },
     {
-      "id": "song:370",
+      "id": "song:395",
       "display": "Honey",
       "clean": "HONEY",
       "counts": {
@@ -6287,7 +6765,7 @@
       "source": "song"
     },
     {
-      "id": "song:370",
+      "id": "song:395",
       "display": "The Life of a Showgirl",
       "clean": "THELIFEOFASHOWGIRL",
       "counts": {

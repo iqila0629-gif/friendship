@@ -362,6 +362,26 @@
             <button class="chip" data-pref="pref">主要消耗</button>
             <button class="chip" data-pref="no">不想消耗</button>
           </div>
+          <div class="weight-group" data-group="pref">
+            <div class="panel-title" style="margin-top:12px;">主要消耗权重</div>
+            <div class="hint" style="font-size:12px;color:var(--muted);margin:4px 0 8px;">点击两个字母互换位置；解析框输入 A B C 会替换当前勾选。</div>
+            <div class="select-row">
+              <input class="parse-input" id="prefWeightInput" placeholder="A B C" autocomplete="off">
+              <button class="select-btn small" id="prefWeightApply">应用</button>
+              <span class="parse-feedback" id="prefWeightFeedback"></span>
+            </div>
+            <div class="alt-pills weight-pills" id="prefWeightPills"></div>
+          </div>
+          <div class="weight-group" data-group="no">
+            <div class="panel-title" style="margin-top:14px;">不想消耗权重</div>
+            <div class="hint" style="font-size:12px;color:var(--muted);margin:4px 0 8px;">点击两个字母互换位置；解析框输入 A B C 会替换当前勾选。</div>
+            <div class="select-row">
+              <input class="parse-input" id="noWeightInput" placeholder="A B C" autocomplete="off">
+              <button class="select-btn small" id="noWeightApply">应用</button>
+              <span class="parse-feedback" id="noWeightFeedback"></span>
+            </div>
+            <div class="alt-pills weight-pills" id="noWeightPills"></div>
+          </div>
         </div>
 
         <div class="panel">
@@ -407,6 +427,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260813.15"></script>
+  <script src="app.js?v=20260813.16"></script>
 </body>
 </html>

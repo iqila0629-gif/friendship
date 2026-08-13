@@ -14,8 +14,9 @@ const state = {
   prefMode: null,
   prefs: {},
   prefStrategy: "consume",
-  beadWeights: ALPHABET.slice(),
-  customWeights: null,
+  customPrefOrder: null,
+  customNoOrder: null,
+  weightSwapSel: null,
   mode: "normal",
   sources: new Set(["song", "song_album", "abbr", "lyric", "related"]),
   albums: new Set(),
@@ -66,21 +67,37 @@ function buildInventory() {
   return inv;
 }
 
-function defaultWeightOrder() {
-  return ALPHABET.slice().sort((a, b) => {
-    const ca = state.counts[a];
-    const cb = state.counts[b];
-    const va = ca == null || ca === "" ? Infinity : Number(ca);
-    const vb = cb == null || cb === "" ? Infinity : Number(cb);
-    if (va !== vb) return va - vb;
+function groupLetters(group) {
+  return ALPHABET.filter((ch) => state.prefs[ch] === group);
+}
+
+function countValue(ch) {
+  const v = state.counts[ch];
+  return v == null || v === "" ? Infinity : Number(v);
+}
+
+function defaultGroupOrder(group) {
+  return groupLetters(group).sort((a, b) => {
+    const va = countValue(a);
+    const vb = countValue(b);
+    if (group === "pref") {
+      if ((va === Infinity) !== (vb === Infinity)) return va === Infinity ? -1 : 1;
+      if (va !== vb) return vb - va;
+    } else {
+      if ((va === Infinity) !== (vb === Infinity)) return va === Infinity ? 1 : -1;
+      if (va !== vb) return va - vb;
+    }
     return a.localeCompare(b);
   });
 }
 
-function currentWeightOrder() {
-  const base = state.customWeights || defaultWeightOrder();
-  const seen = new Set(base);
-  const rest = defaultWeightOrder().filter((ch) => !seen.has(ch));
+function currentGroupOrder(group) {
+  const custom = group === "pref" ? state.customPrefOrder : state.customNoOrder;
+  const letters = groupLetters(group);
+  if (!custom) return defaultGroupOrder(group);
+  const seen = new Set();
+  const base = custom.filter((ch) => letters.includes(ch) && !seen.has(ch) && (seen.add(ch), true));
+  const rest = defaultGroupOrder(group).filter((ch) => !seen.has(ch));
   return [...base, ...rest];
 }
 
@@ -399,19 +416,26 @@ function renderResults() {
     .map((e) => {
       let pref = 0;
       let no = 0;
-      let weightScore = 0;
-      const order = currentWeightOrder();
-      const weightOf = (ch) => order.length - order.indexOf(ch);
+      let prefW = 0;
+      let noW = 0;
+      const prefOrder = currentGroupOrder("pref");
+      const noOrder = currentGroupOrder("no");
+      const priority = (order, ch) => (order.includes(ch) ? order.length - order.indexOf(ch) : 0);
       for (const [ch, n] of Object.entries(e.counts)) {
-        if (state.prefs[ch] === "pref") pref += n;
-        if (state.prefs[ch] === "no") no += n;
-        weightScore += weightOf(ch) * n;
+        if (state.prefs[ch] === "pref") {
+          pref += n;
+          prefW += priority(prefOrder, ch) * n;
+        }
+        if (state.prefs[ch] === "no") {
+          no += n;
+          noW += priority(noOrder, ch) * n;
+        }
       }
       const score =
         state.prefStrategy === "consume"
-          ? (weightScore / totalLetters(e.counts)) * 20 + pref * 4 - no * 2
-          : -(weightScore / totalLetters(e.counts)) * 20 + pref * 2 - no * 4;
-      return { e, pref, no, weightScore, score };
+          ? prefW * 4 - noW * 2
+          : -noW * 4 + prefW * 2;
+      return { e, pref, no, prefW, noW, score };
     })
     .sort((a, b) => b.score - a.score || totalLetters(b.e.counts) - totalLetters(a.e.counts));
   meta.textContent = `${found.length} 条`;
@@ -426,7 +450,6 @@ function renderResults() {
   const unlimitedIds = new Set(unlimitedSongs.map((e) => e.id));
   const limitedRankable = rankable.filter((item) => !unlimitedIds.has(item.e.id));
   const showRanking = limitedRankable.length ? limitedRankable : rankable;
-  const order = currentWeightOrder();
   body.innerHTML = `
     <div class="combo-block">
       <h3>贪心搭配（按当前偏好连续消耗）</h3>
@@ -436,22 +459,6 @@ function renderResults() {
           .map((e) => `<span class="alt-pill" style="${pillStyle(albumById(e.album))}">${esc(e.display)}</span>`)
           .join("") || `<span class="alt-pill" style="background:#f2ede2;color:#888;">还没有选择</span>`}</div>
         <button class="reset-btn" id="undoPick">撤销</button>
-      </div>
-    </div>
-    <div class="combo-block">
-      <h3>珠子权重（优先消耗高权重）</h3>
-      <div class="hint">默认按数量少优先，不限量最后；可拖拽调整或用解析框输入。</div>
-      <div class="select-row">
-        <input class="parse-input" id="weightInput" placeholder="A B C" autocomplete="off">
-        <button class="select-btn small" id="weightApply">应用权重</button>
-        <span class="parse-feedback" id="weightFeedback"></span>
-      </div>
-      <div class="alt-pills" id="weightPills">
-        ${order
-          .map(
-            (ch, i) => `<span class="alt-pill weight-pill" draggable="true" data-letter="${ch}" style="background:#f2ede2;color:var(--ink);">${ch}${i < order.length - 1 ? " &gt;" : ""}</span>`
-          )
-          .join("")}
       </div>
     </div>
     ${unlimitedSongs.length
@@ -490,60 +497,6 @@ function renderResults() {
     state.consumeChain.pop();
     render();
   });
-  $("weightApply").addEventListener("click", () => {
-    const raw = $("weightInput").value;
-    const letters = raw
-      .toUpperCase()
-      .replace(/[^A-Z]/g, " ")
-      .split(/\s+/)
-      .filter((s) => /^[A-Z]$/.test(s));
-    if (!letters.length) {
-      $("weightFeedback").textContent = "格式示例：A B C（权重高的在前）";
-      return;
-    }
-    const seen = new Set();
-    const order = letters.filter((ch) => {
-      if (seen.has(ch)) return false;
-      seen.add(ch);
-      return true;
-    });
-    for (const ch of order) {
-      if (!state.prefs[ch]) {
-        state.prefs[ch] = state.prefStrategy === "consume" ? "pref" : "no";
-      }
-    }
-    state.customWeights = order;
-    $("weightFeedback").textContent = `已应用 ${order.length} 个字母的权重`;
-    state.consumeChain = [];
-    render();
-  });
-  const pillsBox = $("weightPills");
-  if (pillsBox) {
-    let dragLetter = null;
-    pillsBox.querySelectorAll(".weight-pill").forEach((pill) => {
-      pill.addEventListener("dragstart", (ev) => {
-        dragLetter = pill.dataset.letter;
-        ev.dataTransfer.effectAllowed = "move";
-      });
-      pill.addEventListener("dragover", (ev) => {
-        ev.preventDefault();
-      });
-      pill.addEventListener("drop", (ev) => {
-        ev.preventDefault();
-        if (!dragLetter) return;
-        const target = pill.dataset.letter;
-        if (dragLetter === target) return;
-        const arr = state.customWeights ? state.customWeights.slice() : defaultWeightOrder();
-        const from = arr.indexOf(dragLetter);
-        const to = arr.indexOf(target);
-        arr.splice(from, 1);
-        arr.splice(to, 0, dragLetter);
-        state.customWeights = arr;
-        state.consumeChain = [];
-        render();
-      });
-    });
-  }
 }
 
 function renderMax(entries, inventory, title, meta, body) {
@@ -648,9 +601,61 @@ function renderMax(entries, inventory, title, meta, body) {
 
 }
 
+function renderWeightGroups() {
+  for (const group of ["pref", "no"]) {
+    const box = $(group === "pref" ? "prefWeightPills" : "noWeightPills");
+    const letters = groupLetters(group);
+    const order = currentGroupOrder(group);
+    if (!letters.length) {
+      box.innerHTML = `<span class="alt-pill" style="background:#f2ede2;color:#888;">未勾选</span>`;
+      continue;
+    }
+    box.innerHTML = "";
+    order.forEach((ch) => {
+      const pill = document.createElement("span");
+      pill.className = "alt-pill weight-pill" + (state.weightSwapSel === ch ? " swap-sel" : "");
+      pill.dataset.letter = ch;
+      pill.textContent = ch;
+      pill.title = "点击与另一个字母互换位置";
+      pill.addEventListener("click", () => {
+        if (!state.weightSwapSel) {
+          state.weightSwapSel = ch;
+        } else if (state.weightSwapSel === ch) {
+          state.weightSwapSel = null;
+        } else {
+          const a = state.weightSwapSel;
+          const b = ch;
+          const full = currentGroupOrder(group).slice();
+          const fa = full.indexOf(a);
+          const fb = full.indexOf(b);
+          if (fa >= 0 && fb >= 0) {
+            full[fa] = b;
+            full[fb] = a;
+          }
+          const keep = [];
+          for (const x of full) if (!keep.includes(x)) keep.push(x);
+          if (group === "pref") state.customPrefOrder = keep;
+          else state.customNoOrder = keep;
+          state.weightSwapSel = null;
+          state.consumeChain = [];
+          render();
+          return;
+          state.weightSwapSel = null;
+          state.consumeChain = [];
+          render();
+          return;
+        }
+        render();
+      });
+      box.appendChild(pill);
+    });
+  }
+}
+
 function render() {
   if (!DATA) return;
   $("prefPanel").classList.toggle("hidden", state.mode !== "consume");
+  if (state.mode === "consume") renderWeightGroups();
   renderInventorySummary();
   renderBeadGrid();
   renderFilters();
@@ -722,6 +727,9 @@ function bindStaticControls() {
     state.prefMode = null;
     state.prefs = {};
     state.prefStrategy = "consume";
+    state.customPrefOrder = null;
+    state.customNoOrder = null;
+    state.weightSwapSel = null;
     state.mode = "normal";
     state.sources = new Set(["song", "song_album", "abbr", "lyric", "related"]);
     state.albums = new Set(DATA.albums.map((a) => a.id));
@@ -760,6 +768,9 @@ function bindStaticControls() {
         state.prefs = {};
         state.prefMode = null;
         state.prefStrategy = "consume";
+        state.customPrefOrder = null;
+        state.customNoOrder = null;
+        state.weightSwapSel = null;
         document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.remove("active"));
         document.querySelectorAll("#prefStrategy .mode-btn").forEach((b) => {
           b.classList.toggle("active", b.dataset.strategy === "consume");
@@ -818,9 +829,47 @@ function bindStaticControls() {
   });
 }
 
+  function bindWeightApply(group) {
+    const inputId = group === "pref" ? "prefWeightInput" : "noWeightInput";
+    const applyId = group === "pref" ? "prefWeightApply" : "noWeightApply";
+    const fbId = group === "pref" ? "prefWeightFeedback" : "noWeightFeedback";
+    $(applyId).addEventListener("click", () => {
+      const raw = $(inputId).value;
+      const letters = raw
+        .toUpperCase()
+        .replace(/[^A-Z]/g, " ")
+        .split(/\s+/)
+        .filter((s) => /^[A-Z]$/.test(s));
+      if (!letters.length) {
+        $(fbId).textContent = "格式示例：A B C（权重高的在前）";
+        return;
+      }
+      const seen = new Set();
+      const order = letters.filter((ch) => {
+        if (seen.has(ch)) return false;
+        seen.add(ch);
+        return true;
+      });
+      for (const ch of ALPHABET) {
+        if (state.prefs[ch] === group || state.prefs[ch] === (group === "pref" ? "no" : "pref")) {
+          delete state.prefs[ch];
+        }
+      }
+      for (const ch of order) state.prefs[ch] = group;
+      if (group === "pref") state.customPrefOrder = order.slice();
+      else state.customNoOrder = order.slice();
+      state.weightSwapSel = null;
+      state.consumeChain = [];
+      $(fbId).textContent = `已设置 ${order.length} 个字母`;
+      render();
+    });
+  }
+  bindWeightApply("pref");
+  bindWeightApply("no");
+
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.15");
+  const res = await fetch("data/songs.json?v=20260813.16");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
