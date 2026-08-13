@@ -20,7 +20,6 @@ const state = {
   consumeChain: [],
   comboChosen: [],
   comboRounds: [],
-  comboStale: true,
   normalPage: 1,
 };
 
@@ -240,7 +239,7 @@ function renderBeadGrid() {
       bead.appendChild(flag);
     }
     bead.addEventListener("click", () => {
-      state.comboStale = true;
+      state.comboChosen = [];
       state.consumeChain = [];
       state.normalPage = 1;
       if (state.prefMode) {
@@ -268,7 +267,6 @@ function renderBeadGrid() {
       input.addEventListener("focus", () => { focusedCountLetter = ch; });
       input.addEventListener("blur", () => {
         focusedCountLetter = null;
-        state.comboStale = true;
         state.consumeChain = [];
         state.normalPage = 1;
         render();
@@ -294,7 +292,7 @@ function renderFilters() {
     chip.addEventListener("click", () => {
       if (state.albums.has(album.id)) state.albums.delete(album.id);
       else state.albums.add(album.id);
-      state.comboStale = true;
+      state.comboChosen = [];
       state.consumeChain = [];
       state.normalPage = 1;
       render();
@@ -450,10 +448,6 @@ function renderMax(entries, inventory, title, meta, body) {
     return;
   }
 
-  if (state.comboStale) {
-    state.comboStale = false;
-  }
-
   const remaining = state.comboChosen.reduce(
     (inv, e) => useLetters(inv, e.counts),
     { ...inventory }
@@ -566,21 +560,20 @@ function render() {
 function bindStaticControls() {
   $("selectAll").addEventListener("click", () => {
     state.selected = new Set(ALPHABET);
-    state.comboStale = true;
+    state.comboChosen = [];
     state.consumeChain = [];
     state.normalPage = 1;
     render();
   });
   $("clearAll").addEventListener("click", () => {
     state.selected.clear();
-    state.comboStale = true;
+    state.comboChosen = [];
     state.consumeChain = [];
     state.normalPage = 1;
     render();
   });
   $("countToggle").addEventListener("click", () => {
     state.showCounts = !state.showCounts;
-    state.comboStale = true;
     render();
   });
   $("parseApply").addEventListener("click", () => {
@@ -603,7 +596,7 @@ function bindStaticControls() {
     }
     Object.assign(state.counts, counts);
     state.showCounts = true;
-    state.comboStale = true;
+    state.comboChosen = [];
     state.consumeChain = [];
     state.normalPage = 1;
     const okCount = Object.keys(counts).length;
@@ -626,7 +619,7 @@ function bindStaticControls() {
     state.sources = new Set(["song", "song_album", "abbr", "lyric", "related"]);
     state.albums = new Set(DATA.albums.map((a) => a.id));
     state.consumeChain = [];
-    state.comboStale = true;
+    state.comboChosen = [];
     state.normalPage = 1;
     $("parseInput").value = "";
     $("parseFeedback").textContent = "";
@@ -641,14 +634,14 @@ function bindStaticControls() {
   });
   $("albumSelectAll").addEventListener("click", () => {
     state.albums = new Set(DATA.albums.map((a) => a.id));
-    state.comboStale = true;
+    state.comboChosen = [];
     state.consumeChain = [];
     state.normalPage = 1;
     render();
   });
   $("albumClearAll").addEventListener("click", () => {
     state.albums.clear();
-    state.comboStale = true;
+    state.comboChosen = [];
     state.consumeChain = [];
     state.normalPage = 1;
     render();
@@ -665,7 +658,7 @@ function bindStaticControls() {
           b.classList.toggle("active", b.dataset.strategy === "consume");
         });
       }
-      state.comboStale = true;
+      state.comboChosen = [];
       state.consumeChain = [];
       state.normalPage = 1;
       document.querySelectorAll("#modeToggle .mode-btn").forEach((b) => b.classList.toggle("active", b === btn));
@@ -689,7 +682,7 @@ function bindStaticControls() {
       } else {
         state.sources.add(s);
       }
-      state.comboStale = true;
+      state.comboChosen = [];
       state.consumeChain = [];
       state.normalPage = 1;
       render();
@@ -699,7 +692,7 @@ function bindStaticControls() {
     chip.addEventListener("click", () => {
       const p = chip.dataset.pref;
       state.prefMode = state.prefMode === p ? null : p;
-      state.comboStale = true;
+      state.comboChosen = [];
       state.consumeChain = [];
       state.normalPage = 1;
       document.querySelectorAll("#prefControls .chip").forEach((c) => c.classList.toggle("active", c === chip && state.prefMode === p));
@@ -720,7 +713,7 @@ function bindStaticControls() {
 
 async function boot() {
   bindStaticControls();
-  const res = await fetch("data/songs.json?v=20260813.11");
+  const res = await fetch("data/songs.json?v=20260813.12");
   DATA = await res.json();
   state.albums = new Set(DATA.albums.map((a) => a.id));
   render();
